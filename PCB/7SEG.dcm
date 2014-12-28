@@ -5,11 +5,6 @@ D I2C Serial EEPROM
 K EEPROM Serial
 $ENDCMP
 #
-$CMP 24LC256test
-D I2C Serial EEPROM
-K EEPROM Serial
-$ENDCMP
-#
 $CMP P8X32A
 D Parallax Propeller
 $ENDCMP
