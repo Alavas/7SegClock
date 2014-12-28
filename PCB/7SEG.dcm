@@ -1,12 +1,17 @@
 EESchema-DOCLIB  Version 2.0
 #
-$CMP P8X32A
-D Parallax Propeller
+$CMP 24LC256
+D I2C Serial EEPROM
+K EEPROM Serial
 $ENDCMP
 #
-$CMP R
-D Resistance
-K R DEV
+$CMP 24LC256test
+D I2C Serial EEPROM
+K EEPROM Serial
+$ENDCMP
+#
+$CMP P8X32A
+D Parallax Propeller
 $ENDCMP
 #
 #End Doc Library

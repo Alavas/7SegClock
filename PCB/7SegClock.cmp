@@ -1,0 +1,31 @@
+Cmp-Mod V01 Created by Cvpcb (2014-12-26 BZR 5338)-product   date = Sat 27 Dec 2014 09:03:58 PM EST
+
+BeginCmp
+TimeStamp = /549F617F;
+Reference = CON1;
+ValeurCmp = USB-MINI-B;
+IdModule  = Connect:USB_Mini-B;
+EndCmp
+
+BeginCmp
+TimeStamp = /549F5799;
+Reference = U1;
+ValeurCmp = P8X32A;
+IdModule  = SMD_Packages:TQFP-44;
+EndCmp
+
+BeginCmp
+TimeStamp = /549F6837;
+Reference = U2;
+ValeurCmp = 24LC256;
+IdModule  = SMD_Packages:SOIC-8-N;
+EndCmp
+
+BeginCmp
+TimeStamp = /549F5996;
+Reference = X1;
+ValeurCmp = 5mhz CRYSTAL;
+IdModule  = Crystals_Oscillators_SMD:Q_49U3HMS;
+EndCmp
+
+EndListe
