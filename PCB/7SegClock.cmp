@@ -1,10 +1,101 @@
-Cmp-Mod V01 Created by Cvpcb (2014-12-26 BZR 5338)-product   date = Sat 27 Dec 2014 09:03:58 PM EST
+Cmp-Mod V01 Created by Cvpcb (2014-12-26 BZR 5338)-product   date = Sun 28 Dec 2014 09:49:29 PM EST
+
+BeginCmp
+TimeStamp = /54A0A224;
+Reference = BT1;
+ValeurCmp = BATTERY;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A0B1CB;
+Reference = C1;
+ValeurCmp = 0.1uF;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A0AA7F;
+Reference = C2;
+ValeurCmp = 0.1uF;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /549F88B8;
+Reference = C3;
+ValeurCmp = 10nF;
+IdModule  = Capacitors_SMD:C_0805_HandSoldering;
+EndCmp
 
 BeginCmp
 TimeStamp = /549F617F;
 Reference = CON1;
 ValeurCmp = USB-MINI-B;
 IdModule  = Connect:USB_Mini-B;
+EndCmp
+
+BeginCmp
+TimeStamp = /549F9252;
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = LEDs:LED-0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /549F92C9;
+Reference = D2;
+ValeurCmp = LED;
+IdModule  = LEDs:LED-0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /549F89D8;
+Reference = Q1;
+ValeurCmp = NPN;
+IdModule  = Transistors_SMD:sot23;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A043D7;
+Reference = R1;
+ValeurCmp = 10K;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A04352;
+Reference = R2;
+ValeurCmp = 10K;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A0C1E4;
+Reference = R3;
+ValeurCmp = 10K;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /549F945E;
+Reference = R4;
+ValeurCmp = 1K;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /549F93DF;
+Reference = R5;
+ValeurCmp = 10K;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /549F8BBE;
+Reference = R6;
+ValeurCmp = 10K;
+IdModule  = Resistors_SMD:R_0805_HandSoldering;
 EndCmp
 
 BeginCmp
@@ -19,6 +110,20 @@ TimeStamp = /549F6837;
 Reference = U2;
 ValeurCmp = 24LC256;
 IdModule  = SMD_Packages:SOIC-8-N;
+EndCmp
+
+BeginCmp
+TimeStamp = /549F7855;
+Reference = U3;
+ValeurCmp = FT232RL;
+IdModule  = SMD_Packages:SSOP-28;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A09D3F;
+Reference = U4;
+ValeurCmp = DS3231;
+IdModule  = SMD_Packages:SO-16-W;
 EndCmp
 
 BeginCmp
