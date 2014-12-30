@@ -3,7 +3,7 @@
 
 4-Digit 7-Segment Alarm Clock
 
-Need to add Xilinx and Lattice files.
+Added Lattice FGPA files.
 
 Updated to add main Propeller Programs.
 
