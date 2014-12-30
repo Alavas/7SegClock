@@ -17,18 +17,21 @@
 -max_fanout 1000
 -fsm_encoding_style Auto
 -twr_paths 3
+-fix_gated_clocks 1
+-loop_limit 1950
+
 -use_io_insertion 1
 -resolve_mixed_drivers 0
 -use_io_reg 1
 
 
--lpf 0
--p "C:/Users/JustinW7/Dropbox/AlarmClockProject/Lattice"
--ver "C:/Users/JustinW7/Dropbox/AlarmClockProject/Lattice/SevenSegClock/source/AutoShift.v"
+-lpf 1
+-p "/home/justin/7SegClock/7SegClock/Lattice_FPGA"
+-ver "/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift.v"
 -top AutoShift
 
 
--p "C:/lscc/diamond/3.1_x64/ispfpga/xo2c00/data" "C:/Users/JustinW7/Dropbox/AlarmClockProject/Lattice/SevenSegClock" "C:/Users/JustinW7/Dropbox/AlarmClockProject/Lattice"
+-p "/usr/local/diamond/3.3_x64/ispfpga/xo2c00/data" "/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock" "/home/justin/7SegClock/7SegClock/Lattice_FPGA"
 
 -ngd "SevenSegClock_SevenSegClock.ngd"
 

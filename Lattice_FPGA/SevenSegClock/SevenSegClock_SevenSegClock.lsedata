@@ -1,7 +1,7 @@
 <top name = "AutoShift"  library = "work"  arch = ""  entry = "Verilog">
 
 <clocks>
-    <clockitem name = "osc_clk"  type = "port" />
+    <clockitem name = "osc_clk"  type = "net" />
     <clockitem name = "latch"  type = "port" />
     <clockitem name = "clk"  type = "port" />
 </clocks>
@@ -2454,6 +2454,31 @@
         <nitem  name = "cnt[0]"  />
         </nets>
     </instance>
+
+    <!--
+        REG instances in netlist: 3
+    -->
+
+    <regs>
+        <reg  name = "tmp"  />
+        <reg  name = "digit"  />
+        <reg  name = "cnt"  />
+    </regs>
+
+    <!--
+        Views in design "AutoShift": 8
+    -->
+
+    <views>
+        <view  name = "Mux_5u_32u"  />
+        <view  name = "OSCH(NOM_FREQ="2.08")"  />
+        <view  name = "add_11u_11u"  />
+        <view  name = "and_7"  />
+        <view  name = "wide_dffrs_11"  />
+        <view  name = "wide_dffrs_28"  />
+        <view  name = "wide_dffrs_32"  />
+        <view  name = "wide_mux_5_384"  />
+    </views>
 
 </unit>
 

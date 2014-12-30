@@ -1,31 +1,33 @@
+
           Lattice Mapping Report File for Design Module 'AutoShift'
+
 
 Design Information
 ------------------
 
 Command line:   map -a MachXO2 -p LCMXO2-7000HC -t TQFP144 -s 5 -oc Commercial
      SevenSegClock_SevenSegClock.ngd -o SevenSegClock_SevenSegClock_map.ncd -pr
-     SevenSegClock_SevenSegClock.prf -mp SevenSegClock_SevenSegClock.mrp C:/User
-     s/JustinW7/Dropbox/AlarmClockProject/Lattice/SevenSegClock/source/SevenSegC
-     lock.lpf -c 0 -gui
+     SevenSegClock_SevenSegClock.prf -mp SevenSegClock_SevenSegClock.mrp /home/j
+     ustin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/SevenSegClock.l
+     pf -c 0 -gui 
 Target Vendor:  LATTICE
 Target Device:  LCMXO2-7000HCTQFP144
 Target Performance:   5
-Mapper:  xo2c00,  version:  Diamond (64-bit) 3.1.0.96
-Mapped on:  12/29/14  19:24:35
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.3.0.109
+Mapped on:  12/30/14  04:27:22
 
 Design Summary
 --------------
 
    Number of registers:     70 out of  7209 (1%)
-      PFU registers:           69 out of  6864 (1%)
-      PIO registers:            1 out of   345 (0%)
-   Number of SLICEs:        48 out of  3432 (1%)
-      SLICEs as Logic/ROM:     48 out of  3432 (1%)
+      PFU registers:           70 out of  6864 (1%)
+      PIO registers:            0 out of   345 (0%)
+   Number of SLICEs:        50 out of  3432 (1%)
+      SLICEs as Logic/ROM:     50 out of  3432 (1%)
       SLICEs as RAM:            0 out of  2574 (0%)
       SLICEs as Carry:          6 out of  3432 (0%)
-   Number of LUT4s:         57 out of  6864 (1%)
-      Number of logic LUTs:       45
+   Number of LUT4s:         56 out of  6864 (1%)
+      Number of logic LUTs:       44
       Number of distributed RAM:   0 (0 LUT4s)
       Number of ripple logic:      6 (12 LUT4s)
       Number of shift registers:   0
@@ -64,7 +66,7 @@ Design Summary
 
 
 
-Design:  AutoShift                                     Date:  12/29/14  19:24:35
+Design:  AutoShift                                     Date:  12/30/14  04:27:22
 
 Design Summary (cont)
 ---------------------
@@ -72,14 +74,14 @@ Design Summary (cont)
    Number of LSRs:  0
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
+     Net cnt_7: 33 loads
      Net cnt_6: 32 loads
-     Net cnt_7: 32 loads
-     Net cnt_8: 22 loads
-     Net cnt_10: 20 loads
-     Net cnt_9: 20 loads
+     Net cnt_9: 24 loads
+     Net cnt_8: 23 loads
+     Net cnt_10: 19 loads
+     Net n1334: 3 loads
      Net tmp_0: 2 loads
      Net tmp_1: 2 loads
-     Net tmp_27: 2 loads
      Net tmp_28: 2 loads
      Net tmp_29: 2 loads
 
@@ -88,17 +90,18 @@ Design Summary (cont)
 
    Number of warnings:  3
    Number of errors:    0
+     
 
 Design Errors/Warnings
 ----------------------
 
-WARNING - map: C:/Users/JustinW7/Dropbox/AlarmClockProject/Lattice/SevenSegClock
-     /source/SevenSegClock.lpf(3): Semantic error in "FREQUENCY NET
-     "osc_clk_c_c" 2.080000 MHz ;": osc_clk_c_c matches no clock nets in the
-     design.  Disable this preference.
-WARNING - map: Preference parsing results:  1 semantic error detected
-WARNING - map: There are semantic errors in the preference file C:/Users/JustinW
-     7/Dropbox/AlarmClockProject/Lattice/SevenSegClock/source/SevenSegClock.lpf.
+WARNING - map: /home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/sourc
+     e/SevenSegClock.lpf(3): Semantic error in "FREQUENCY NET "osc_clk_c_c"
+     2.080000 MHz ;": osc_clk_c_c matches no clock nets in the design.  This
+     preference has been disabled.
+WARNING - map: Preference parsing results:  1 semantic error detected.
+WARNING - map: There are semantic errors in the preference file /home/justin/7Se
+     gClock/7SegClock/Lattice_FPGA/SevenSegClock/source/SevenSegClock.lpf.
 
 IO (PIO) Attributes
 -------------------
@@ -123,17 +126,17 @@ IO (PIO) Attributes
 +---------------------+-----------+-----------+------------+
 | leds[4]             | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| leds[3]             | OUTPUT    | LVCMOS33  |            |
 
                                     Page 2
 
 
 
 
-Design:  AutoShift                                     Date:  12/29/14  19:24:35
+Design:  AutoShift                                     Date:  12/30/14  04:27:22
 
 IO (PIO) Attributes (cont)
 --------------------------
+| leds[3]             | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | leds[2]             | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
@@ -147,7 +150,7 @@ IO (PIO) Attributes (cont)
 +---------------------+-----------+-----------+------------+
 | clk                 | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| data                | INPUT     | LVCMOS33  | IN         |
+| data                | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 
 Removed logic
@@ -157,14 +160,16 @@ Block i2 undriven or does not drive anything - clipped.
 Block GSR_INST undriven or does not drive anything - clipped.
 Signal GND_net undriven or does not drive anything - clipped.
 Signal VCC_net undriven or does not drive anything - clipped.
+Signal cnt_41_add_4_11/CO undriven or does not drive anything - clipped.
 Signal cnt_41_add_4_1/S0 undriven or does not drive anything - clipped.
 Signal cnt_41_add_4_1/CI undriven or does not drive anything - clipped.
-Signal cnt_41_add_4_11/CO undriven or does not drive anything - clipped.
 Block i1 was optimized away.
 
 Memory Usage
 ------------
 
+
+     
 
 OSC Summary
 -----------
@@ -185,20 +190,81 @@ Instance Name: OSCH_inst
 Run Time and Memory Usage
 -------------------------
 
-   Total CPU Time: 0 secs
-   Total REAL Time: 0 secs
-   Peak Memory Usage: 57 MB
-
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
 
                                     Page 3
 
 
+
+
+Design:  AutoShift                                     Date:  12/30/14  04:27:22
+
+Run Time and Memory Usage (cont)
+--------------------------------
+   Peak Memory Usage: 179 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 4
+
+
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
-Copyright (c) 1995
-     AT&T Corp.   All rights reserved.
-Copyright (c) 1995-2001 Lucent
-     Technologies Inc.  All rights reserved.
-Copyright (c) 2001 Agere Systems
-     All rights reserved.
-Copyright (c) 2002-2014 Lattice Semiconductor
-     Corporation,  All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights
+     reserved.

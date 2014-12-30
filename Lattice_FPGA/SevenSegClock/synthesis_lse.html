@@ -2,52 +2,126 @@
 <HEAD><TITLE>Synthesis and Ngdbuild Report</TITLE>
 <STYLE TYPE="text/css">
 <!--
- body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
 -->
 </STYLE>
 </HEAD>
 <PRE><A name="Syn"></A><B><U><big>Synthesis and Ngdbuild  Report</big></U></B>
-synthesis:  version Diamond (64-bit) 3.1.0.96
+synthesis:  version Diamond (64-bit) 3.3.0.109
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Dec 29 19:24:34 2014
+Tue Dec 30 04:27:20 2014
 
 
 Command Line:  synthesis -f SevenSegClock_SevenSegClock_lattice.synproj -gui 
 
--- all messages logged in file synthesis.log
-INFO:                                                           
-INFO: ##########################################################
-INFO: ### Lattice Family : MachXO2A
-INFO: ### Device  : LCMXO2-7000HC
-INFO: ### Package : TQFP144
-INFO: ### Speed   : 5
-INFO: ##########################################################
-INFO:                                                           
-INFO: fix_gated_clocks = 1
--- Technology check ok...
-c:/users/justinw7/dropbox/alarmclockproject/lattice/sevensegclock/source/autoshift.v(1): INFO: compiling module AutoShift (VERI-1018)
-C:/lscc/diamond/3.1_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): INFO: compiling module OSCH(NOM_FREQ="2.08") (VERI-1018)
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 5.
+The -t option is TQFP144.
+The -d option is LCMXO2-7000HC.
+Using package TQFP144.
+Using performance grade 5.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2A
+
+### Device  : LCMXO2-7000HC
+
+### Package : TQFP144
+
+### Speed   : 5
+
+##########################################################
+
+                                                          
+
+Optimization goal = Balanced
+Top-level module name = AutoShift.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true (default)
+DSP utilization = 100 % (default)
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+WARNING - synthesis: Using default loop_limit value of 1950
+
+Use IO Insertion = TRUE
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p /home/justin/7SegClock/7SegClock/Lattice_FPGA (searchpath added)
+-p /usr/local/diamond/3.3_x64/ispfpga/xo2c00/data (searchpath added)
+-p /home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock (searchpath added)
+-p /home/justin/7SegClock/7SegClock/Lattice_FPGA (searchpath added)
+Verilog design file = /home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift.v
+NGD file = SevenSegClock_SevenSegClock.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Compile design.
+Compile Design Begin
+Top module name (Verilog): AutoShift
+INFO - synthesis: /home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift.v(1): compiling module AutoShift. VERI-1018
+INFO - synthesis: /usr/local/diamond/3.3_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1793): compiling module OSCH(NOM_FREQ="2.08"). VERI-1018
+Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c7000.nph' in environment: /usr/local/diamond/3.3_x64/ispfpga.
+Package Status:                     Final          Version 1.36.
+Top-level module name = AutoShift.
 
 
-INFO: Applying 200.000000 MHz constraint to all clocks (LSE-5000)
+
+GSR instance connected to net n1.
+GSR will not be inferred because no asynchronous signal was found in the netlist.
+WARNING - synthesis: No user .sdc file.
+Applying 200.000000 MHz constraint to all clocks
+
+Results of NGD DRC are available in AutoShift_drc.log.
+Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+WARNING - synthesis: logical net 'cnt_41_add_4_1/S0' has no load.
+WARNING - synthesis: logical net 'cnt_41_add_4_11/CO' has no load.
+WARNING - synthesis: DRC complete with 2 warnings.
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file SevenSegClock_SevenSegClock.ngd.
 
 ################### Begin Area Report (AutoShift)######################
-Number of register bits => 70 of 5148 (1 % )
+Number of register bits => 70 of 7209 (0 % )
 CCU2D => 6
-FD1S3AX => 69
+FD1S3AX => 70
 GSR => 1
 IB => 3
-IFS1P3DX => 1
 L6MUX21 => 2
-LUT4 => 45
+LUT4 => 44
 OB => 13
 OSCH => 1
-PFUMX => 13
+PFUMX => 14
 ################### End Area Report ##################
 
 ################### Begin Clock Report ######################
@@ -57,19 +131,19 @@ Number of Clocks: 3
   Net : latch_c, loads : 28
   Net : osc_clk_c, loads : 12
 Clock Enable Nets
-Number of Clock Enables: 1
+Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : cnt_7, loads : 32
+  Net : cnt_7, loads : 33
   Net : cnt_6, loads : 32
-  Net : cnt_8, loads : 22
-  Net : cnt_10, loads : 20
-  Net : cnt_9, loads : 20
+  Net : cnt_9, loads : 24
+  Net : cnt_8, loads : 23
+  Net : cnt_10, loads : 19
+  Net : n1334, loads : 3
   Net : tmp_29, loads : 2
   Net : tmp_28, loads : 2
   Net : tmp_27, loads : 2
   Net : tmp_26, loads : 2
-  Net : tmp_25, loads : 2
 ################### End Clock Report ##################
 
 <A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
@@ -85,7 +159,7 @@ create_clock -period 5.000000 -name     |             |             |
 clk1 [get_nets osc_clk_c]               |            -|            -|     0  
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets clk_c]                   |  200.000 MHz|  601.323 MHz|     1  
+clk0 [get_nets clk_c]                   |  200.000 MHz|  644.745 MHz|     1  
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -93,10 +167,10 @@ clk0 [get_nets clk_c]                   |  200.000 MHz|  601.323 MHz|     1
 All constraints were met.
 
 
-Peak Memory Usage: 57.109  MB
+Peak Memory Usage: 186.199  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.468  secs
+Elapsed CPU time for LSE flow : 0.632  secs
 --------------------------------------------------------------
 
 
