@@ -1,0 +1,17 @@
+#Start recording tcl command: 12/29/2014 19:23:34
+#Project Location: C:/Users/JustinW7/Dropbox/AlarmClockProject/Lattice; Project name: SevenSegClock
+prj_project new -name "SevenSegClock" -impl "SevenSegClock" -dev LCMXO2-7000HC-5TG144C -synthesis "lse" -lpf "C:/Users/JustinW7/Dropbox/AlarmClockProject/Lattice/SevenSegClock/source/SevenSegClock.lpf"
+file copy -force -- "C:/Users/JustinW7/Dropbox/AlarmClockProject/7SegClock/Clock/SevenSegClock.lpf" "C:/Users/JustinW7/Dropbox/AlarmClockProject/7SegClock/Clock/SevenSegClock/source/AutoShift.v" "C:/Users/JustinW7/Dropbox/AlarmClockProject/Lattice/SevenSegClock/source"
+prj_src add "C:/Users/JustinW7/Dropbox/AlarmClockProject/Lattice/SevenSegClock/source/AutoShift.v"
+prj_project save
+prj_run Export -impl SevenSegClock -task Jedecgen
+pgr_project save "C:/Users/JustinW7/Dropbox/AlarmClockProject/Lattice/SevenSegClock/SevenSegClock.xcf"
+prj_src add -exclude "C:/Users/JustinW7/Dropbox/AlarmClockProject/Lattice/SevenSegClock/SevenSegClock.xcf"
+prj_src enable "C:/Users/JustinW7/Dropbox/AlarmClockProject/Lattice/SevenSegClock/SevenSegClock.xcf"
+prj_run Export -impl SevenSegClock -task Jedecgen
+pgr_program run
+pgr_project save "C:/Users/JustinW7/Dropbox/AlarmClockProject/Lattice/SevenSegClock/SevenSegClock.xcf"
+pgr_project close
+pgr_project open "C:/Users/JustinW7/Dropbox/AlarmClockProject/Lattice/SevenSegClock/SevenSegClock.xcf"
+pgr_project close
+#Stop recording: 12/29/2014 19:32:05
