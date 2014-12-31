@@ -23,6 +23,10 @@
             <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1419913642"/>
             <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1419913657"/>
         </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0">
+            <Task name="SSO" build_result="0" update_result="3" update_time="0"/>
+            <Task name="PIODRC" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
         <Report name="SevenSegClock_SevenSegClock.bgn" last_build_time="1419913663" last_build_size="3636"/>
         <Report name="SevenSegClock_SevenSegClock.bit" last_build_time="1419913663" last_build_size="26076"/>
         <Report name="SevenSegClock_SevenSegClock.jed" last_build_time="1419913656" last_build_size="1453600"/>
