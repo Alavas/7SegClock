@@ -3,7 +3,7 @@
     <Options/>
     <Implementation title="SevenSegClock" dir="SevenSegClock" description="SevenSegClock" synthesis="lse" default_strategy="Strategy1">
         <Options def_top="AutoShift"/>
-        <Source name="SevenSegClock/source/AutoShift.v" type="Verilog" type_short="Verilog">
+        <Source name="SevenSegClock/source/AutoShift_1.v" type="Verilog" type_short="Verilog">
             <Options top_module="AutoShift"/>
         </Source>
         <Source name="SevenSegClock/SevenSegClock.xcf" type="Programming Project File" type_short="Programming">
