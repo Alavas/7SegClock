@@ -1,24 +1,32 @@
 NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
 NOTE All Rights Reserved *
-NOTE DATE CREATED: Tue Dec 30 04:27:43 2014 *
+NOTE DATE CREATED: Fri Jan  2 08:05:58 2015 *
 NOTE DESIGN NAME: AutoShift *
 NOTE DEVICE NAME: LCMXO2-7000HC-5TQFP144 *
 NOTE PIN ASSIGNMENTS *
+NOTE PINS leds[18] : 22 : out *
+NOTE PINS leds[4] : 5 : out *
+NOTE PINS leds[5] : 6 : out *
+NOTE PINS data : 28 : in *
+NOTE PINS leds[6] : 9 : out *
+NOTE PINS leds[7] : 10 : out *
+NOTE PINS clk : 33 : in *
+NOTE PINS leds[8] : 11 : out *
+NOTE PINS leds[9] : 12 : out *
+NOTE PINS latch : 35 : in *
 NOTE PINS leds[10] : 13 : out *
 NOTE PINS leds[11] : 14 : out *
-NOTE PINS leds[9] : 12 : out *
-NOTE PINS leds[8] : 11 : out *
-NOTE PINS leds[7] : 10 : out *
-NOTE PINS leds[6] : 9 : out *
-NOTE PINS leds[5] : 6 : out *
-NOTE PINS leds[4] : 5 : out *
-NOTE PINS leds[3] : 4 : out *
-NOTE PINS leds[2] : 3 : out *
-NOTE PINS leds[1] : 2 : out *
 NOTE PINS leds[0] : 1 : out *
-NOTE PINS osc_clk : 40 : out *
-NOTE PINS latch : 35 : in *
-NOTE PINS clk : 33 : in *
-NOTE PINS data : 28 : in *
+NOTE PINS leds[12] : 24 : out *
+NOTE PINS leds[13] : 21 : out *
+NOTE PINS leds[1] : 2 : out *
+NOTE PINS leds[20] : 25 : out *
+NOTE PINS leds[14] : 17 : out *
+NOTE PINS leds[15] : 23 : out *
+NOTE PINS leds[2] : 3 : out *
+NOTE PINS leds[19] : 20 : out *
+NOTE PINS leds[16] : 15 : out *
+NOTE PINS leds[17] : 19 : out *
+NOTE PINS leds[3] : 4 : out *
 NOTE CONFIGURATION MODE: NONE *
 NOTE COMPRESSION: on *

@@ -14,7 +14,7 @@ Performance Grade:      5
 PACKAGE:          TQFP144
 Package Status:                     Final          Version 1.36
 
-Tue Dec 30 04:27:28 2014
+Fri Jan  2 08:05:50 2015
 
 Pinout by Port Name:
 +-----------+----------+--------------+-------+-----------+-----------+--------------------------------+
@@ -26,7 +26,16 @@ Pinout by Port Name:
 | leds[0]   | 1/5      | LVCMOS33_OUT | PL3A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
 | leds[10]  | 13/4     | LVCMOS33_OUT | PL10A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
 | leds[11]  | 14/4     | LVCMOS33_OUT | PL10B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| leds[12]  | 24/4     | LVCMOS33_OUT | PL17B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| leds[13]  | 21/4     | LVCMOS33_OUT | PL15A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| leds[14]  | 17/4     | LVCMOS33_OUT | PL11B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| leds[15]  | 23/4     | LVCMOS33_OUT | PL17A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| leds[16]  | 15/4     | LVCMOS33_OUT | PL11A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| leds[17]  | 19/4     | LVCMOS33_OUT | PL12A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| leds[18]  | 22/4     | LVCMOS33_OUT | PL15B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| leds[19]  | 20/4     | LVCMOS33_OUT | PL12B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
 | leds[1]   | 2/5      | LVCMOS33_OUT | PL3B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
+| leds[20]  | 25/3     | LVCMOS33_OUT | PL19A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
 | leds[2]   | 3/5      | LVCMOS33_OUT | PL4A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
 | leds[3]   | 4/5      | LVCMOS33_OUT | PL4B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
 | leds[4]   | 5/5      | LVCMOS33_OUT | PL6A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
@@ -35,7 +44,6 @@ Pinout by Port Name:
 | leds[7]   | 10/5     | LVCMOS33_OUT | PL8B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
 | leds[8]   | 11/5     | LVCMOS33_OUT | PL9A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
 | leds[9]   | 12/5     | LVCMOS33_OUT | PL9B  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
-| osc_clk   | 40/2     | LVCMOS33_OUT | PB6A  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW  |
 +-----------+----------+--------------+-------+-----------+-----------+--------------------------------+
 
 Vccio by Bank:
@@ -73,15 +81,15 @@ Vccio by Bank:
 | 12/5     | leds[9]               | LOCATED    | LVCMOS33_OUT | PL9B         |                |           |           |
 | 13/4     | leds[10]              | LOCATED    | LVCMOS33_OUT | PL10A        |                |           |           |
 | 14/4     | leds[11]              | LOCATED    | LVCMOS33_OUT | PL10B        |                |           |           |
-| 15/4     |     unused, PULL:DOWN |            |              | PL11A        |                |           |           |
-| 17/4     |     unused, PULL:DOWN |            |              | PL11B        |                |           |           |
-| 19/4     |     unused, PULL:DOWN |            |              | PL12A        | PCLKT4_0       |           |           |
-| 20/4     |     unused, PULL:DOWN |            |              | PL12B        | PCLKC4_0       |           |           |
-| 21/4     |     unused, PULL:DOWN |            |              | PL15A        |                |           |           |
-| 22/4     |     unused, PULL:DOWN |            |              | PL15B        |                |           |           |
-| 23/4     |     unused, PULL:DOWN |            |              | PL17A        |                |           |           |
-| 24/4     |     unused, PULL:DOWN |            |              | PL17B        |                |           |           |
-| 25/3     |     unused, PULL:DOWN |            |              | PL19A        |                |           |           |
+| 15/4     | leds[16]              |            | LVCMOS33_OUT | PL11A        |                |           |           |
+| 17/4     | leds[14]              |            | LVCMOS33_OUT | PL11B        |                |           |           |
+| 19/4     | leds[17]              |            | LVCMOS33_OUT | PL12A        | PCLKT4_0       |           |           |
+| 20/4     | leds[19]              |            | LVCMOS33_OUT | PL12B        | PCLKC4_0       |           |           |
+| 21/4     | leds[13]              |            | LVCMOS33_OUT | PL15A        |                |           |           |
+| 22/4     | leds[18]              |            | LVCMOS33_OUT | PL15B        |                |           |           |
+| 23/4     | leds[15]              |            | LVCMOS33_OUT | PL17A        |                |           |           |
+| 24/4     | leds[12]              |            | LVCMOS33_OUT | PL17B        |                |           |           |
+| 25/3     | leds[20]              |            | LVCMOS33_OUT | PL19A        |                |           |           |
 | 26/3     |     unused, PULL:DOWN |            |              | PL19B        |                |           |           |
 | 27/3     |     unused, PULL:DOWN |            |              | PL22A        | PCLKT3_0       |           |           |
 | 28/3     | data                  | LOCATED    | LVCMOS33_IN  | PL22B        | PCLKC3_0       |           |           |
@@ -92,7 +100,7 @@ Vccio by Bank:
 | 35/3     | latch                 | LOCATED    | LVCMOS33_IN  | PL25B        |                |           |           |
 | 38/2     |     unused, PULL:DOWN |            |              | PB4A         |                |           |           |
 | 39/2     |     unused, PULL:DOWN |            |              | PB4B         |                |           |           |
-| 40/2     | osc_clk               | LOCATED    | LVCMOS33_OUT | PB6A         | CSSPIN         |           |           |
+| 40/2     |     unused, PULL:DOWN |            |              | PB6A         | CSSPIN         |           |           |
 | 41/2     |     unused, PULL:DOWN |            |              | PB6B         |                |           |           |
 | 42/2     |     unused, PULL:DOWN |            |              | PB9A         |                |           |           |
 | 43/2     |     unused, PULL:DOWN |            |              | PB9B         |                |           |           |
@@ -418,7 +426,16 @@ LOCATE  COMP  "latch"  SITE  "35";
 LOCATE  COMP  "leds[0]"  SITE  "1";
 LOCATE  COMP  "leds[10]"  SITE  "13";
 LOCATE  COMP  "leds[11]"  SITE  "14";
+LOCATE  COMP  "leds[12]"  SITE  "24";
+LOCATE  COMP  "leds[13]"  SITE  "21";
+LOCATE  COMP  "leds[14]"  SITE  "17";
+LOCATE  COMP  "leds[15]"  SITE  "23";
+LOCATE  COMP  "leds[16]"  SITE  "15";
+LOCATE  COMP  "leds[17]"  SITE  "19";
+LOCATE  COMP  "leds[18]"  SITE  "22";
+LOCATE  COMP  "leds[19]"  SITE  "20";
 LOCATE  COMP  "leds[1]"  SITE  "2";
+LOCATE  COMP  "leds[20]"  SITE  "25";
 LOCATE  COMP  "leds[2]"  SITE  "3";
 LOCATE  COMP  "leds[3]"  SITE  "4";
 LOCATE  COMP  "leds[4]"  SITE  "5";
@@ -427,7 +444,6 @@ LOCATE  COMP  "leds[6]"  SITE  "9";
 LOCATE  COMP  "leds[7]"  SITE  "10";
 LOCATE  COMP  "leds[8]"  SITE  "11";
 LOCATE  COMP  "leds[9]"  SITE  "12";
-LOCATE  COMP  "osc_clk"  SITE  "40";
 
 
 
@@ -439,7 +455,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Dec 30 04:27:28 2014
+Fri Jan  2 08:05:50 2015
 
 
 

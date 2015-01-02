@@ -1,26 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
-    <Task name="Map">
-        <Message>
-            <ID>1100523</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/SevenSegClock.lpf(3): Semantic error in &quot;FREQUENCY NET &quot;osc_clk_c_c&quot; 2.080000 MHz ;&quot;: </Dynamic>
-            <Dynamic>osc_clk_c_c matches no clock nets in the design. </Dynamic>
-            <Navigation>/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/SevenSegClock.lpf</Navigation>
-            <Navigation>3</Navigation>
-        </Message>
-        <Message>
-            <ID>1104062</ID>
-            <Severity>Warning</Severity>
-            <Dynamic></Dynamic>
-            <Dynamic>1 semantic error</Dynamic>
-        </Message>
-        <Message>
-            <ID>51001230</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/SevenSegClock.lpf</Dynamic>
-        </Message>
-    </Task>
     <Task name="Lattice_Synthesis">
         <Message>
             <ID>2029993</ID>
@@ -32,9 +11,9 @@
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift.v(1): </Dynamic>
+            <Dynamic>/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(1): </Dynamic>
             <Dynamic>AutoShift</Dynamic>
-            <Navigation>/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift.v</Navigation>
+            <Navigation>/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v</Navigation>
             <Navigation>1</Navigation>
         </Message>
         <Message>
@@ -53,18 +32,24 @@
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>cnt_41_add_4_1/S0</Dynamic>
+            <Dynamic>cnt_237_add_4_1/S0</Dynamic>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>cnt_41_add_4_11/CO</Dynamic>
+            <Dynamic>cnt_237_add_4_11/CO</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cnt_237_add_4_11/S1</Dynamic>
         </Message>
         <Message>
             <ID>1163101</ID>
             <Severity>Warning</Severity>
-            <Dynamic>2</Dynamic>
+            <Dynamic>3</Dynamic>
         </Message>
     </Task>
     <Task name="PAR">
@@ -95,6 +80,18 @@
             <ID>62061008</ID>
             <Severity>Warning</Severity>
             <Dynamic>latch_c</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=n1379 loads=2 clock_loads=2</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=n1379 loads=2 clock_loads=2</Dynamic>
         </Message>
     </Task>
 </BaliMessageLog>

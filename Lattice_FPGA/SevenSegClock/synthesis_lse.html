@@ -14,7 +14,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Dec 30 04:27:20 2014
+Fri Jan  2 08:05:42 2015
 
 
 Command Line:  synthesis -f SevenSegClock_SevenSegClock_lattice.synproj -gui 
@@ -72,7 +72,7 @@ The -syn option is FALSE.
 -p /usr/local/diamond/3.3_x64/ispfpga/xo2c00/data (searchpath added)
 -p /home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock (searchpath added)
 -p /home/justin/7SegClock/7SegClock/Lattice_FPGA (searchpath added)
-Verilog design file = /home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift.v
+Verilog design file = /home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v
 NGD file = SevenSegClock_SevenSegClock.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -83,7 +83,7 @@ Technology check ok...
 Compile design.
 Compile Design Begin
 Top module name (Verilog): AutoShift
-INFO - synthesis: /home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift.v(1): compiling module AutoShift. VERI-1018
+INFO - synthesis: /home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(1): compiling module AutoShift. VERI-1018
 INFO - synthesis: /usr/local/diamond/3.3_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1793): compiling module OSCH(NOM_FREQ="2.08"). VERI-1018
 Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
@@ -105,45 +105,47 @@ Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/xo2c00a/data/xo2alib.ngl
 Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
 Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/or5g00/data/orc5glib.ngl'...
-WARNING - synthesis: logical net 'cnt_41_add_4_1/S0' has no load.
-WARNING - synthesis: logical net 'cnt_41_add_4_11/CO' has no load.
-WARNING - synthesis: DRC complete with 2 warnings.
+WARNING - synthesis: logical net 'cnt_237_add_4_1/S0' has no load.
+WARNING - synthesis: logical net 'cnt_237_add_4_11/CO' has no load.
+WARNING - synthesis: logical net 'cnt_237_add_4_11/S1' has no load.
+WARNING - synthesis: DRC complete with 3 warnings.
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file SevenSegClock_SevenSegClock.ngd.
 
 ################### Begin Area Report (AutoShift)######################
-Number of register bits => 70 of 7209 (0 % )
+Number of register bits => 78 of 7209 (1 % )
 CCU2D => 6
-FD1S3AX => 70
+FD1S1I => 24
+FD1S3AX => 54
 GSR => 1
 IB => 3
-L6MUX21 => 2
-LUT4 => 44
-OB => 13
+LUT4 => 39
+OB => 21
 OSCH => 1
-PFUMX => 14
 ################### End Area Report ##################
 
 ################### Begin Clock Report ######################
 Clock Nets
-Number of Clocks: 3
-  Net : clk_c, loads : 31
-  Net : latch_c, loads : 28
-  Net : osc_clk_c, loads : 12
+Number of Clocks: 5
+  Net : clk_c, loads : 23
+  Net : latch_c, loads : 21
+  Net : n1378, loads : 21
+  Net : osc_clk_c_c, loads : 10
+  Net : n1379, loads : 3
 Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : cnt_7, loads : 33
-  Net : cnt_6, loads : 32
-  Net : cnt_9, loads : 24
-  Net : cnt_8, loads : 23
-  Net : cnt_10, loads : 19
-  Net : n1334, loads : 3
-  Net : tmp_29, loads : 2
-  Net : tmp_28, loads : 2
-  Net : tmp_27, loads : 2
-  Net : tmp_26, loads : 2
+  Net : segment_0, loads : 18
+  Net : segment_1, loads : 17
+  Net : segment_2, loads : 16
+  Net : cnt_9, loads : 13
+  Net : cnt_8, loads : 13
+  Net : cnt_7, loads : 13
+  Net : cnt_6, loads : 13
+  Net : n1164, loads : 7
+  Net : n724, loads : 7
+  Net : n947, loads : 3
 ################### End Clock Report ##################
 
 <A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
@@ -153,10 +155,10 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk2 [get_nets latch_c]                 |            -|            -|     0  
+clk2 [get_nets osc_clk_c_c]             |            -|            -|     0  
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk1 [get_nets osc_clk_c]               |            -|            -|     0  
+clk1 [get_nets latch_c]                 |            -|            -|     0  
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
 clk0 [get_nets clk_c]                   |  200.000 MHz|  644.745 MHz|     1  
@@ -167,10 +169,10 @@ clk0 [get_nets clk_c]                   |  200.000 MHz|  644.745 MHz|     1
 All constraints were met.
 
 
-Peak Memory Usage: 186.199  MB
+Peak Memory Usage: 186.047  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.632  secs
+Elapsed CPU time for LSE flow : 0.539  secs
 --------------------------------------------------------------
 
 

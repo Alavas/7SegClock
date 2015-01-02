@@ -7,12 +7,13 @@ Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/or5g00/data/orc5glib.ngl
 
 Running DRC...
 
-WARNING - synthesis: logical net 'cnt_41_add_4_1/S0' has no load.
-WARNING - synthesis: logical net 'cnt_41_add_4_11/CO' has no load.
-WARNING - synthesis: DRC complete with 2 warnings.
+WARNING - synthesis: logical net 'cnt_237_add_4_1/S0' has no load.
+WARNING - synthesis: logical net 'cnt_237_add_4_11/CO' has no load.
+WARNING - synthesis: logical net 'cnt_237_add_4_11/S1' has no load.
+WARNING - synthesis: DRC complete with 3 warnings.
 
 Design Results:
-    157 blocks expanded
+    152 blocks expanded
 completed the first expansion
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file SevenSegClock_SevenSegClock.ngd.

@@ -14,24 +14,24 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-7000HCTQFP144
 Target Performance:   5
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.3.0.109
-Mapped on:  12/30/14  04:27:22
+Mapped on:  01/02/15  08:05:44
 
 Design Summary
 --------------
 
-   Number of registers:     70 out of  7209 (1%)
-      PFU registers:           70 out of  6864 (1%)
+   Number of registers:     78 out of  7209 (1%)
+      PFU registers:           78 out of  6864 (1%)
       PIO registers:            0 out of   345 (0%)
-   Number of SLICEs:        50 out of  3432 (1%)
-      SLICEs as Logic/ROM:     50 out of  3432 (1%)
+   Number of SLICEs:        46 out of  3432 (1%)
+      SLICEs as Logic/ROM:     46 out of  3432 (1%)
       SLICEs as RAM:            0 out of  2574 (0%)
       SLICEs as Carry:          6 out of  3432 (0%)
-   Number of LUT4s:         56 out of  6864 (1%)
-      Number of logic LUTs:       44
+   Number of LUT4s:         44 out of  6864 (1%)
+      Number of logic LUTs:       32
       Number of distributed RAM:   0 (0 LUT4s)
       Number of ripple logic:      6 (12 LUT4s)
       Number of shift registers:   0
-   Number of PIO sites used: 16 + 4(JTAG) out of 115 (17%)
+   Number of PIO sites used: 24 + 4(JTAG) out of 115 (24%)
    Number of block RAMs:  0 out of 26 (0%)
    Number of GSRs:  0 out of 1 (0%)
    EFB used :       No
@@ -56,52 +56,60 @@ Design Summary
      distributed RAMs) + 2*(Number of ripple logic)
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
-   Number of clocks:  3
-     Net clk_c: 16 loads, 16 rising, 0 falling (Driver: PIO clk )
-     Net osc_clk_c: 6 loads, 6 rising, 0 falling (Driver: OSCH_inst )
-     Net latch_c: 14 loads, 14 rising, 0 falling (Driver: PIO latch )
+   Number of clocks:  5
+     Net n1378: 15 loads, 15 rising, 0 falling (Driver:
+     i10_1_lut_rep_8_2_lut_3_lut_4_lut )
+     Net clk_c: 12 loads, 12 rising, 0 falling (Driver: PIO clk )
 
                                     Page 1
 
 
 
 
-Design:  AutoShift                                     Date:  12/30/14  04:27:22
+Design:  AutoShift                                     Date:  01/02/15  08:05:44
 
 Design Summary (cont)
 ---------------------
+     Net latch_c: 11 loads, 11 rising, 0 falling (Driver: PIO latch )
+     Net osc_clk_c_c: 6 loads, 6 rising, 0 falling (Driver: OSCH_inst )
+     Net n1379: 2 loads, 2 rising, 0 falling (Driver: i1_2_lut_rep_9_3_lut_4_lut
+     )
    Number of Clock Enables:  0
-   Number of LSRs:  0
+   Number of LSRs:  10
+     Net ledon_0: 1 loads, 1 LSLICEs
+     Net n947: 2 loads, 2 LSLICEs
+     Net n1164: 4 loads, 4 LSLICEs
+     Net n724: 4 loads, 4 LSLICEs
+     Net ledon_1: 1 loads, 1 LSLICEs
+     Net ledon_6: 1 loads, 1 LSLICEs
+     Net ledon_5: 1 loads, 1 LSLICEs
+     Net ledon_2: 1 loads, 1 LSLICEs
+     Net ledon_4: 1 loads, 1 LSLICEs
+     Net ledon_3: 1 loads, 1 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net cnt_7: 33 loads
-     Net cnt_6: 32 loads
-     Net cnt_9: 24 loads
-     Net cnt_8: 23 loads
-     Net cnt_10: 19 loads
-     Net n1334: 3 loads
-     Net tmp_0: 2 loads
-     Net tmp_1: 2 loads
-     Net tmp_28: 2 loads
-     Net tmp_29: 2 loads
+     Net segment_0: 18 loads
+     Net segment_1: 17 loads
+     Net segment_2: 16 loads
+     Net cnt_6: 13 loads
+     Net cnt_7: 13 loads
+     Net cnt_8: 13 loads
+     Net cnt_9: 13 loads
+     Net n1164: 4 loads
+     Net n724: 4 loads
+     Net n947: 2 loads
 
 
 
 
-   Number of warnings:  3
+   Number of warnings:  0
    Number of errors:    0
      
 
 Design Errors/Warnings
 ----------------------
 
-WARNING - map: /home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/sourc
-     e/SevenSegClock.lpf(3): Semantic error in "FREQUENCY NET "osc_clk_c_c"
-     2.080000 MHz ;": osc_clk_c_c matches no clock nets in the design.  This
-     preference has been disabled.
-WARNING - map: Preference parsing results:  1 semantic error detected.
-WARNING - map: There are semantic errors in the preference file /home/justin/7Se
-     gClock/7SegClock/Lattice_FPGA/SevenSegClock/source/SevenSegClock.lpf.
+   No errors or warnings present.
 
 IO (PIO) Attributes
 -------------------
@@ -110,21 +118,13 @@ IO (PIO) Attributes
 | IO Name             | Direction | Levelmode | IO         |
 |                     |           |  IO_TYPE  | Register   |
 +---------------------+-----------+-----------+------------+
-| leds[10]            | OUTPUT    | LVCMOS33  |            |
+| leds[18]            | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| leds[11]            | OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| leds[9]             | OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| leds[8]             | OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| leds[7]             | OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| leds[6]             | OUTPUT    | LVCMOS33  |            |
+| leds[4]             | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | leds[5]             | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| leds[4]             | OUTPUT    | LVCMOS33  |            |
+| data                | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 
                                     Page 2
@@ -132,25 +132,49 @@ IO (PIO) Attributes
 
 
 
-Design:  AutoShift                                     Date:  12/30/14  04:27:22
+Design:  AutoShift                                     Date:  01/02/15  08:05:44
 
 IO (PIO) Attributes (cont)
 --------------------------
-| leds[3]             | OUTPUT    | LVCMOS33  |            |
+| leds[6]             | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| leds[2]             | OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| leds[1]             | OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| leds[0]             | OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| osc_clk             | OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| latch               | INPUT     | LVCMOS33  |            |
+| leds[7]             | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | clk                 | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| data                | INPUT     | LVCMOS33  |            |
+| leds[8]             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| leds[9]             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| latch               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| leds[10]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| leds[11]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| leds[0]             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| leds[12]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| leds[13]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| leds[1]             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| leds[20]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| leds[14]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| leds[15]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| leds[2]             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| leds[19]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| leds[16]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| leds[17]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| leds[3]             | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 
 Removed logic
@@ -158,11 +182,36 @@ Removed logic
 
 Block i2 undriven or does not drive anything - clipped.
 Block GSR_INST undriven or does not drive anything - clipped.
+Signal n953 was merged into signal ledon_3
+Signal n955 was merged into signal ledon_4
+Signal n952 was merged into signal ledon_2
+Signal n956 was merged into signal ledon_5
+Signal n958 was merged into signal ledon_6
+Signal n949 was merged into signal ledon_0
+Signal n950 was merged into signal ledon_1
 Signal GND_net undriven or does not drive anything - clipped.
 Signal VCC_net undriven or does not drive anything - clipped.
-Signal cnt_41_add_4_11/CO undriven or does not drive anything - clipped.
-Signal cnt_41_add_4_1/S0 undriven or does not drive anything - clipped.
-Signal cnt_41_add_4_1/CI undriven or does not drive anything - clipped.
+Signal cnt_237_add_4_11/S1 undriven or does not drive anything - clipped.
+
+                                    Page 3
+
+
+
+
+Design:  AutoShift                                     Date:  01/02/15  08:05:44
+
+Removed logic (cont)
+--------------------
+Signal cnt_237_add_4_11/CO undriven or does not drive anything - clipped.
+Signal cnt_237_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal cnt_237_add_4_1/CI undriven or does not drive anything - clipped.
+Block i552_1_lut was optimized away.
+Block i554_1_lut was optimized away.
+Block i551_1_lut was optimized away.
+Block i555_1_lut was optimized away.
+Block i557_1_lut was optimized away.
+Block i548_1_lut was optimized away.
+Block i549_1_lut was optimized away.
 Block i1 was optimized away.
 
 Memory Usage
@@ -178,7 +227,7 @@ OSC 1:                                     Pin/Node Value
   OSC Instance Name:                                OSCH_inst
   OSC Type:                                         OSCH
   STDBY Input:                                      NONE
-  OSC Output:                              PIN,NODE osc_clk_c
+  OSC Output:                              NODE     osc_clk_c_c
   OSC Nominal Frequency (MHz):                      2.08
 
 ASIC Components
@@ -192,57 +241,8 @@ Run Time and Memory Usage
 
    Total CPU Time: 0 secs  
    Total REAL Time: 0 secs  
-
-                                    Page 3
-
-
-
-
-Design:  AutoShift                                     Date:  12/30/14  04:27:22
-
-Run Time and Memory Usage (cont)
---------------------------------
    Peak Memory Usage: 179 MB
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -27,7 +27,7 @@
 
 -lpf 1
 -p "/home/justin/7SegClock/7SegClock/Lattice_FPGA"
--ver "/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift.v"
+-ver "/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v"
 -top AutoShift
 
 
