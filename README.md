@@ -10,4 +10,5 @@ Updated Propeller files to add MIT license.
 Added new Kicad schematic.
 Using BZR-5338.
 
+![alt tag](https://raw.github.com/alavas/7SegClock/FrontView.png)
 
