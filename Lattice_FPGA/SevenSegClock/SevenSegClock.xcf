@@ -20,8 +20,8 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/SevenSegClock_SevenSegClock.jed</File>
-			<FileTime>12/30/14 04:27:36</FileTime>
-			<JedecChecksum>0x14E6</JedecChecksum>
+			<FileTime>01/03/15 04:35:33</FileTime>
+			<JedecChecksum>0x2473</JedecChecksum>
 			<Operation>FLASH Erase,Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>
@@ -30,7 +30,6 @@
 				<IOVectorData>0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</IOVectorData>
 				<TCKFrequency>1.000000 MHz</TCKFrequency>
 				<SVFProcessor>SVF Processor</SVFProcessor>
-				<Usercode>0x00000000</Usercode>
 				<AccessMode>FLASH</AccessMode>
 			</Option>
 		</Device>
@@ -45,7 +44,7 @@
 	</ProjectOptions>
 	<CableOptions>
 		<CableName>USB2</CableName>
-		<PortAdd>FTUSB-1</PortAdd>
-		<USBID>Lattice FTUSB Interface Cable A Location 0001 Serial A</USBID>
+		<PortAdd>FTUSB-0</PortAdd>
+		<USBID>LATTICE FTUSB INTERFACE CABLE A Location 0000 Serial Lattice FTUSB Interface Cable A</USBID>
 	</CableOptions>
 </ispXCF>

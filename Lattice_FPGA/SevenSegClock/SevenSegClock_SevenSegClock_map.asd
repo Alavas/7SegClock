@@ -1,5 +1,5 @@
 [ActiveSupport MAP]
-Device = LCMXO2-7000HC;
+Device = LCMXO2-7000HE;
 Package = TQFP144;
 Performance = 5;
 LUTS_avail = 6864;

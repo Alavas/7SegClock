@@ -11,7 +11,7 @@ Loading design for application Bitgen from file SevenSegClock_SevenSegClock.ncd.
 Design name: AutoShift
 NCD version: 3.3
 Vendor:      LATTICE
-Device:      LCMXO2-7000HC
+Device:      LCMXO2-7000HE
 Package:     TQFP144
 Performance: 5
 Loading device for application Bitgen from file 'xo2c7000.nph' in environment: /usr/local/diamond/3.3_x64/ispfpga.

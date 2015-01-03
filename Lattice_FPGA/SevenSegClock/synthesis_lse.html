@@ -14,7 +14,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Fri Jan  2 08:05:42 2015
+Sat Jan  3 04:35:18 2015
 
 
 Command Line:  synthesis -f SevenSegClock_SevenSegClock_lattice.synproj -gui 
@@ -23,7 +23,7 @@ Synthesis options:
 The -a option is MachXO2.
 The -s option is 5.
 The -t option is TQFP144.
-The -d option is LCMXO2-7000HC.
+The -d option is LCMXO2-7000HE.
 Using package TQFP144.
 Using performance grade 5.
                                                           
@@ -32,7 +32,7 @@ Using performance grade 5.
 
 ### Lattice Family : MachXO2A
 
-### Device  : LCMXO2-7000HC
+### Device  : LCMXO2-7000HE
 
 ### Package : TQFP144
 
@@ -80,11 +80,6 @@ Hardtimer checking is enabled (default). The -dt option is not used.
 The -r option is OFF. [ Remove LOC Properties is OFF. ]
 Technology check ok...
 
-Compile design.
-Compile Design Begin
-Top module name (Verilog): AutoShift
-INFO - synthesis: /home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(1): compiling module AutoShift. VERI-1018
-INFO - synthesis: /usr/local/diamond/3.3_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1793): compiling module OSCH(NOM_FREQ="2.08"). VERI-1018
 Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
@@ -129,9 +124,9 @@ Clock Nets
 Number of Clocks: 5
   Net : clk_c, loads : 23
   Net : latch_c, loads : 21
-  Net : n1378, loads : 21
+  Net : n1377, loads : 21
   Net : osc_clk_c_c, loads : 10
-  Net : n1379, loads : 3
+  Net : n1378, loads : 3
 Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
@@ -169,10 +164,10 @@ clk0 [get_nets clk_c]                   |  200.000 MHz|  644.745 MHz|     1
 All constraints were met.
 
 
-Peak Memory Usage: 186.047  MB
+Peak Memory Usage: 186.742  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.539  secs
+Elapsed CPU time for LSE flow : 0.584  secs
 --------------------------------------------------------------
 
 

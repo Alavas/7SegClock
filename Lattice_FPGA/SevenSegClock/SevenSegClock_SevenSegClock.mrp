@@ -5,16 +5,16 @@
 Design Information
 ------------------
 
-Command line:   map -a MachXO2 -p LCMXO2-7000HC -t TQFP144 -s 5 -oc Commercial
+Command line:   map -a MachXO2 -p LCMXO2-7000HE -t TQFP144 -s 5 -oc Commercial
      SevenSegClock_SevenSegClock.ngd -o SevenSegClock_SevenSegClock_map.ncd -pr
      SevenSegClock_SevenSegClock.prf -mp SevenSegClock_SevenSegClock.mrp /home/j
      ustin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/SevenSegClock.l
      pf -c 0 -gui 
 Target Vendor:  LATTICE
-Target Device:  LCMXO2-7000HCTQFP144
+Target Device:  LCMXO2-7000HETQFP144
 Target Performance:   5
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.3.0.109
-Mapped on:  01/02/15  08:05:44
+Mapped on:  01/03/15  04:35:19
 
 Design Summary
 --------------
@@ -57,7 +57,7 @@ Design Summary
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
    Number of clocks:  5
-     Net n1378: 15 loads, 15 rising, 0 falling (Driver:
+     Net n1377: 15 loads, 15 rising, 0 falling (Driver:
      i10_1_lut_rep_8_2_lut_3_lut_4_lut )
      Net clk_c: 12 loads, 12 rising, 0 falling (Driver: PIO clk )
 
@@ -66,13 +66,13 @@ Design Summary
 
 
 
-Design:  AutoShift                                     Date:  01/02/15  08:05:44
+Design:  AutoShift                                     Date:  01/03/15  04:35:19
 
 Design Summary (cont)
 ---------------------
      Net latch_c: 11 loads, 11 rising, 0 falling (Driver: PIO latch )
      Net osc_clk_c_c: 6 loads, 6 rising, 0 falling (Driver: OSCH_inst )
-     Net n1379: 2 loads, 2 rising, 0 falling (Driver: i1_2_lut_rep_9_3_lut_4_lut
+     Net n1378: 2 loads, 2 rising, 0 falling (Driver: i1_2_lut_rep_9_3_lut_4_lut
      )
    Number of Clock Enables:  0
    Number of LSRs:  10
@@ -80,10 +80,10 @@ Design Summary (cont)
      Net n947: 2 loads, 2 LSLICEs
      Net n1164: 4 loads, 4 LSLICEs
      Net n724: 4 loads, 4 LSLICEs
+     Net ledon_2: 1 loads, 1 LSLICEs
      Net ledon_1: 1 loads, 1 LSLICEs
      Net ledon_6: 1 loads, 1 LSLICEs
      Net ledon_5: 1 loads, 1 LSLICEs
-     Net ledon_2: 1 loads, 1 LSLICEs
      Net ledon_4: 1 loads, 1 LSLICEs
      Net ledon_3: 1 loads, 1 LSLICEs
    Number of nets driven by tri-state buffers:  0
@@ -132,7 +132,7 @@ IO (PIO) Attributes
 
 
 
-Design:  AutoShift                                     Date:  01/02/15  08:05:44
+Design:  AutoShift                                     Date:  01/03/15  04:35:19
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -184,11 +184,11 @@ Block i2 undriven or does not drive anything - clipped.
 Block GSR_INST undriven or does not drive anything - clipped.
 Signal n953 was merged into signal ledon_3
 Signal n955 was merged into signal ledon_4
-Signal n952 was merged into signal ledon_2
 Signal n956 was merged into signal ledon_5
 Signal n958 was merged into signal ledon_6
 Signal n949 was merged into signal ledon_0
 Signal n950 was merged into signal ledon_1
+Signal n952 was merged into signal ledon_2
 Signal GND_net undriven or does not drive anything - clipped.
 Signal VCC_net undriven or does not drive anything - clipped.
 Signal cnt_237_add_4_11/S1 undriven or does not drive anything - clipped.
@@ -198,7 +198,7 @@ Signal cnt_237_add_4_11/S1 undriven or does not drive anything - clipped.
 
 
 
-Design:  AutoShift                                     Date:  01/02/15  08:05:44
+Design:  AutoShift                                     Date:  01/03/15  04:35:19
 
 Removed logic (cont)
 --------------------
@@ -207,11 +207,11 @@ Signal cnt_237_add_4_1/S0 undriven or does not drive anything - clipped.
 Signal cnt_237_add_4_1/CI undriven or does not drive anything - clipped.
 Block i552_1_lut was optimized away.
 Block i554_1_lut was optimized away.
-Block i551_1_lut was optimized away.
 Block i555_1_lut was optimized away.
 Block i557_1_lut was optimized away.
 Block i548_1_lut was optimized away.
 Block i549_1_lut was optimized away.
+Block i551_1_lut was optimized away.
 Block i1 was optimized away.
 
 Memory Usage
@@ -241,7 +241,7 @@ Run Time and Memory Usage
 
    Total CPU Time: 0 secs  
    Total REAL Time: 0 secs  
-   Peak Memory Usage: 179 MB
+   Peak Memory Usage: 180 MB
         
 
 

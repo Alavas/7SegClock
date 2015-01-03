@@ -9,22 +9,6 @@
             <Navigation>Using default loop_limit value of 1950</Navigation>
         </Message>
         <Message>
-            <ID>35901018</ID>
-            <Severity>Info</Severity>
-            <Dynamic>/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(1): </Dynamic>
-            <Dynamic>AutoShift</Dynamic>
-            <Navigation>/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v</Navigation>
-            <Navigation>1</Navigation>
-        </Message>
-        <Message>
-            <ID>35901018</ID>
-            <Severity>Info</Severity>
-            <Dynamic>/usr/local/diamond/3.3_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1793): </Dynamic>
-            <Dynamic>OSCH(NOM_FREQ=&quot;2.08&quot;)</Dynamic>
-            <Navigation>/usr/local/diamond/3.3_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
-            <Navigation>1793</Navigation>
-        </Message>
-        <Message>
             <ID>35001611</ID>
             <Severity>Warning</Severity>
         </Message>
@@ -85,13 +69,13 @@
             <ID>66011008</ID>
             <Severity>Warning</Severity>
             <Dynamic>
-   Signal=n1379 loads=2 clock_loads=2</Dynamic>
+   Signal=n1378 loads=2 clock_loads=2</Dynamic>
         </Message>
         <Message>
             <ID>66011008</ID>
             <Severity>Warning</Severity>
             <Dynamic>
-   Signal=n1379 loads=2 clock_loads=2</Dynamic>
+   Signal=n1378 loads=2 clock_loads=2</Dynamic>
         </Message>
     </Task>
 </BaliMessageLog>
