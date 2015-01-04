@@ -1,13 +1,13 @@
 NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
 NOTE All Rights Reserved *
-NOTE DATE CREATED: Sat Jan  3 04:35:33 2015 *
+NOTE DATE CREATED: Sat Jan  3 07:01:39 2015 *
 NOTE DESIGN NAME: AutoShift *
 NOTE DEVICE NAME: LCMXO2-7000HE-5TQFP144 *
 NOTE PIN ASSIGNMENTS *
 NOTE PINS leds[18] : 25 : out *
 NOTE PINS leds[4] : 5 : out *
 NOTE PINS leds[5] : 6 : out *
-NOTE PINS data : 34 : in *
+NOTE PINS data : 28 : in *
 NOTE PINS leds[6] : 9 : out *
 NOTE PINS leds[7] : 10 : out *
 NOTE PINS clk : 33 : in *

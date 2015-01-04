@@ -20,8 +20,8 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/SevenSegClock_SevenSegClock.jed</File>
-			<FileTime>01/03/15 04:35:33</FileTime>
-			<JedecChecksum>0x2473</JedecChecksum>
+			<FileTime>01/03/15 07:01:39</FileTime>
+			<JedecChecksum>0x1BC8</JedecChecksum>
 			<Operation>FLASH Erase,Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>
@@ -30,6 +30,7 @@
 				<IOVectorData>0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</IOVectorData>
 				<TCKFrequency>1.000000 MHz</TCKFrequency>
 				<SVFProcessor>SVF Processor</SVFProcessor>
+				<Usercode>0x00000000</Usercode>
 				<AccessMode>FLASH</AccessMode>
 			</Option>
 		</Device>
@@ -40,6 +41,7 @@
 		<OperationOverride>No Override</OperationOverride>
 		<StartTAP>TLR</StartTAP>
 		<EndTAP>TLR</EndTAP>
+		<ContinueOnError value="TRUE"/>
 		<VerifyUsercode value="FALSE"/>
 	</ProjectOptions>
 	<CableOptions>

@@ -14,14 +14,14 @@ Performance Grade:      5
 PACKAGE:          TQFP144
 Package Status:                     Final          Version 1.36
 
-Sat Jan  3 04:35:24 2015
+Sat Jan  3 07:01:31 2015
 
 Pinout by Port Name:
 +-----------+----------+--------------+-------+-----------+-----------+---------------------------------+
 | Port Name | Pin/Bank | Buffer Type  | Site  | PG Enable | BC Enable | Properties                      |
 +-----------+----------+--------------+-------+-----------+-----------+---------------------------------+
 | clk       | 33/3     | LVCMOS33_IN  | PL24B |           |           | CLAMP:ON HYSTERESIS:SMALL       |
-| data      | 34/3     | LVCMOS33_IN  | PL25A |           |           | CLAMP:ON HYSTERESIS:SMALL       |
+| data      | 28/3     | LVCMOS33_IN  | PL22B |           |           | CLAMP:ON HYSTERESIS:SMALL       |
 | latch     | 35/3     | LVCMOS33_IN  | PL25B |           |           | CLAMP:ON HYSTERESIS:SMALL       |
 | leds[0]   | 1/5      | LVCMOS33_OUT | PL3A  |           |           | DRIVE:16mA PULL:DOWN SLEW:SLOW  |
 | leds[10]  | 13/4     | LVCMOS33_OUT | PL10A |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW   |
@@ -89,11 +89,11 @@ Vccio by Bank:
 | 25/3     | leds[18]              | LOCATED    | LVCMOS33_OUT | PL19A        |                |           |           |
 | 26/3     | leds[19]              | LOCATED    | LVCMOS33_OUT | PL19B        |                |           |           |
 | 27/3     | leds[20]              | LOCATED    | LVCMOS33_OUT | PL22A        | PCLKT3_0       |           |           |
-| 28/3     |     unused, PULL:DOWN |            |              | PL22B        | PCLKC3_0       |           |           |
+| 28/3     | data                  | LOCATED    | LVCMOS33_IN  | PL22B        | PCLKC3_0       |           |           |
 | 31/3     |     unused, PULL:DOWN |            |              | PL23D        |                |           |           |
 | 32/3     |     unused, PULL:DOWN |            |              | PL24A        |                |           |           |
 | 33/3     | clk                   | LOCATED    | LVCMOS33_IN  | PL24B        |                |           |           |
-| 34/3     | data                  | LOCATED    | LVCMOS33_IN  | PL25A        |                |           |           |
+| 34/3     |     unused, PULL:DOWN |            |              | PL25A        |                |           |           |
 | 35/3     | latch                 | LOCATED    | LVCMOS33_IN  | PL25B        |                |           |           |
 | 38/2     |     unused, PULL:DOWN |            |              | PB4A         |                |           |           |
 | 39/2     |     unused, PULL:DOWN |            |              | PB4B         |                |           |           |
@@ -418,7 +418,7 @@ sysCONFIG Pins:
 Locate Preferences for each Pin: 
 
 LOCATE  COMP  "clk"  SITE  "33";
-LOCATE  COMP  "data"  SITE  "34";
+LOCATE  COMP  "data"  SITE  "28";
 LOCATE  COMP  "latch"  SITE  "35";
 LOCATE  COMP  "leds[0]"  SITE  "1";
 LOCATE  COMP  "leds[10]"  SITE  "13";
@@ -452,7 +452,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Sat Jan  3 04:35:24 2015
+Sat Jan  3 07:01:31 2015
 
 
 

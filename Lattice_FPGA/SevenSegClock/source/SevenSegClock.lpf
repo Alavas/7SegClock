@@ -5,7 +5,7 @@ IOBUF ALLPORTS IO_TYPE=LVCMOS33 ;
 //LOCATE COMP "osc_clk" SITE "40" ;
 LOCATE COMP "latch" SITE "35" ;
 LOCATE COMP "clk" SITE "33" ;
-LOCATE COMP "data" SITE "34" ;
+LOCATE COMP "data" SITE "28" ;
 #
 LOCATE COMP "leds[0]" SITE "1" ;
 LOCATE COMP "leds[1]" SITE "2" ;
