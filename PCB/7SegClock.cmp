@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2014-12-26 BZR 5338)-product   date = Sun 28 Dec 2014 09:49:29 PM EST
+Cmp-Mod V01 Created by Cvpcb (2014-12-26 BZR 5338)-product   date = Sun 04 Jan 2015 04:54:02 PM EST
 
 BeginCmp
 TimeStamp = /54A0A224;
@@ -47,6 +47,13 @@ TimeStamp = /549F92C9;
 Reference = D2;
 ValeurCmp = LED;
 IdModule  = LEDs:LED-0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A0D025;
+Reference = F1;
+ValeurCmp = FUSE;
+IdModule  = ;
 EndCmp
 
 BeginCmp
@@ -122,6 +129,20 @@ EndCmp
 BeginCmp
 TimeStamp = /54A09D3F;
 Reference = U4;
+ValeurCmp = DS3231;
+IdModule  = SMD_Packages:SO-16-W;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A0D0C2;
+Reference = U5;
+ValeurCmp = TPS62172DSGT;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A9B3AB/54A9BCC3;
+Reference = U6;
 ValeurCmp = DS3231;
 IdModule  = SMD_Packages:SO-16-W;
 EndCmp
