@@ -14,7 +14,7 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-7000HETQFP144
 Target Performance:   5
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.3.0.109
-Mapped on:  01/03/15  07:01:24
+Mapped on:  01/04/15  07:24:39
 
 Design Summary
 --------------
@@ -66,7 +66,7 @@ Design Summary
 
 
 
-Design:  AutoShift                                     Date:  01/03/15  07:01:24
+Design:  AutoShift                                     Date:  01/04/15  07:24:39
 
 Design Summary (cont)
 ---------------------
@@ -132,7 +132,7 @@ IO (PIO) Attributes
 
 
 
-Design:  AutoShift                                     Date:  01/03/15  07:01:24
+Design:  AutoShift                                     Date:  01/04/15  07:24:39
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -198,7 +198,7 @@ Signal cnt_237_add_4_11/S1 undriven or does not drive anything - clipped.
 
 
 
-Design:  AutoShift                                     Date:  01/03/15  07:01:24
+Design:  AutoShift                                     Date:  01/04/15  07:24:39
 
 Removed logic (cont)
 --------------------
@@ -241,7 +241,7 @@ Run Time and Memory Usage
 
    Total CPU Time: 0 secs  
    Total REAL Time: 0 secs  
-   Peak Memory Usage: 180 MB
+   Peak Memory Usage: 179 MB
         
 
 
