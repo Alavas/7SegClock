@@ -1,1 +1,0 @@
-AutoShift_rtl.vdb
