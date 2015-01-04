@@ -1,257 +1,0 @@
-<HTML>
-<HEAD><TITLE>Project Summary</TITLE>
-<STYLE TYPE="text/css">
-<!--
- body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
--->
-</STYLE>
-</HEAD>
-<PRE><A name="Mrp"></A>          Lattice Mapping Report File for Design Module 'AutoShift'
-
-
-<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
-
-Command line:   map -a MachXO2 -p LCMXO2-7000HE -t TQFP144 -s 5 -oc Commercial
-     SevenSegClock_SevenSegClock.ngd -o SevenSegClock_SevenSegClock_map.ncd -pr
-     SevenSegClock_SevenSegClock.prf -mp SevenSegClock_SevenSegClock.mrp C:/User
-     s/JustinW7/Dropbox/AlarmClockProject/7SegClock/Lattice_FPGA/SevenSegClock/s
-     ource/SevenSegClock.lpf -c 0 -gui
-Target Vendor:  LATTICE
-Target Device:  LCMXO2-7000HETQFP144
-Target Performance:   5
-Mapper:  xo2c00,  version:  Diamond (64-bit) 3.1.0.96
-Mapped on:  01/03/15  01:12:30
-
-
-<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of registers:     70 out of  7209 (1%)
-      PFU registers:           69 out of  6864 (1%)
-      PIO registers:            1 out of   345 (0%)
-   Number of SLICEs:        48 out of  3432 (1%)
-      SLICEs as Logic/ROM:     48 out of  3432 (1%)
-      SLICEs as RAM:            0 out of  2574 (0%)
-      SLICEs as Carry:          6 out of  3432 (0%)
-   Number of LUT4s:         57 out of  6864 (1%)
-      Number of logic LUTs:       45
-      Number of distributed RAM:   0 (0 LUT4s)
-      Number of ripple logic:      6 (12 LUT4s)
-      Number of shift registers:   0
-   Number of PIO sites used: 16 + 4(JTAG) out of 115 (17%)
-   Number of block RAMs:  0 out of 26 (0%)
-   Number of GSRs:  0 out of 1 (0%)
-   EFB used :       No
-   JTAG used :      No
-   Readback used :  No
-   Oscillator used :  Yes
-   Startup used :   No
-   POR :            On
-   Bandgap :        On
-   Number of Power Controller:  0 out of 1 (0%)
-   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
-   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
-   Number of DCCA:  0 out of 8 (0%)
-   Number of DCMA:  0 out of 2 (0%)
-   Number of PLLs:  0 out of 2 (0%)
-   Number of DQSDLLs:  0 out of 2 (0%)
-   Number of CLKDIVC:  0 out of 4 (0%)
-   Number of ECLKSYNCA:  0 out of 4 (0%)
-   Number of ECLKBRIDGECS:  0 out of 2 (0%)
-   Notes:-
-      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
-     distributed RAMs) + 2*(Number of ripple logic)
-      2. Number of logic LUT4s does not include count of distributed RAM and
-     ripple logic.
-   Number of clocks:  3
-     Net clk_c: 16 loads, 16 rising, 0 falling (Driver: PIO clk )
-     Net osc_clk_c: 6 loads, 6 rising, 0 falling (Driver: OSCH_inst )
-     Net latch_c: 14 loads, 14 rising, 0 falling (Driver: PIO latch )
-
-   Number of Clock Enables:  0
-   Number of LSRs:  0
-   Number of nets driven by tri-state buffers:  0
-   Top 10 highest fanout non-clock nets:
-     Net cnt_6: 32 loads
-     Net cnt_7: 32 loads
-     Net cnt_8: 22 loads
-     Net cnt_10: 20 loads
-     Net cnt_9: 20 loads
-     Net tmp_0: 2 loads
-     Net tmp_1: 2 loads
-     Net tmp_27: 2 loads
-     Net tmp_28: 2 loads
-     Net tmp_29: 2 loads
-
-
-
-
-   Number of warnings:  3
-   Number of errors:    0
-
-
-
-
-<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
-
-WARNING - map: C:/Users/JustinW7/Dropbox/AlarmClockProject/7SegClock/Lattice_FPG
-     A/SevenSegClock/source/SevenSegClock.lpf(3): Semantic error in "FREQUENCY
-     NET "osc_clk_c_c" 2.080000 MHz ;": osc_clk_c_c matches no clock nets in the
-     design.  Disable this preference.
-WARNING - map: Preference parsing results:  1 semantic error detected
-WARNING - map: There are semantic errors in the preference file C:/Users/JustinW
-     7/Dropbox/AlarmClockProject/7SegClock/Lattice_FPGA/SevenSegClock/source/Sev
-     enSegClock.lpf.
-
-
-
-<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
-
-+---------------------+-----------+-----------+------------+
-| IO Name             | Direction | Levelmode | IO         |
-|                     |           |  IO_TYPE  | Register   |
-+---------------------+-----------+-----------+------------+
-| leds[10]            | OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| leds[11]            | OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| leds[9]             | OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| leds[8]             | OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| leds[7]             | OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| leds[6]             | OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| leds[5]             | OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| leds[4]             | OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-
-| leds[3]             | OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| leds[2]             | OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| leds[1]             | OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| leds[0]             | OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| osc_clk             | OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| latch               | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| clk                 | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| data                | INPUT     | LVCMOS33  | IN         |
-+---------------------+-----------+-----------+------------+
-
-
-
-<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
-
-Block i2 undriven or does not drive anything - clipped.
-Block GSR_INST undriven or does not drive anything - clipped.
-Signal GND_net undriven or does not drive anything - clipped.
-Signal VCC_net undriven or does not drive anything - clipped.
-Signal cnt_41_add_4_1/S0 undriven or does not drive anything - clipped.
-Signal cnt_41_add_4_1/CI undriven or does not drive anything - clipped.
-Signal cnt_41_add_4_11/CO undriven or does not drive anything - clipped.
-Block i1 was optimized away.
-
-
-
-<A name="mrp_mem"></A><B><U><big>Memory Usage</big></U></B>
-
-
-OSC Summary
------------
-
-OSC 1:                                     Pin/Node Value
-  OSC Instance Name:                                OSCH_inst
-  OSC Type:                                         OSCH
-  STDBY Input:                                      NONE
-  OSC Output:                              PIN,NODE osc_clk_c
-  OSC Nominal Frequency (MHz):                      2.08
-
-
-
-<A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
----------------
-
-Instance Name: OSCH_inst
-         Type: OSCH
-
-
-
-<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
--------------------------
-
-   Total CPU Time: 0 secs
-   Total REAL Time: 0 secs
-   Peak Memory Usage: 57 MB
-
-
-
-Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
-Copyright (c) 1995
-     AT&T Corp.   All rights reserved.
-Copyright (c) 1995-2001 Lucent
-     Technologies Inc.  All rights reserved.
-Copyright (c) 2001 Agere Systems
-     All rights reserved.
-Copyright (c) 2002-2014 Lattice Semiconductor
-     Corporation,  All rights reserved.
-
-
-
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-<BR>
-</PRE></FONT>
-</BODY>
-</HTML>
