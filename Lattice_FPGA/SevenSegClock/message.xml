@@ -9,6 +9,28 @@
             <Navigation>Using default loop_limit value of 1950</Navigation>
         </Message>
         <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(8): </Dynamic>
+            <Dynamic>AutoShift</Dynamic>
+            <Navigation>/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>/usr/local/diamond/3.3_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1793): </Dynamic>
+            <Dynamic>OSCH(NOM_FREQ=&quot;2.08&quot;)</Dynamic>
+            <Navigation>/usr/local/diamond/3.3_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1793</Navigation>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(143): Latch dlatchrs_709_i20 input is stuck at Zero
+</Dynamic>
+        </Message>
+        <Message>
             <ID>35001611</ID>
             <Severity>Warning</Severity>
         </Message>
@@ -16,19 +38,19 @@
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>cnt_237_add_4_1/S0</Dynamic>
+            <Dynamic>cnt_735_add_4_1/S0</Dynamic>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>cnt_237_add_4_11/CO</Dynamic>
+            <Dynamic>cnt_735_add_4_11/CO</Dynamic>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>cnt_237_add_4_11/S1</Dynamic>
+            <Dynamic>cnt_735_add_4_11/S1</Dynamic>
         </Message>
         <Message>
             <ID>1163101</ID>
@@ -69,13 +91,13 @@
             <ID>66011008</ID>
             <Severity>Warning</Severity>
             <Dynamic>
-   Signal=n1378 loads=2 clock_loads=2</Dynamic>
+   Signal=n1008 loads=2 clock_loads=2</Dynamic>
         </Message>
         <Message>
             <ID>66011008</ID>
             <Severity>Warning</Severity>
             <Dynamic>
-   Signal=n1378 loads=2 clock_loads=2</Dynamic>
+   Signal=n1008 loads=2 clock_loads=2</Dynamic>
         </Message>
     </Task>
 </BaliMessageLog>

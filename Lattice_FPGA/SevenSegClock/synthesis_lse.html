@@ -14,7 +14,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Sat Jan  3 04:35:18 2015
+Tue Jan  6 04:58:10 2015
 
 
 Command Line:  synthesis -f SevenSegClock_SevenSegClock_lattice.synproj -gui 
@@ -23,7 +23,7 @@ Synthesis options:
 The -a option is MachXO2.
 The -s option is 5.
 The -t option is TQFP144.
-The -d option is LCMXO2-7000HE.
+The -d option is LCMXO2-640UHC.
 Using package TQFP144.
 Using performance grade 5.
                                                           
@@ -32,7 +32,7 @@ Using performance grade 5.
 
 ### Lattice Family : MachXO2A
 
-### Device  : LCMXO2-7000HE
+### Device  : LCMXO2-640UHC
 
 ### Package : TQFP144
 
@@ -80,17 +80,93 @@ Hardtimer checking is enabled (default). The -dt option is not used.
 The -r option is OFF. [ Remove LOC Properties is OFF. ]
 Technology check ok...
 
+Compile design.
+Compile Design Begin
+Top module name (Verilog): AutoShift
+INFO - synthesis: /home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(8): compiling module AutoShift. VERI-1018
+INFO - synthesis: /usr/local/diamond/3.3_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1793): compiling module OSCH(NOM_FREQ="2.08"). VERI-1018
 Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
 Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/or5g00/data/orc5glib.ngl'...
-Loading device for application map from file 'xo2c7000.nph' in environment: /usr/local/diamond/3.3_x64/ispfpga.
-Package Status:                     Final          Version 1.36.
+Loading device for application map from file 'xo2c1200.nph' in environment: /usr/local/diamond/3.3_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
 Top-level module name = AutoShift.
+/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(26): net RedD2[6] does not have a driver. VDB-1002
+/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(27): net RedD3[6] does not have a driver. VDB-1002
+/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(28): net RedD4[6] does not have a driver. VDB-1002
+/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(30): net GrnD2[6] does not have a driver. VDB-1002
+/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(31): net GrnD3[6] does not have a driver. VDB-1002
+/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(32): net GrnD4[6] does not have a driver. VDB-1002
+/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(34): net ledA2[5] does not have a driver. VDB-1002
+/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(35): net ledA3[5] does not have a driver. VDB-1002
+/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(36): net ledA4[5] does not have a driver. VDB-1002
+######## Missing driver on net RedD2[6]. Patching with GND.
+######## Missing driver on net RedD2[5]. Patching with GND.
+######## Missing driver on net RedD2[4]. Patching with GND.
+######## Missing driver on net RedD2[3]. Patching with GND.
+######## Missing driver on net RedD2[2]. Patching with GND.
+######## Missing driver on net RedD2[1]. Patching with GND.
+######## Missing driver on net RedD2[0]. Patching with GND.
+######## Missing driver on net RedD3[6]. Patching with GND.
+######## Missing driver on net RedD3[5]. Patching with GND.
+######## Missing driver on net RedD3[4]. Patching with GND.
+######## Missing driver on net RedD3[3]. Patching with GND.
+######## Missing driver on net RedD3[2]. Patching with GND.
+######## Missing driver on net RedD3[1]. Patching with GND.
+######## Missing driver on net RedD3[0]. Patching with GND.
+######## Missing driver on net RedD4[6]. Patching with GND.
+######## Missing driver on net RedD4[5]. Patching with GND.
+######## Missing driver on net RedD4[4]. Patching with GND.
+######## Missing driver on net RedD4[3]. Patching with GND.
+######## Missing driver on net RedD4[2]. Patching with GND.
+######## Missing driver on net RedD4[1]. Patching with GND.
+######## Missing driver on net RedD4[0]. Patching with GND.
+######## Missing driver on net GrnD2[6]. Patching with GND.
+######## Missing driver on net GrnD2[5]. Patching with GND.
+######## Missing driver on net GrnD2[4]. Patching with GND.
+######## Missing driver on net GrnD2[3]. Patching with GND.
+######## Missing driver on net GrnD2[2]. Patching with GND.
+######## Missing driver on net GrnD2[1]. Patching with GND.
+######## Missing driver on net GrnD2[0]. Patching with GND.
+######## Missing driver on net GrnD3[6]. Patching with GND.
+######## Missing driver on net GrnD3[5]. Patching with GND.
+######## Missing driver on net GrnD3[4]. Patching with GND.
+######## Missing driver on net GrnD3[3]. Patching with GND.
+######## Missing driver on net GrnD3[2]. Patching with GND.
+######## Missing driver on net GrnD3[1]. Patching with GND.
+######## Missing driver on net GrnD3[0]. Patching with GND.
+######## Missing driver on net GrnD4[6]. Patching with GND.
+######## Missing driver on net GrnD4[5]. Patching with GND.
+######## Missing driver on net GrnD4[4]. Patching with GND.
+######## Missing driver on net GrnD4[3]. Patching with GND.
+######## Missing driver on net GrnD4[2]. Patching with GND.
+######## Missing driver on net GrnD4[1]. Patching with GND.
+######## Missing driver on net GrnD4[0]. Patching with GND.
+######## Missing driver on net ledA2[5]. Patching with GND.
+######## Missing driver on net ledA2[4]. Patching with GND.
+######## Missing driver on net ledA2[3]. Patching with GND.
+######## Missing driver on net ledA2[2]. Patching with GND.
+######## Missing driver on net ledA2[1]. Patching with GND.
+######## Missing driver on net ledA2[0]. Patching with GND.
+######## Missing driver on net ledA3[5]. Patching with GND.
+######## Missing driver on net ledA3[4]. Patching with GND.
+######## Missing driver on net ledA3[3]. Patching with GND.
+######## Missing driver on net ledA3[2]. Patching with GND.
+######## Missing driver on net ledA3[1]. Patching with GND.
+######## Missing driver on net ledA3[0]. Patching with GND.
+######## Missing driver on net ledA4[5]. Patching with GND.
+######## Missing driver on net ledA4[4]. Patching with GND.
+######## Missing driver on net ledA4[3]. Patching with GND.
+######## Missing driver on net ledA4[2]. Patching with GND.
+######## Missing driver on net ledA4[1]. Patching with GND.
+######## Missing driver on net ledA4[0]. Patching with GND.
 
 
 
-GSR instance connected to net n1.
+WARNING - synthesis: /home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(143): Latch dlatchrs_709_i20 input is stuck at Zero
+
+GSR instance connected to net Digit4_c.
 GSR will not be inferred because no asynchronous signal was found in the netlist.
 WARNING - synthesis: No user .sdc file.
 Applying 200.000000 MHz constraint to all clocks
@@ -100,22 +176,22 @@ Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/xo2c00a/data/xo2alib.ngl
 Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
 Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/or5g00/data/orc5glib.ngl'...
-WARNING - synthesis: logical net 'cnt_237_add_4_1/S0' has no load.
-WARNING - synthesis: logical net 'cnt_237_add_4_11/CO' has no load.
-WARNING - synthesis: logical net 'cnt_237_add_4_11/S1' has no load.
+WARNING - synthesis: logical net 'cnt_735_add_4_1/S0' has no load.
+WARNING - synthesis: logical net 'cnt_735_add_4_11/CO' has no load.
+WARNING - synthesis: logical net 'cnt_735_add_4_11/S1' has no load.
 WARNING - synthesis: DRC complete with 3 warnings.
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file SevenSegClock_SevenSegClock.ngd.
 
 ################### Begin Area Report (AutoShift)######################
-Number of register bits => 78 of 7209 (1 % )
+Number of register bits => 76 of 964 (7 % )
 CCU2D => 6
-FD1S1I => 24
-FD1S3AX => 54
+FD1S1I => 23
+FD1S3AX => 53
 GSR => 1
 IB => 3
-LUT4 => 39
-OB => 21
+LUT4 => 36
+OB => 80
 OSCH => 1
 ################### End Area Report ##################
 
@@ -123,10 +199,10 @@ OSCH => 1
 Clock Nets
 Number of Clocks: 5
   Net : clk_c, loads : 23
-  Net : latch_c, loads : 21
-  Net : n1377, loads : 21
+  Net : latch_c, loads : 20
+  Net : n2420, loads : 20
   Net : osc_clk_c_c, loads : 10
-  Net : n1378, loads : 3
+  Net : n1008, loads : 3
 Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
@@ -134,13 +210,13 @@ Top 10 highest fanout non-clock nets:
   Net : segment_0, loads : 18
   Net : segment_1, loads : 17
   Net : segment_2, loads : 16
-  Net : cnt_9, loads : 13
-  Net : cnt_8, loads : 13
-  Net : cnt_7, loads : 13
-  Net : cnt_6, loads : 13
-  Net : n1164, loads : 7
-  Net : n724, loads : 7
-  Net : n947, loads : 3
+  Net : cnt_9, loads : 12
+  Net : cnt_8, loads : 12
+  Net : cnt_7, loads : 12
+  Net : cnt_6, loads : 11
+  Net : n1977, loads : 7
+  Net : n2073, loads : 7
+  Net : n2063, loads : 3
 ################### End Clock Report ##################
 
 <A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
@@ -150,10 +226,10 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk2 [get_nets osc_clk_c_c]             |            -|            -|     0  
+clk2 [get_nets latch_c]                 |            -|            -|     0  
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk1 [get_nets latch_c]                 |            -|            -|     0  
+clk1 [get_nets osc_clk_c_c]             |            -|            -|     0  
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
 clk0 [get_nets clk_c]                   |  200.000 MHz|  644.745 MHz|     1  
@@ -164,10 +240,10 @@ clk0 [get_nets clk_c]                   |  200.000 MHz|  644.745 MHz|     1
 All constraints were met.
 
 
-Peak Memory Usage: 186.742  MB
+Peak Memory Usage: 180.184  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.584  secs
+Elapsed CPU time for LSE flow : 0.634  secs
 --------------------------------------------------------------
 
 

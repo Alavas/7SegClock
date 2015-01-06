@@ -3,8 +3,8 @@ Report for cell AutoShift
    Instance path: AutoShift
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      46.00        100.0
-                                  LUT4	      32.00        100.0
-                                 IOBUF	         24        100.0
-                                PFUREG	         78        100.0
+                                  SLIC	      44.00        100.0
+                                  LUT4	      31.00        100.0
+                                 IOBUF	         83        100.0
+                                PFUREG	         76        100.0
                                 RIPPLE	          6        100.0
