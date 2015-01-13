@@ -1,10 +1,10 @@
-Cmp-Mod V01 Created by Cvpcb (2014-12-26 BZR 5338)-product   date = Tue 13 Jan 2015 01:30:53 AM EST
+Cmp-Mod V01 Created by Cvpcb (2014-12-26 BZR 5338)-product   date = Tue 13 Jan 2015 01:09:06 AM EST
 
 BeginCmp
 TimeStamp = /54A0A224;
 Reference = BT1;
 ValeurCmp = BATTERY;
-IdModule  = ;
+IdModule  = SMD_Packages:WSON-8-1EP;
 EndCmp
 
 BeginCmp
@@ -291,7 +291,7 @@ BeginCmp
 TimeStamp = /54A9B3AB/54B4F6B0;
 Reference = U6;
 ValeurCmp = LCMX02-640UHC-4TG144C;
-IdModule  = SMD_Packages:TQFP-144;
+IdModule  = SMD_Packages:SO-16-W;
 EndCmp
 
 BeginCmp
