@@ -1,6 +1,0 @@
-#Start recording tcl command: 12/31/2014 22:54:28
-#Project Location: /home/justin/7SegClock/7SegClock/Lattice_FPGA; Project name: SevenSegClock
-prj_project open "/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock.ldf"
-prj_src add "/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v"
-prj_src remove "/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift.v"
-#Stop recording: 1/1/2015 06:45:33
