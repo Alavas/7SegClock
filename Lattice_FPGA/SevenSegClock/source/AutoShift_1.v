@@ -91,49 +91,43 @@ always @(cnt[9:6])begin
 				Digit4 = {(RedD4 & Seg),7'b0000000,(ledA4 & 6'b100000)};				
 			 end	
 		6  : begin
-				Digit1 = {7'b0000000,(GrnD1 & Seg),(ledA1 & 6'b0000001)};
-				Digit2 = {7'b0000000,(GrnD2 & Seg),(ledA2 & 6'b0000001)};	
-				Digit3 = {7'b0000000,(GrnD3 & Seg),(ledA3 & 6'b0000001)};
-				Digit4 = {7'b0000000,(GrnD4 & Seg),(ledA4 & 6'b0000001)};					
+				Digit1 = {7'b0000000,(GrnD1 & Seg),(ledA1 & 6'b000001)};
+				Digit2 = {7'b0000000,(GrnD2 & Seg),(ledA2 & 6'b000001)};	
+				Digit3 = {7'b0000000,(GrnD3 & Seg),(ledA3 & 6'b000001)};
+				Digit4 = {7'b0000000,(GrnD4 & Seg),(ledA4 & 6'b000001)};					
 			 end	
 		7  : begin
-				Digit1 = {7'b0000000,(GrnD1 & Seg),(ledA1 & 6'b0000010)};
-				Digit2 = {7'b0000000,(GrnD2 & Seg),(ledA2 & 6'b0000010)};	
-				Digit3 = {7'b0000000,(GrnD3 & Seg),(ledA3 & 6'b0000010)};
-				Digit4 = {7'b0000000,(GrnD4 & Seg),(ledA4 & 6'b0000010)};					
+				Digit1 = {7'b0000000,(GrnD1 & Seg),(ledA1 & 6'b000010)};
+				Digit2 = {7'b0000000,(GrnD2 & Seg),(ledA2 & 6'b000010)};	
+				Digit3 = {7'b0000000,(GrnD3 & Seg),(ledA3 & 6'b000010)};
+				Digit4 = {7'b0000000,(GrnD4 & Seg),(ledA4 & 6'b000010)};					
 			 end
 		8  : begin
-				Digit1 = {7'b0000000,(GrnD1 & Seg),(ledA1 & 6'b0000100)};
-				Digit2 = {7'b0000000,(GrnD2 & Seg),(ledA2 & 6'b0000100)};	
-				Digit3 = {7'b0000000,(GrnD3 & Seg),(ledA3 & 6'b0000100)};
-				Digit4 = {7'b0000000,(GrnD4 & Seg),(ledA4 & 6'b0000100)};					
+				Digit1 = {7'b0000000,(GrnD1 & Seg),(ledA1 & 6'b000100)};
+				Digit2 = {7'b0000000,(GrnD2 & Seg),(ledA2 & 6'b000100)};	
+				Digit3 = {7'b0000000,(GrnD3 & Seg),(ledA3 & 6'b000100)};
+				Digit4 = {7'b0000000,(GrnD4 & Seg),(ledA4 & 6'b000100)};					
 			 end
 		9  : begin
-				Digit1 = {7'b0000000,(GrnD1 & Seg),(ledA1 & 6'b0001000)};
-				Digit2 = {7'b0000000,(GrnD2 & Seg),(ledA2 & 6'b0001000)};	
-				Digit3 = {7'b0000000,(GrnD3 & Seg),(ledA3 & 6'b0001000)};
-				Digit4 = {7'b0000000,(GrnD4 & Seg),(ledA4 & 6'b0001000)};					
-			 end
-		10 : begin
 				Digit1 = {7'b0000000,(GrnD1 & Seg),(ledA1 & 6'b001000)};
 				Digit2 = {7'b0000000,(GrnD2 & Seg),(ledA2 & 6'b001000)};	
 				Digit3 = {7'b0000000,(GrnD3 & Seg),(ledA3 & 6'b001000)};
 				Digit4 = {7'b0000000,(GrnD4 & Seg),(ledA4 & 6'b001000)};					
 			 end
-		11 : begin
+		10 : begin
 				Digit1 = {7'b0000000,(GrnD1 & Seg),(ledA1 & 6'b010000)};
 				Digit2 = {7'b0000000,(GrnD2 & Seg),(ledA2 & 6'b010000)};	
 				Digit3 = {7'b0000000,(GrnD3 & Seg),(ledA3 & 6'b010000)};
 				Digit4 = {7'b0000000,(GrnD4 & Seg),(ledA4 & 6'b010000)};					
 			 end
-		12 : begin
+		11 : begin
 				Digit1 = {7'b0000000,(GrnD1 & Seg),(ledA1 & 6'b100000)};
 				Digit2 = {7'b0000000,(GrnD2 & Seg),(ledA2 & 6'b100000)};	
 				Digit3 = {7'b0000000,(GrnD3 & Seg),(ledA3 & 6'b100000)};
 				Digit4 = {7'b0000000,(GrnD4 & Seg),(ledA4 & 6'b100000)};					
 			 end	
-		13 : Digit1 = 20'b000000000000000000000;		
-		14 : begin
+		12 : Digit1 = 20'b000000000000000000000;		
+		13 : begin
 				segment = segment + 1;
 				if (segment == 3'b111)
 					segment = 3'b000;
