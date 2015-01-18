@@ -35,7 +35,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 2 6
 Title "4 Digit 7 Segment Clock"
 Date "12/27/14"
 Rev ""
@@ -660,12 +660,6 @@ Text GLabel 1950 3700 0    50   Input ~ 0
 SDA
 Text GLabel 1950 3800 0    50   Input ~ 0
 SCL
-$Sheet
-S 1600 5900 2200 1700
-U 54B63892
-F0 "Clock Face" 50
-F1 "ClockFace.sch" 50
-$EndSheet
 $Bitmap
 Pos 10200 6850
 Scale 0.750000
@@ -1455,4 +1449,28 @@ F0 3A 1E C0 38 64 CF D4 F2 C8 9E A9 05 CC 43 F6 BE 79 15 99 0A D7 74 00 CF 02 78
 47 91 3D 63 3D 51 4F 11 C2 FF 03 CA 62 49 C8 E1 A2 25 5C 00 00 00 00 49 45 4E 44 AE 42 60 82 00 
 EndData
 $EndBitmap
+$Sheet
+S 2000 5950 500  1550
+U 54BC7562
+F0 "Digit_2" 60
+F1 "Digit2.sch" 60
+$EndSheet
+$Sheet
+S 2900 5950 500  1550
+U 54BC757D
+F0 "Digit_3" 60
+F1 "Digit3.sch" 60
+$EndSheet
+$Sheet
+S 3800 5950 500  1550
+U 54BC7598
+F0 "Digit_4" 60
+F1 "Digit4.sch" 60
+$EndSheet
+$Sheet
+S 1100 5950 500  1550
+U 54BC74C5
+F0 "Digit_1" 60
+F1 "Digit1.sch" 60
+$EndSheet
 $EndSCHEMATC
