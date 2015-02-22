@@ -578,9 +578,6 @@ Wire Wire Line
 	3930 4400 3930 4550
 Connection ~ 3930 4550
 Wire Wire Line
-	4235 4400 4235 4550
-Connection ~ 4235 4550
-Wire Wire Line
 	4530 4400 4530 4550
 Connection ~ 4530 4550
 Wire Wire Line
@@ -699,9 +696,9 @@ Wire Wire Line
 Wire Wire Line
 	3780 1700 3780 1800
 Wire Wire Line
-	5405 1800 3780 1800
+	3780 1800 5405 1800
 Wire Wire Line
-	5405 675  5405 1800
+	5405 1800 5405 675 
 Wire Wire Line
 	3930 1700 3930 1850
 Connection ~ 3930 1850
@@ -1244,4 +1241,7 @@ Wire Wire Line
 	5480 1850 5480 750 
 Wire Wire Line
 	5405 675  8800 675 
+Wire Wire Line
+	4230 4400 4230 4550
+Connection ~ 4230 4550
 $EndSCHEMATC
