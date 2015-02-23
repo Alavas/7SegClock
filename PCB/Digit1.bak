@@ -129,8 +129,6 @@ Text Label 2680 2350 0    50   ~ 0
 D1A5
 Text Label 2680 2050 0    50   ~ 0
 D1A6
-Text Label 5405 950  3    50   ~ 0
-D1S1G
 $Comp
 L FDG1024NZ Q?
 U 1 1 54C622E0
