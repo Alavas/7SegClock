@@ -57,89 +57,89 @@ F 3 "" H 4455 5075 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 3705 950  3    50   ~ 0
-D2A1
+D3A1
 Text Label 4005 950  3    50   ~ 0
-D2A2
+D3A2
 Text Label 4305 950  3    50   ~ 0
-D2A3
+D3A3
 Text Label 4605 950  3    50   ~ 0
-D2A4
+D3A4
 Text Label 4905 950  3    50   ~ 0
-D2A5
+D3A5
 Text Label 5205 950  3    50   ~ 0
-D2A6
+D3A6
 Text Label 3705 3650 3    50   ~ 0
-D2A1
+D3A1
 Text Label 4005 3650 3    50   ~ 0
-D2A2
+D3A2
 Text Label 4305 3650 3    50   ~ 0
-D2A3
+D3A3
 Text Label 4605 3650 3    50   ~ 0
-D2A4
+D3A4
 Text Label 4905 3650 3    50   ~ 0
-D2A5
+D3A5
 Text Label 5205 3650 3    50   ~ 0
-D2A6
+D3A6
 Text Label 5205 7350 1    50   ~ 0
-D2A1
+D3A1
 Text Label 4905 7350 1    50   ~ 0
-D2A2
+D3A2
 Text Label 4605 7350 1    50   ~ 0
-D2A3
+D3A3
 Text Label 4305 7350 1    50   ~ 0
-D2A4
+D3A4
 Text Label 4005 7350 1    50   ~ 0
-D2A5
+D3A5
 Text Label 3705 7350 1    50   ~ 0
-D2A6
+D3A6
 Text Label 6230 2050 2    50   ~ 0
-D2A1
+D3A1
 Text Label 6230 2350 2    50   ~ 0
-D2A2
+D3A2
 Text Label 6230 2650 2    50   ~ 0
-D2A3
+D3A3
 Text Label 6230 2950 2    50   ~ 0
-D2A4
+D3A4
 Text Label 6230 3250 2    50   ~ 0
-D2A5
+D3A5
 Text Label 6230 3550 2    50   ~ 0
-D2A6
+D3A6
 Text Label 6230 4750 2    50   ~ 0
-D2A1
+D3A1
 Text Label 6230 5050 2    50   ~ 0
-D2A2
+D3A2
 Text Label 6230 5350 2    50   ~ 0
-D2A3
+D3A3
 Text Label 6230 5650 2    50   ~ 0
-D2A4
+D3A4
 Text Label 6230 5950 2    50   ~ 0
-D2A5
+D3A5
 Text Label 6230 6250 2    50   ~ 0
-D2A6
+D3A6
 Text Label 2680 6250 0    50   ~ 0
-D2A1
+D3A1
 Text Label 2680 5950 0    50   ~ 0
-D2A2
+D3A2
 Text Label 2680 5650 0    50   ~ 0
-D2A3
+D3A3
 Text Label 2680 5350 0    50   ~ 0
-D2A4
+D3A4
 Text Label 2680 5050 0    50   ~ 0
-D2A5
+D3A5
 Text Label 2680 4750 0    50   ~ 0
-D2A6
+D3A6
 Text Label 2675 3550 0    50   ~ 0
-D2A1
+D3A1
 Text Label 2680 3250 0    50   ~ 0
-D2A2
+D3A2
 Text Label 2680 2950 0    50   ~ 0
-D2A3
+D3A3
 Text Label 2680 2650 0    50   ~ 0
-D2A4
+D3A4
 Text Label 2680 2350 0    50   ~ 0
-D2A5
+D3A5
 Text Label 2680 2050 0    50   ~ 0
-D2A6
+D3A6
 $Comp
 L FDG1024NZ Q?
 U 1 1 54EB2DCB
@@ -262,13 +262,13 @@ F 3 "" H 1450 5750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 900  2400 0    50   Input ~ 0
-D2S6R
+D3S6R
 Text HLabel 1900 2400 0    50   Input ~ 0
-D2S6G
+D3S6G
 Text HLabel 900  5100 0    50   Input ~ 0
-D2S5R
+D3S5R
 Text HLabel 1900 5100 0    50   Input ~ 0
-D2S5G
+D3S5G
 $Comp
 L FDG1024NZ Q?
 U 1 1 54EB2E18
@@ -336,9 +336,9 @@ F 3 "" H 1450 7525 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 900  6875 0    50   Input ~ 0
-D2S4R
+D3S4R
 Text HLabel 1900 6875 0    50   Input ~ 0
-D2S4G
+D3S4G
 $Comp
 L FDG1024NZ Q?
 U 1 1 54EB2E42
@@ -876,9 +876,9 @@ F 3 "" H 7800 1825 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 7250 1175 0    50   Input ~ 0
-D2S1R
+D3S1R
 Text HLabel 8250 1175 0    50   Input ~ 0
-D2S1G
+D3S1G
 $Comp
 L FDG1024NZ Q?
 U 1 1 54EB2F80
@@ -972,9 +972,9 @@ F 3 "" H 7800 3325 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 7250 2675 0    50   Input ~ 0
-D2S2R
+D3S2R
 Text HLabel 8250 2675 0    50   Input ~ 0
-D2S2G
+D3S2G
 $Comp
 L FDG1024NZ Q?
 U 1 1 54EB2FB9
@@ -1070,9 +1070,9 @@ F 3 "" H 7800 6185 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 7250 5535 0    50   Input ~ 0
-D2S3R
+D3S3R
 Text HLabel 8250 5535 0    50   Input ~ 0
-D2S3G
+D3S3G
 $Comp
 L FDG1024NZ Q?
 U 1 1 54EB2FF3
@@ -1170,9 +1170,9 @@ F 3 "" H 7800 4710 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 7250 4060 0    50   Input ~ 0
-D2S7R
+D3S7R
 Text HLabel 8250 4060 0    50   Input ~ 0
-D2S7G
+D3S7G
 $Comp
 L FDG1024NZ Q?
 U 1 1 54EB302E
