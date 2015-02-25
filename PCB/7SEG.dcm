@@ -5,6 +5,17 @@ D I2C Serial EEPROM
 K EEPROM Serial
 $ENDCMP
 #
+$CMP DMN2041LSD
+D FDG1024NZ, 20V Vds, 1.2A Id, 175mOhm Rds, Dual N-Channel MOSFET, SC70-6
+K Dual N-Channel MOSFET Logic Level
+F http://www.fairchildsemi.com/ds/FD/FDG1024NZ.pdf
+$ENDCMP
+#
+$CMP DMN2041LSD-13
+D Dual N-Channel MOSFET, SO-8
+K Dual N-Channel MOSFET Logic Level
+$ENDCMP
+#
 $CMP P8X32A
 D Parallax Propeller
 $ENDCMP
