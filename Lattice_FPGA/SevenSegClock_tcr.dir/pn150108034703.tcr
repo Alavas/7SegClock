@@ -1,6 +1,0 @@
-#Start recording tcl command: 1/8/2015 03:41:22
-#Project Location: /home/justin/7SegClock/7SegClock/Lattice_FPGA; Project name: SevenSegClock
-prj_project open "/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock.ldf"
-prj_run Synthesis -impl SevenSegClock -task Lattice_Synthesis
-prj_project close
-#Stop recording: 1/8/2015 03:47:03
