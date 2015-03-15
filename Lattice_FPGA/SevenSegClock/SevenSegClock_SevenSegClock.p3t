@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "SevenSegClock_SevenSegClock.log"
+-o "SevenSegClock_SevenSegClock.csv"
+-pr "SevenSegClock_SevenSegClock.prf"

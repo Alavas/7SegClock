@@ -1,0 +1,430 @@
+<HTML>
+<HEAD><TITLE>Project Summary</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Mrp"></A>
+          Lattice Mapping Report File for Design Module 'AutoShift'
+
+
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -a MachXO2 -p LCMXO2-640UHC -t TQFP144 -s 5 -oc Commercial
+     SevenSegClock_SevenSegClock.ngd -o SevenSegClock_SevenSegClock_map.ncd -pr
+     SevenSegClock_SevenSegClock.prf -mp SevenSegClock_SevenSegClock.mrp /home/j
+     ustin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/SevenSegClock.l
+     pf -c 0 -gui 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-640UHCTQFP144
+Target Performance:   5
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.3.0.109
+Mapped on:  03/15/15  01:44:49
+
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+   Number of registers:     76 out of   964 (8%)
+      PFU registers:           76 out of   640 (12%)
+      PIO registers:            0 out of   324 (0%)
+   Number of SLICEs:        44 out of   320 (14%)
+      SLICEs as Logic/ROM:     44 out of   320 (14%)
+      SLICEs as RAM:            0 out of   240 (0%)
+      SLICEs as Carry:          6 out of   320 (2%)
+   Number of LUT4s:         43 out of   640 (7%)
+      Number of logic LUTs:       31
+      Number of distributed RAM:   0 (0 LUT4s)
+      Number of ripple logic:      6 (12 LUT4s)
+      Number of shift registers:   0
+   Number of PIO sites used: 84 + 4(JTAG) out of 108 (81%)
+   Number of block RAMs:  0 out of 7 (0%)
+   Number of GSRs:  0 out of 1 (0%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  Yes
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 4 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 1 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  5
+     Net n2325: 14 loads, 14 rising, 0 falling (Driver:
+     i1202_1_lut_rep_6_2_lut_3_lut_4_lut )
+     Net clk_c: 12 loads, 12 rising, 0 falling (Driver: PIO clk )
+
+     Net osc_clk_c_c: 6 loads, 6 rising, 0 falling (Driver: OSCH_inst )
+     Net latch_c: 10 loads, 10 rising, 0 falling (Driver: PIO latch )
+     Net n2326: 2 loads, 2 rising, 0 falling (Driver:
+     i1201_2_lut_rep_7_3_lut_4_lut )
+   Number of Clock Enables:  0
+   Number of LSRs:  9
+     Net ledA1_0: 1 loads, 1 LSLICEs
+     Net n1976: 2 loads, 2 LSLICEs
+     Net n2062: 4 loads, 4 LSLICEs
+     Net n2060: 4 loads, 4 LSLICEs
+     Net ledA1_4: 1 loads, 1 LSLICEs
+     Net ledA1_3: 1 loads, 1 LSLICEs
+     Net ledA1_5: 1 loads, 1 LSLICEs
+     Net ledA1_2: 1 loads, 1 LSLICEs
+     Net ledA1_1: 1 loads, 1 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net segment_0: 18 loads
+     Net segment_1: 17 loads
+     Net segment_2: 16 loads
+     Net heartbeat_c: 13 loads
+     Net cnt_7: 12 loads
+     Net cnt_8: 12 loads
+     Net cnt_6: 10 loads
+     Net n2060: 4 loads
+     Net n2062: 4 loads
+     Net n1976: 2 loads
+
+
+
+
+   Number of warnings:  2
+   Number of errors:    0
+     
+
+
+
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+WARNING - map: Multiple comps assigned to site "67". Only one comp will be
+     assigned to this location.
+WARNING - map: Pref conflict: Multi-locate on site. Ignoring LOCATE COMP "clk"
+     SITE "67" ;
+        Keeping LOCATE COMP "latch" SITE "67" ;
+     .
+
+
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| Digit3[11]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit2[7]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+| data                | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| clk                 | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit4[15]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| heartbeat           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit4[16]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit4[17]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit4[18]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit4[19]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| latch               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit4[1]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit4[4]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit4[7]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit4[10]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit4[13]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit2[8]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit2[9]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit2[10]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit2[11]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit2[12]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit3[12]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit3[13]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit2[13]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit3[14]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit2[14]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit3[0]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit3[1]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit3[15]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit3[16]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+| Digit4[12]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit4[9]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit4[6]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit4[3]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit4[0]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit2[15]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit2[16]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit3[2]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit3[17]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit2[17]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit2[18]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit3[18]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit3[19]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit2[19]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit2[0]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit3[3]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit1[0]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit1[1]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit1[2]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit1[3]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit2[1]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit1[4]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit2[2]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit1[5]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit2[3]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit1[6]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit1[7]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit1[8]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+| Digit1[9]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit1[10]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit3[4]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit2[4]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit2[5]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit1[11]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit3[5]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit2[6]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit1[19]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit1[12]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit3[6]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit1[13]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit1[14]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit1[15]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit1[16]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit1[17]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit3[7]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit1[18]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit3[8]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit4[11]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit4[8]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit4[5]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit4[2]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit3[9]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit3[10]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit4[14]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+
+
+
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Block i2 undriven or does not drive anything - clipped.
+Block GSR_INST undriven or does not drive anything - clipped.
+Signal n1979 was merged into signal ledA1_1
+Signal n1981 was merged into signal ledA1_2
+Signal n1985 was merged into signal ledA1_5
+Signal n1978 was merged into signal ledA1_0
+Signal n1982 was merged into signal ledA1_3
+Signal n1984 was merged into signal ledA1_4
+Signal VCC_net undriven or does not drive anything - clipped.
+Signal cnt_727_add_4_11/S1 undriven or does not drive anything - clipped.
+Signal cnt_727_add_4_11/CO undriven or does not drive anything - clipped.
+Signal cnt_727_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal cnt_727_add_4_1/CI undriven or does not drive anything - clipped.
+Block i940_1_lut was optimized away.
+Block i942_1_lut was optimized away.
+Block i946_1_lut was optimized away.
+Block i939_1_lut was optimized away.
+Block i943_1_lut was optimized away.
+Block i945_1_lut was optimized away.
+
+
+
+<A name="mrp_mem"></A><B><U><big>Memory Usage</big></U></B>
+
+
+     
+
+OSC Summary
+-----------
+
+OSC 1:                                     Pin/Node Value
+  OSC Instance Name:                                OSCH_inst
+  OSC Type:                                         OSCH
+  STDBY Input:                                      NONE
+  OSC Output:                              NODE     osc_clk_c_c
+  OSC Nominal Frequency (MHz):                      2.08
+
+
+
+<A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
+---------------
+
+Instance Name: OSCH_inst
+         Type: OSCH
+
+
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 155 MB
+        
+
+
+
+
+
+
+
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights
+     reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

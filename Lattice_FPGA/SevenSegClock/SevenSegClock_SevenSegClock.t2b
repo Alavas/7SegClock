@@ -1,0 +1,5 @@
+
+
+-g RamCfg:Reset
+
+-path "/home/justin/7SegClock/7SegClock/Lattice_FPGA"  
