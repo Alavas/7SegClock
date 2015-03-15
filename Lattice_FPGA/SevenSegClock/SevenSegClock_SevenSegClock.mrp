@@ -14,7 +14,7 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-640UHCTQFP144
 Target Performance:   5
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.3.0.109
-Mapped on:  01/06/15  04:59:19
+Mapped on:  03/15/15  01:44:49
 
 Design Summary
 --------------
@@ -31,7 +31,7 @@ Design Summary
       Number of distributed RAM:   0 (0 LUT4s)
       Number of ripple logic:      6 (12 LUT4s)
       Number of shift registers:   0
-   Number of PIO sites used: 83 + 4(JTAG) out of 108 (81%)
+   Number of PIO sites used: 84 + 4(JTAG) out of 108 (81%)
    Number of block RAMs:  0 out of 7 (0%)
    Number of GSRs:  0 out of 1 (0%)
    EFB used :       No
@@ -57,56 +57,63 @@ Design Summary
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
    Number of clocks:  5
+     Net n2325: 14 loads, 14 rising, 0 falling (Driver:
+     i1202_1_lut_rep_6_2_lut_3_lut_4_lut )
      Net clk_c: 12 loads, 12 rising, 0 falling (Driver: PIO clk )
-     Net osc_clk_c_c: 6 loads, 6 rising, 0 falling (Driver: OSCH_inst )
-     Net latch_c: 10 loads, 10 rising, 0 falling (Driver: PIO latch )
 
                                     Page 1
 
 
 
 
-Design:  AutoShift                                     Date:  01/06/15  04:59:19
+Design:  AutoShift                                     Date:  03/15/15  01:44:49
 
 Design Summary (cont)
 ---------------------
-     Net n1008: 2 loads, 2 rising, 0 falling (Driver: i1079_1_lut_2_lut_4_lut )
-     Net n2420: 14 loads, 14 rising, 0 falling (Driver: i1_2_lut_rep_8_4_lut )
+     Net osc_clk_c_c: 6 loads, 6 rising, 0 falling (Driver: OSCH_inst )
+     Net latch_c: 10 loads, 10 rising, 0 falling (Driver: PIO latch )
+     Net n2326: 2 loads, 2 rising, 0 falling (Driver:
+     i1201_2_lut_rep_7_3_lut_4_lut )
    Number of Clock Enables:  0
    Number of LSRs:  9
      Net ledA1_0: 1 loads, 1 LSLICEs
-     Net n2063: 2 loads, 2 LSLICEs
-     Net n2073: 4 loads, 4 LSLICEs
-     Net n1977: 4 loads, 4 LSLICEs
-     Net ledA1_2: 1 loads, 1 LSLICEs
-     Net ledA1_1: 1 loads, 1 LSLICEs
-     Net ledA1_5: 1 loads, 1 LSLICEs
+     Net n1976: 2 loads, 2 LSLICEs
+     Net n2062: 4 loads, 4 LSLICEs
+     Net n2060: 4 loads, 4 LSLICEs
      Net ledA1_4: 1 loads, 1 LSLICEs
      Net ledA1_3: 1 loads, 1 LSLICEs
+     Net ledA1_5: 1 loads, 1 LSLICEs
+     Net ledA1_2: 1 loads, 1 LSLICEs
+     Net ledA1_1: 1 loads, 1 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
      Net segment_0: 18 loads
      Net segment_1: 17 loads
      Net segment_2: 16 loads
+     Net heartbeat_c: 13 loads
      Net cnt_7: 12 loads
      Net cnt_8: 12 loads
-     Net cnt_9: 12 loads
-     Net cnt_6: 11 loads
-     Net n1977: 4 loads
-     Net n2073: 4 loads
-     Net n2063: 2 loads
+     Net cnt_6: 10 loads
+     Net n2060: 4 loads
+     Net n2062: 4 loads
+     Net n1976: 2 loads
 
 
 
 
-   Number of warnings:  0
+   Number of warnings:  2
    Number of errors:    0
      
 
 Design Errors/Warnings
 ----------------------
 
-   No errors or warnings present.
+WARNING - map: Multiple comps assigned to site "67". Only one comp will be
+     assigned to this location.
+WARNING - map: Pref conflict: Multi-locate on site. Ignoring LOCATE COMP "clk"
+     SITE "67" ;
+        Keeping LOCATE COMP "latch" SITE "67" ;
+     .
 
 IO (PIO) Attributes
 -------------------
@@ -119,23 +126,25 @@ IO (PIO) Attributes
 +---------------------+-----------+-----------+------------+
 | Digit2[7]           | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| data                | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| Digit4[15]          | OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| latch               | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| Digit4[16]          | OUTPUT    | LVCMOS33  |            |
 
                                     Page 2
 
 
 
 
-Design:  AutoShift                                     Date:  01/06/15  04:59:19
+Design:  AutoShift                                     Date:  03/15/15  01:44:49
 
 IO (PIO) Attributes (cont)
 --------------------------
+| data                | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| clk                 | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit4[15]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| heartbeat           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Digit4[16]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | Digit4[17]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
@@ -143,7 +152,7 @@ IO (PIO) Attributes (cont)
 +---------------------+-----------+-----------+------------+
 | Digit4[19]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| clk                 | INPUT     | LVCMOS33  |            |
+| latch               | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | Digit4[1]           | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
@@ -183,6 +192,16 @@ IO (PIO) Attributes (cont)
 +---------------------+-----------+-----------+------------+
 | Digit3[16]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
+
+                                    Page 3
+
+
+
+
+Design:  AutoShift                                     Date:  03/15/15  01:44:49
+
+IO (PIO) Attributes (cont)
+--------------------------
 | Digit4[12]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | Digit4[9]           | OUTPUT    | LVCMOS33  |            |
@@ -192,16 +211,6 @@ IO (PIO) Attributes (cont)
 | Digit4[3]           | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | Digit4[0]           | OUTPUT    | LVCMOS33  |            |
-
-                                    Page 3
-
-
-
-
-Design:  AutoShift                                     Date:  01/06/15  04:59:19
-
-IO (PIO) Attributes (cont)
---------------------------
 +---------------------+-----------+-----------+------------+
 | Digit2[15]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
@@ -249,6 +258,16 @@ IO (PIO) Attributes (cont)
 +---------------------+-----------+-----------+------------+
 | Digit1[8]           | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
+
+                                    Page 4
+
+
+
+
+Design:  AutoShift                                     Date:  03/15/15  01:44:49
+
+IO (PIO) Attributes (cont)
+--------------------------
 | Digit1[9]           | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | Digit1[10]          | OUTPUT    | LVCMOS33  |            |
@@ -258,16 +277,6 @@ IO (PIO) Attributes (cont)
 | Digit2[4]           | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | Digit2[5]           | OUTPUT    | LVCMOS33  |            |
-
-                                    Page 4
-
-
-
-
-Design:  AutoShift                                     Date:  01/06/15  04:59:19
-
-IO (PIO) Attributes (cont)
---------------------------
 +---------------------+-----------+-----------+------------+
 | Digit1[11]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
@@ -312,38 +321,39 @@ IO (PIO) Attributes (cont)
 | Digit4[14]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 
-Removed logic
--------------
 
-Block i2 undriven or does not drive anything - clipped.
-Block GSR_INST undriven or does not drive anything - clipped.
-Signal n2069 was merged into signal ledA1_3
-Signal n2071 was merged into signal ledA1_4
-Signal n2065 was merged into signal ledA1_0
-Signal n2072 was merged into signal ledA1_5
-Signal n2066 was merged into signal ledA1_1
-Signal n2068 was merged into signal ledA1_2
-Signal VCC_net undriven or does not drive anything - clipped.
+
+
 
                                     Page 5
 
 
 
 
-Design:  AutoShift                                     Date:  01/06/15  04:59:19
+Design:  AutoShift                                     Date:  03/15/15  01:44:49
 
-Removed logic (cont)
---------------------
-Signal cnt_735_add_4_11/S1 undriven or does not drive anything - clipped.
-Signal cnt_735_add_4_11/CO undriven or does not drive anything - clipped.
-Signal cnt_735_add_4_1/S0 undriven or does not drive anything - clipped.
-Signal cnt_735_add_4_1/CI undriven or does not drive anything - clipped.
-Block i979_1_lut was optimized away.
-Block i981_1_lut was optimized away.
-Block i975_1_lut was optimized away.
-Block i982_1_lut was optimized away.
-Block i976_1_lut was optimized away.
-Block i978_1_lut was optimized away.
+Removed logic
+-------------
+
+Block i2 undriven or does not drive anything - clipped.
+Block GSR_INST undriven or does not drive anything - clipped.
+Signal n1979 was merged into signal ledA1_1
+Signal n1981 was merged into signal ledA1_2
+Signal n1985 was merged into signal ledA1_5
+Signal n1978 was merged into signal ledA1_0
+Signal n1982 was merged into signal ledA1_3
+Signal n1984 was merged into signal ledA1_4
+Signal VCC_net undriven or does not drive anything - clipped.
+Signal cnt_727_add_4_11/S1 undriven or does not drive anything - clipped.
+Signal cnt_727_add_4_11/CO undriven or does not drive anything - clipped.
+Signal cnt_727_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal cnt_727_add_4_1/CI undriven or does not drive anything - clipped.
+Block i940_1_lut was optimized away.
+Block i942_1_lut was optimized away.
+Block i946_1_lut was optimized away.
+Block i939_1_lut was optimized away.
+Block i943_1_lut was optimized away.
+Block i945_1_lut was optimized away.
 
 Memory Usage
 ------------
@@ -374,16 +384,6 @@ Run Time and Memory Usage
    Total REAL Time: 0 secs  
    Peak Memory Usage: 155 MB
         
-
-
-
-
-
-
-
-
-
-
 
 
 

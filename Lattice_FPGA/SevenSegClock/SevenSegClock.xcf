@@ -9,10 +9,10 @@
 			<Pos>1</Pos>
 			<Vendor>Lattice</Vendor>
 			<Family>MachXO2</Family>
-			<Name>LCMXO2-7000HE</Name>
-			<IDCode>0x012b5043</IDCode>
+			<Name>LCMXO2-640UHC</Name>
+			<IDCode>0x012ba043</IDCode>
 			<Package>All</Package>
-			<PON>LCMXO2-7000HE</PON>
+			<PON>LCMXO2-640UHC</PON>
 			<Bypass>
 				<InstrLen>8</InstrLen>
 				<InstrVal>11111111</InstrVal>
@@ -20,14 +20,14 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/SevenSegClock_SevenSegClock.jed</File>
-			<FileTime>01/04/15 07:24:54</FileTime>
-			<JedecChecksum>0x1B05</JedecChecksum>
+			<FileTime>03/15/15 01:45:05</FileTime>
+			<JedecChecksum>0x4517</JedecChecksum>
 			<Operation>FLASH Erase,Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>
 				<IOState>HighZ</IOState>
-				<PreloadLength>664</PreloadLength>
-				<IOVectorData>0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</IOVectorData>
+				<PreloadLength>208</PreloadLength>
+				<IOVectorData>0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</IOVectorData>
 				<Usercode>0x00000000</Usercode>
 				<AccessMode>FLASH</AccessMode>
 			</Option>

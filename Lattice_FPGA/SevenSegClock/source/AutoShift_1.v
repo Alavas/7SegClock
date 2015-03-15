@@ -5,18 +5,20 @@
 // 4 seven segments displays with each segment made of 6 bi-color leds (red & green). Microcontroller updates FPGA which then maintains clock display automatically.
 
 
-module AutoShift(Digit1[19:0],Digit2[19:0],Digit3[19:0],Digit4[19:0], latch, clk, data);
+module AutoShift(Digit1[19:0],Digit2[19:0],Digit3[19:0],Digit4[19:0], latch, clk, data, heartbeat);
 
 output  Digit1;
 output	Digit2;
 output 	Digit3;
 output	Digit4;
+output  heartbeat;
 
 input 	latch;
 input	clk;
 input	data;
 //input   oe;
 
+reg		heartbeat;
 reg		[19:0]	Digit1;	// Digit 1 output.
 reg		[19:0]	Digit2;	// Digit 2 output.
 reg		[19:0]	Digit3;	// Digit 3 output.
@@ -51,6 +53,10 @@ OSCH OSCH_inst( .STDBY(1'b0), 		// 0=Enabled, 1=Disabled also Disabled with Band
 //always @*begin	
 //	assign Digit1 = (oe) ? ledsout : 21'b000000000000000000000;
 //end
+
+always @(cnt[9])begin
+	heartbeat = cnt[9];
+end
 
 // Segment 1 controller.
 always @(cnt[9:6])begin

@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
+    <Task name="Map">
+        <Message>
+            <ID>51001104</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>67</Dynamic>
+        </Message>
+        <Message>
+            <ID>1103737</ID>
+            <Severity>Warning</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>LOCATE COMP &quot;clk&quot; SITE &quot;67&quot; ;
+</Dynamic>
+            <Dynamic>LOCATE COMP &quot;latch&quot; SITE &quot;67&quot; ;
+</Dynamic>
+        </Message>
+    </Task>
     <Task name="Lattice_Synthesis">
         <Message>
             <ID>2029993</ID>
@@ -27,7 +43,7 @@
         <Message>
             <ID>1009991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(143): Latch dlatchrs_709_i20 input is stuck at Zero
+            <Dynamic>/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(143): Latch dlatchrs_701_i20 input is stuck at Zero
 </Dynamic>
         </Message>
         <Message>
@@ -38,19 +54,19 @@
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>cnt_735_add_4_1/S0</Dynamic>
+            <Dynamic>cnt_727_add_4_1/S0</Dynamic>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>cnt_735_add_4_11/CO</Dynamic>
+            <Dynamic>cnt_727_add_4_11/CO</Dynamic>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>cnt_735_add_4_11/S1</Dynamic>
+            <Dynamic>cnt_727_add_4_11/S1</Dynamic>
         </Message>
         <Message>
             <ID>1163101</ID>
@@ -62,25 +78,11 @@
         <Message>
             <ID>61061008</ID>
             <Severity>Warning</Severity>
-            <Dynamic>clk_c</Dynamic>
-            <Dynamic>Primary</Dynamic>
-            <Dynamic>clk</Dynamic>
-            <Dynamic>33</Dynamic>
-            <Dynamic>Primary</Dynamic>
-        </Message>
-        <Message>
-            <ID>61061008</ID>
-            <Severity>Warning</Severity>
             <Dynamic>latch_c</Dynamic>
             <Dynamic>Primary</Dynamic>
             <Dynamic>latch</Dynamic>
-            <Dynamic>35</Dynamic>
+            <Dynamic>67</Dynamic>
             <Dynamic>Primary</Dynamic>
-        </Message>
-        <Message>
-            <ID>62061008</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>clk_c</Dynamic>
         </Message>
         <Message>
             <ID>62061008</ID>
@@ -91,13 +93,13 @@
             <ID>66011008</ID>
             <Severity>Warning</Severity>
             <Dynamic>
-   Signal=n1008 loads=2 clock_loads=2</Dynamic>
+   Signal=n2326 loads=2 clock_loads=2</Dynamic>
         </Message>
         <Message>
             <ID>66011008</ID>
             <Severity>Warning</Severity>
             <Dynamic>
-   Signal=n1008 loads=2 clock_loads=2</Dynamic>
+   Signal=n2326 loads=2 clock_loads=2</Dynamic>
         </Message>
     </Task>
 </BaliMessageLog>
