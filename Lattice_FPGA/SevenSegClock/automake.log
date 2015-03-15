@@ -1,252 +1,4 @@
 
-synthesis -f "SevenSegClock_SevenSegClock_lattice.synproj"
-synthesis:  version Diamond (64-bit) 3.3.0.109
-
-Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
-Copyright (c) 1995 AT&T Corp.   All rights reserved.
-Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
-Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Mar 15 01:44:48 2015
-
-
-Command Line:  synthesis -f SevenSegClock_SevenSegClock_lattice.synproj -gui 
-
-Synthesis options:
-The -a option is MachXO2.
-The -s option is 5.
-The -t option is TQFP144.
-The -d option is LCMXO2-640UHC.
-Using package TQFP144.
-Using performance grade 5.
-                                                          
-
-##########################################################
-
-### Lattice Family : MachXO2A
-
-### Device  : LCMXO2-640UHC
-
-### Package : TQFP144
-
-### Speed   : 5
-
-##########################################################
-
-                                                          
-
-Optimization goal = Balanced
-Top-level module name = AutoShift.
-Target frequency = 200.000000 MHz.
-Maximum fanout = 1000.
-Timing path count = 3
-BRAM utilization = 100.000000 %
-DSP usage = true (default)
-DSP utilization = 100 % (default)
-fsm_encoding_style = auto
-resolve_mixed_drivers = 0
-fix_gated_clocks = 1
-
-Mux style = Auto
-Use Carry Chain = true
-carry_chain_length = 0
-WARNING - synthesis: Using default loop_limit value of 1950
-
-Use IO Insertion = TRUE
-Resource Sharing = TRUE
-Propagate Constants = TRUE
-Remove Duplicate Registers = TRUE
-force_gsr = auto
-ROM style = auto
-RAM style = auto
-The -comp option is FALSE.
-The -syn option is FALSE.
--p /home/justin/7SegClock/7SegClock/Lattice_FPGA (searchpath added)
--p /usr/local/diamond/3.3_x64/ispfpga/xo2c00/data (searchpath added)
--p /home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock (searchpath added)
--p /home/justin/7SegClock/7SegClock/Lattice_FPGA (searchpath added)
-Verilog design file = /home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v
-NGD file = SevenSegClock_SevenSegClock.ngd
--sdc option: SDC file input not used.
--lpf option: Output file option is ON.
-Hardtimer checking is enabled (default). The -dt option is not used.
-The -r option is OFF. [ Remove LOC Properties is OFF. ]
-Technology check ok...
-
-Compile design.
-Compile Design Begin
-Top module name (Verilog): AutoShift
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(8): " arg1="AutoShift" arg2="/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v" arg3="8"  />
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="/usr/local/diamond/3.3_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1793): " arg1="OSCH(NOM_FREQ=&quot;2.08&quot;)" arg2="/usr/local/diamond/3.3_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v" arg3="1793"  />
-Last elaborated design is AutoShift()
-Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
-Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
-Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
-Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/or5g00/data/orc5glib.ngl'...
-Loading device for application map from file 'xo2c1200.nph' in environment: /usr/local/diamond/3.3_x64/ispfpga.
-Package Status:                     Final          Version 1.39.
-Top-level module name = AutoShift.
-/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(28): net RedD2[6] does not have a driver. VDB-1002
-/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(29): net RedD3[6] does not have a driver. VDB-1002
-/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(30): net RedD4[6] does not have a driver. VDB-1002
-/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(32): net GrnD2[6] does not have a driver. VDB-1002
-/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(33): net GrnD3[6] does not have a driver. VDB-1002
-/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(34): net GrnD4[6] does not have a driver. VDB-1002
-/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(36): net ledA2[5] does not have a driver. VDB-1002
-/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(37): net ledA3[5] does not have a driver. VDB-1002
-/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(38): net ledA4[5] does not have a driver. VDB-1002
-######## Missing driver on net RedD2[6]. Patching with GND.
-######## Missing driver on net RedD2[5]. Patching with GND.
-######## Missing driver on net RedD2[4]. Patching with GND.
-######## Missing driver on net RedD2[3]. Patching with GND.
-######## Missing driver on net RedD2[2]. Patching with GND.
-######## Missing driver on net RedD2[1]. Patching with GND.
-######## Missing driver on net RedD2[0]. Patching with GND.
-######## Missing driver on net RedD3[6]. Patching with GND.
-######## Missing driver on net RedD3[5]. Patching with GND.
-######## Missing driver on net RedD3[4]. Patching with GND.
-######## Missing driver on net RedD3[3]. Patching with GND.
-######## Missing driver on net RedD3[2]. Patching with GND.
-######## Missing driver on net RedD3[1]. Patching with GND.
-######## Missing driver on net RedD3[0]. Patching with GND.
-######## Missing driver on net RedD4[6]. Patching with GND.
-######## Missing driver on net RedD4[5]. Patching with GND.
-######## Missing driver on net RedD4[4]. Patching with GND.
-######## Missing driver on net RedD4[3]. Patching with GND.
-######## Missing driver on net RedD4[2]. Patching with GND.
-######## Missing driver on net RedD4[1]. Patching with GND.
-######## Missing driver on net RedD4[0]. Patching with GND.
-######## Missing driver on net GrnD2[6]. Patching with GND.
-######## Missing driver on net GrnD2[5]. Patching with GND.
-######## Missing driver on net GrnD2[4]. Patching with GND.
-######## Missing driver on net GrnD2[3]. Patching with GND.
-######## Missing driver on net GrnD2[2]. Patching with GND.
-######## Missing driver on net GrnD2[1]. Patching with GND.
-######## Missing driver on net GrnD2[0]. Patching with GND.
-######## Missing driver on net GrnD3[6]. Patching with GND.
-######## Missing driver on net GrnD3[5]. Patching with GND.
-######## Missing driver on net GrnD3[4]. Patching with GND.
-######## Missing driver on net GrnD3[3]. Patching with GND.
-######## Missing driver on net GrnD3[2]. Patching with GND.
-######## Missing driver on net GrnD3[1]. Patching with GND.
-######## Missing driver on net GrnD3[0]. Patching with GND.
-######## Missing driver on net GrnD4[6]. Patching with GND.
-######## Missing driver on net GrnD4[5]. Patching with GND.
-######## Missing driver on net GrnD4[4]. Patching with GND.
-######## Missing driver on net GrnD4[3]. Patching with GND.
-######## Missing driver on net GrnD4[2]. Patching with GND.
-######## Missing driver on net GrnD4[1]. Patching with GND.
-######## Missing driver on net GrnD4[0]. Patching with GND.
-######## Missing driver on net ledA2[5]. Patching with GND.
-######## Missing driver on net ledA2[4]. Patching with GND.
-######## Missing driver on net ledA2[3]. Patching with GND.
-######## Missing driver on net ledA2[2]. Patching with GND.
-######## Missing driver on net ledA2[1]. Patching with GND.
-######## Missing driver on net ledA2[0]. Patching with GND.
-######## Missing driver on net ledA3[5]. Patching with GND.
-######## Missing driver on net ledA3[4]. Patching with GND.
-######## Missing driver on net ledA3[3]. Patching with GND.
-######## Missing driver on net ledA3[2]. Patching with GND.
-######## Missing driver on net ledA3[1]. Patching with GND.
-######## Missing driver on net ledA3[0]. Patching with GND.
-######## Missing driver on net ledA4[5]. Patching with GND.
-######## Missing driver on net ledA4[4]. Patching with GND.
-######## Missing driver on net ledA4[3]. Patching with GND.
-######## Missing driver on net ledA4[2]. Patching with GND.
-######## Missing driver on net ledA4[1]. Patching with GND.
-######## Missing driver on net ledA4[0]. Patching with GND.
-
-
-
-    <postMsg mid="1009991" type="Warning" dynamic="1" navigation="0" arg0="/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(143): Latch dlatchrs_701_i20 input is stuck at Zero&#xA;"  />
-GSR instance connected to net Digit4_c.
-GSR will not be inferred because no asynchronous signal was found in the netlist.
-    <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
-Applying 200.000000 MHz constraint to all clocks
-
-Results of NGD DRC are available in AutoShift_drc.log.
-Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
-Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
-Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
-Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/or5g00/data/orc5glib.ngl'...
-
-
-Running DRC...
-
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="cnt_727_add_4_1/S0"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="cnt_727_add_4_11/CO"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="cnt_727_add_4_11/S1"  />
-    <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="3"  />
-
-Design Results:
-    207 blocks expanded
-completed the first expansion
-All blocks are expanded and NGD expansion is successful.
-Writing NGD file SevenSegClock_SevenSegClock.ngd.
-
-################### Begin Area Report (AutoShift)######################
-Number of register bits => 76 of 964 (7 % )
-CCU2D => 6
-FD1S1I => 23
-FD1S3AX => 53
-GSR => 1
-IB => 3
-LUT4 => 36
-OB => 81
-OSCH => 1
-################### End Area Report ##################
-
-################### Begin Clock Report ######################
-Clock Nets
-Number of Clocks: 5
-  Net : clk_c, loads : 23
-  Net : latch_c, loads : 20
-  Net : n2325, loads : 20
-  Net : osc_clk_c_c, loads : 10
-  Net : n2326, loads : 3
-Clock Enable Nets
-Number of Clock Enables: 0
-Highest fanout non-clock nets
-Top 10 highest fanout non-clock nets:
-  Net : segment_0, loads : 18
-  Net : segment_1, loads : 17
-  Net : segment_2, loads : 16
-  Net : heartbeat_c, loads : 13
-  Net : cnt_8, loads : 12
-  Net : cnt_7, loads : 12
-  Net : cnt_6, loads : 10
-  Net : n2060, loads : 7
-  Net : n2062, loads : 7
-  Net : n1976, loads : 3
-################### End Clock Report ##################
-
-Timing Report Summary
---------------
---------------------------------------------------------------------------------
-Constraint                              |   Constraint|       Actual|Levels
---------------------------------------------------------------------------------
-                                        |             |             |
-create_clock -period 5.000000 -name     |             |             |
-clk2 [get_nets latch_c]                 |            -|            -|     0  
-                                        |             |             |
-create_clock -period 5.000000 -name     |             |             |
-clk1 [get_nets osc_clk_c_c]             |            -|            -|     0  
-                                        |             |             |
-create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets clk_c]                   |  200.000 MHz|  644.745 MHz|     1  
-                                        |             |             |
---------------------------------------------------------------------------------
-
-
-All constraints were met.
-
-
-Peak Memory Usage: 180.180  MB
-
---------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.611  secs
---------------------------------------------------------------
-
 map -a "MachXO2" -p LCMXO2-640UHC -t TQFP144 -s 5 -oc Commercial   "SevenSegClock_SevenSegClock.ngd" -o "SevenSegClock_SevenSegClock_map.ncd" -pr "SevenSegClock_SevenSegClock.prf" -mp "SevenSegClock_SevenSegClock.mrp" "/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/SevenSegClock.lpf" -c 0            
 map:  version Diamond (64-bit) 3.3.0.109
 
@@ -345,11 +97,9 @@ Design Summary:
      Net n2060: 4 loads
      Net n2062: 4 loads
      Net n1976: 2 loads
-    <postMsg mid="51001104" type="Warning" dynamic="1" navigation="0" arg0="67"  />
-    <postMsg mid="1103737" type="Warning" dynamic="3" navigation="0" arg0="" arg1="LOCATE COMP &quot;clk&quot; SITE &quot;67&quot; ;&#xA;" arg2="LOCATE COMP &quot;latch&quot; SITE &quot;67&quot; ;&#xA;"  />
  
 
-   Number of warnings:  2
+   Number of warnings:  0
    Number of errors:    0
 
 
@@ -372,7 +122,7 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "SevenSegClock_SevenSegClock_map.ncd"
-Sun Mar 15 01:44:50 2015
+Sun Mar 15 06:58:02 2015
 
 PAR: Place And Route Diamond (64-bit) 3.3.0.109.
 Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF SevenSegClock_SevenSegClock_map.ncd SevenSegClock_SevenSegClock.dir/5_1.ncd SevenSegClock_SevenSegClock.prf
@@ -408,14 +158,15 @@ Number of Signals: 126
 Number of Connections: 341
 
 Pin Constraint Summary:
-   23 out of 23 pins locked (100% locked).
+   24 out of 24 pins locked (100% locked).
 
 The following 3 signals are selected to use the primary clock routing resources:
     n2325 (driver: SLICE_30, clk load #: 14)
     clk_c (driver: clk, clk load #: 12)
     latch_c (driver: latch, clk load #: 10)
 
-    <postMsg mid="61061008" type="Warning" dynamic="5" navigation="0" arg0="latch_c" arg1="Primary" arg2="latch" arg3="67" arg4="Primary"  />
+    <postMsg mid="61061008" type="Warning" dynamic="5" navigation="0" arg0="clk_c" arg1="Primary" arg2="clk" arg3="67" arg4="Primary"  />
+    <postMsg mid="61061008" type="Warning" dynamic="5" navigation="0" arg0="latch_c" arg1="Primary" arg2="latch" arg3="65" arg4="Primary"  />
 
 The following 1 signal is selected to use the secondary clock routing resources:
     osc_clk_c_c (driver: OSCH_inst, clk load #: 6, sr load #: 0, ce load #: 0)
@@ -423,33 +174,33 @@ The following 1 signal is selected to use the secondary clock routing resources:
 No signal is selected as Global Set/Reset.
 .
 Starting Placer Phase 0.
-
+.....
 Finished Placer Phase 0.  REAL time: 0 secs 
 
 Starting Placer Phase 1.
-....................
-Placer score = 23407.
+...................
+Placer score = 23639.
 Finished Placer Phase 1.  REAL time: 9 secs 
 
 Starting Placer Phase 2.
 .
-Placer score =  22717
+Placer score =  23039
 Finished Placer Phase 2.  REAL time: 9 secs 
 
 
 ------------------ Clock Report ------------------
 
 Global Clock Resources:
-  CLK_PIN    : 1 out of 8 (12%)
-  General PIO: 1 out of 108 (0%)
+  CLK_PIN    : 0 out of 8 (0%)
+  General PIO: 2 out of 108 (1%)
   PLL        : 0 out of 1 (0%)
   DCM        : 0 out of 2 (0%)
   DCC        : 0 out of 8 (0%)
 
 Quadrants All (TL, TR, BL, BR) - Global Clocks:
   PRIMARY "n2325" from F1 on comp "SLICE_30" on site "R2C13D", clk load = 14
-  PRIMARY "clk_c" from comp "clk" on CLK_PIN site "55 (PB11A)", clk load = 12
-  PRIMARY "latch_c" from comp "latch" on PIO site "67 (PB18D)", clk load = 10
+  PRIMARY "clk_c" from comp "clk" on PIO site "67 (PB18D)", clk load = 12
+  PRIMARY "latch_c" from comp "latch" on PIO site "65 (PB18C)", clk load = 10
   SECONDARY "osc_clk_c_c" from OSC on comp "OSCH_inst" on site "OSC", clk load = 6, ce load = 0, sr load = 0
 
   PRIMARY  : 3 out of 8 (37%)
@@ -471,10 +222,10 @@ I/O Bank Usage Summary:
 +----------+----------------+------------+-----------+
 | I/O Bank | Usage          | Bank Vccio | Bank Vref |
 +----------+----------------+------------+-----------+
-| 0        | 18 / 28 ( 64%) | 3.3V       | -         |
+| 0        | 19 / 28 ( 67%) | 3.3V       | -         |
 | 1        | 22 / 26 ( 84%) | 3.3V       | -         |
-| 2        | 22 / 28 ( 78%) | 3.3V       | -         |
-| 3        | 22 / 26 ( 84%) | 3.3V       | -         |
+| 2        | 20 / 28 ( 71%) | 3.3V       | -         |
+| 3        | 23 / 26 ( 88%) | 3.3V       | -         |
 +----------+----------------+------------+-----------+
 
 Total placer CPU time: 8 secs 
@@ -483,13 +234,14 @@ Dumping design to file SevenSegClock_SevenSegClock.dir/5_1.ncd.
 
 0 connections routed; 341 unrouted.
 Starting router resource preassignment
+    <postMsg mid="62061008" type="Warning" dynamic="1" navigation="0" arg0="clk_c"  />
     <postMsg mid="62061008" type="Warning" dynamic="1" navigation="0" arg0="latch_c"  />
 
     <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=n2326 loads=2 clock_loads=2"  />
 
-Completed router resource preassignment. Real time: 10 secs 
+Completed router resource preassignment. Real time: 9 secs 
 
-Start NBR router at Sun Mar 15 01:45:00 UTC 2015
+Start NBR router at Sun Mar 15 06:58:11 UTC 2015
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -504,41 +256,59 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design. Thanks.                                       
 *****************************************************************
 
-Start NBR special constraint process at Sun Mar 15 01:45:00 UTC 2015
+Start NBR special constraint process at Sun Mar 15 06:58:11 UTC 2015
 
-Start NBR section for initial routing at Sun Mar 15 01:45:00 UTC 2015
+Start NBR section for initial routing at Sun Mar 15 06:58:11 UTC 2015
 Level 4, iteration 1
-7(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 478.293ns/0.000ns; real time: 10 secs 
+9(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 478.293ns/0.000ns; real time: 9 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at Sun Mar 15 01:45:00 UTC 2015
+Start NBR section for normal routing at Sun Mar 15 06:58:11 UTC 2015
 Level 4, iteration 1
-4(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 478.293ns/0.000ns; real time: 10 secs 
+9(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 478.293ns/0.000ns; real time: 9 secs 
 Level 4, iteration 2
 3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 478.293ns/0.000ns; real time: 10 secs 
+Estimated worst slack/total negative slack<setup>: 478.293ns/0.000ns; real time: 9 secs 
 Level 4, iteration 3
-2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 478.293ns/0.000ns; real time: 10 secs 
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 478.293ns/0.000ns; real time: 9 secs 
 Level 4, iteration 4
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 478.293ns/0.000ns; real time: 10 secs 
+2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 478.293ns/0.000ns; real time: 9 secs 
 Level 4, iteration 5
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 478.293ns/0.000ns; real time: 9 secs 
+Level 4, iteration 6
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 478.293ns/0.000ns; real time: 9 secs 
+Level 4, iteration 7
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 478.293ns/0.000ns; real time: 9 secs 
+Level 4, iteration 8
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 478.293ns/0.000ns; real time: 9 secs 
+Level 4, iteration 9
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 478.293ns/0.000ns; real time: 9 secs 
+Level 4, iteration 10
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 478.293ns/0.000ns; real time: 9 secs 
+Level 4, iteration 11
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 478.293ns/0.000ns; real time: 10 secs 
+Estimated worst slack/total negative slack<setup>: 478.293ns/0.000ns; real time: 9 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at Sun Mar 15 01:45:00 UTC 2015
+Start NBR section for setup/hold timing optimization with effort level 3 at Sun Mar 15 06:58:11 UTC 2015
 
-Start NBR section for re-routing at Sun Mar 15 01:45:00 UTC 2015
+Start NBR section for re-routing at Sun Mar 15 06:58:12 UTC 2015
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
 Estimated worst slack/total negative slack<setup>: 478.293ns/0.000ns; real time: 10 secs 
 
-Start NBR section for post-routing at Sun Mar 15 01:45:00 UTC 2015
+Start NBR section for post-routing at Sun Mar 15 06:58:12 UTC 2015
 
 End NBR router with 0 unrouted connection
 

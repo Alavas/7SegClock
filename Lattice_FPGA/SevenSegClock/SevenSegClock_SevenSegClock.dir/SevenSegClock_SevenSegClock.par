@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Mar 15 01:44:50 2015
+Sun Mar 15 06:58:02 2015
 
 /usr/local/diamond/3.3_x64/ispfpga/bin/lin64/par -f
 SevenSegClock_SevenSegClock.p2t SevenSegClock_SevenSegClock_map.ncd

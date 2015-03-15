@@ -5,17 +5,17 @@
             <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
-            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1426383905"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1426402697"/>
             <Task name="Bitgen" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1426383890">
-            <Task name="Map" build_result="2" update_result="0" update_time="1426383890"/>
+        <Milestone name="Map" build_result="2" build_time="1426402681">
+            <Task name="Map" build_result="2" update_result="0" update_time="1426402681"/>
             <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVHDLSimFile" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1426383902">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1426383902"/>
+        <Milestone name="PAR" build_result="2" build_time="1426402693">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1426402693"/>
             <Task name="PARTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
@@ -28,13 +28,13 @@
             <Task name="SSO" build_result="0" update_result="3" update_time="0"/>
             <Task name="PIODRC" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Report name="SevenSegClock_SevenSegClock.bgn" last_build_time="1426383905" last_build_size="3900"/>
+        <Report name="SevenSegClock_SevenSegClock.bgn" last_build_time="1426402697" last_build_size="3900"/>
         <Report name="SevenSegClock_SevenSegClock.bit" last_build_time="1419913663" last_build_size="26076"/>
-        <Report name="SevenSegClock_SevenSegClock.jed" last_build_time="1426383905" last_build_size="349945"/>
+        <Report name="SevenSegClock_SevenSegClock.jed" last_build_time="1426402697" last_build_size="349945"/>
         <Report name="SevenSegClock_SevenSegClock.lsedata" last_build_time="1426383888" last_build_size="271308"/>
-        <Report name="SevenSegClock_SevenSegClock.ncd" last_build_time="1426383902" last_build_size="132074"/>
+        <Report name="SevenSegClock_SevenSegClock.ncd" last_build_time="1426402693" last_build_size="132969"/>
         <Report name="SevenSegClock_SevenSegClock.ngd" last_build_time="1426383889" last_build_size="95331"/>
-        <Report name="SevenSegClock_SevenSegClock_map.ncd" last_build_time="1426383889" last_build_size="103003"/>
-        <Report name="SevenSegClock_SevenSegClock_map.vdb" last_build_time="1426383890" last_build_size="70144"/>
+        <Report name="SevenSegClock_SevenSegClock_map.ncd" last_build_time="1426402681" last_build_size="103008"/>
+        <Report name="SevenSegClock_SevenSegClock_map.vdb" last_build_time="1426402681" last_build_size="70144"/>
     </Strategy>
 </BuildStatus>

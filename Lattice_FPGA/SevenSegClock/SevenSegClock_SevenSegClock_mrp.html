@@ -22,7 +22,7 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-640UHCTQFP144
 Target Performance:   5
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.3.0.109
-Mapped on:  03/15/15  01:44:49
+Mapped on:  03/15/15  06:58:00
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
@@ -99,7 +99,7 @@ Mapped on:  03/15/15  01:44:49
 
 
 
-   Number of warnings:  2
+   Number of warnings:  0
    Number of errors:    0
      
 
@@ -108,12 +108,7 @@ Mapped on:  03/15/15  01:44:49
 
 <A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
 
-WARNING - map: Multiple comps assigned to site "67". Only one comp will be
-     assigned to this location.
-WARNING - map: Pref conflict: Multi-locate on site. Ignoring LOCATE COMP "clk"
-     SITE "67" ;
-        Keeping LOCATE COMP "latch" SITE "67" ;
-     .
+   No errors or warnings present.
 
 
 
@@ -127,12 +122,12 @@ WARNING - map: Pref conflict: Multi-locate on site. Ignoring LOCATE COMP "clk"
 +---------------------+-----------+-----------+------------+
 | Digit2[7]           | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-
 | data                | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | clk                 | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | Digit4[15]          | OUTPUT    | LVCMOS33  |            |
+
 +---------------------+-----------+-----------+------------+
 | heartbeat           | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
@@ -184,12 +179,12 @@ WARNING - map: Pref conflict: Multi-locate on site. Ignoring LOCATE COMP "clk"
 +---------------------+-----------+-----------+------------+
 | Digit3[16]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-
 | Digit4[12]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | Digit4[9]           | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | Digit4[6]           | OUTPUT    | LVCMOS33  |            |
+
 +---------------------+-----------+-----------+------------+
 | Digit4[3]           | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
@@ -241,12 +236,12 @@ WARNING - map: Pref conflict: Multi-locate on site. Ignoring LOCATE COMP "clk"
 +---------------------+-----------+-----------+------------+
 | Digit1[8]           | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-
 | Digit1[9]           | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | Digit1[10]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | Digit3[4]           | OUTPUT    | LVCMOS33  |            |
+
 +---------------------+-----------+-----------+------------+
 | Digit2[4]           | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
@@ -297,10 +292,6 @@ WARNING - map: Pref conflict: Multi-locate on site. Ignoring LOCATE COMP "clk"
 
 
 
-
-
-
-
 <A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
 
 Block i2 undriven or does not drive anything - clipped.
@@ -308,6 +299,7 @@ Block GSR_INST undriven or does not drive anything - clipped.
 Signal n1979 was merged into signal ledA1_1
 Signal n1981 was merged into signal ledA1_2
 Signal n1985 was merged into signal ledA1_5
+
 Signal n1978 was merged into signal ledA1_0
 Signal n1982 was merged into signal ledA1_3
 Signal n1984 was merged into signal ledA1_4
@@ -357,6 +349,12 @@ Instance Name: OSCH_inst
    Total REAL Time: 0 secs  
    Peak Memory Usage: 155 MB
         
+
+
+
+
+
+
 
 
 

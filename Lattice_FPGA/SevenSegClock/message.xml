@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
-    <Task name="Map">
-        <Message>
-            <ID>51001104</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>67</Dynamic>
-        </Message>
-        <Message>
-            <ID>1103737</ID>
-            <Severity>Warning</Severity>
-            <Dynamic></Dynamic>
-            <Dynamic>LOCATE COMP &quot;clk&quot; SITE &quot;67&quot; ;
-</Dynamic>
-            <Dynamic>LOCATE COMP &quot;latch&quot; SITE &quot;67&quot; ;
-</Dynamic>
-        </Message>
-    </Task>
     <Task name="Lattice_Synthesis">
         <Message>
             <ID>2029993</ID>
@@ -27,7 +11,7 @@
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(8): </Dynamic>
+            <Dynamic>/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(8):</Dynamic>
             <Dynamic>AutoShift</Dynamic>
             <Navigation>/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v</Navigation>
             <Navigation>8</Navigation>
@@ -35,7 +19,7 @@
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>/usr/local/diamond/3.3_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1793): </Dynamic>
+            <Dynamic>/usr/local/diamond/3.3_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1793):</Dynamic>
             <Dynamic>OSCH(NOM_FREQ=&quot;2.08&quot;)</Dynamic>
             <Navigation>/usr/local/diamond/3.3_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
             <Navigation>1793</Navigation>
@@ -43,8 +27,7 @@
         <Message>
             <ID>1009991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(143): Latch dlatchrs_701_i20 input is stuck at Zero
-</Dynamic>
+            <Dynamic>/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(143): Latch dlatchrs_701_i20 input is stuck at Zero</Dynamic>
         </Message>
         <Message>
             <ID>35001611</ID>
@@ -78,11 +61,25 @@
         <Message>
             <ID>61061008</ID>
             <Severity>Warning</Severity>
+            <Dynamic>clk_c</Dynamic>
+            <Dynamic>Primary</Dynamic>
+            <Dynamic>clk</Dynamic>
+            <Dynamic>67</Dynamic>
+            <Dynamic>Primary</Dynamic>
+        </Message>
+        <Message>
+            <ID>61061008</ID>
+            <Severity>Warning</Severity>
             <Dynamic>latch_c</Dynamic>
             <Dynamic>Primary</Dynamic>
             <Dynamic>latch</Dynamic>
-            <Dynamic>67</Dynamic>
+            <Dynamic>65</Dynamic>
             <Dynamic>Primary</Dynamic>
+        </Message>
+        <Message>
+            <ID>62061008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>clk_c</Dynamic>
         </Message>
         <Message>
             <ID>62061008</ID>
