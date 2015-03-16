@@ -11,10 +11,10 @@
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(8): </Dynamic>
+            <Dynamic>/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(9): </Dynamic>
             <Dynamic>AutoShift</Dynamic>
             <Navigation>/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v</Navigation>
-            <Navigation>8</Navigation>
+            <Navigation>9</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -32,19 +32,19 @@
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>cnt_662_add_4_11/CO</Dynamic>
+            <Dynamic>cnt_71_72_add_4_9/CO</Dynamic>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>cnt_662_add_4_11/S1</Dynamic>
+            <Dynamic>cnt_71_72_add_4_9/S1</Dynamic>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>cnt_662_add_4_1/S0</Dynamic>
+            <Dynamic>cnt_71_72_add_4_1/S0</Dynamic>
         </Message>
         <Message>
             <ID>1163101</ID>
@@ -80,18 +80,6 @@
             <ID>62061008</ID>
             <Severity>Warning</Severity>
             <Dynamic>latch_c</Dynamic>
-        </Message>
-        <Message>
-            <ID>66011008</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>
-   Signal=n2601 loads=2 clock_loads=2</Dynamic>
-        </Message>
-        <Message>
-            <ID>66011008</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>
-   Signal=n2601 loads=2 clock_loads=2</Dynamic>
         </Message>
     </Task>
     <Task name="TimingSimFileVHD">

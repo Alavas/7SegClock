@@ -1,6 +1,7 @@
 // Overly Complicated Alarm Clock
 // by : Justin Savala
 // January 5,2015
+// Updated March 16,2015
 
 // 4 seven segments displays with each segment made of 6 bi-color leds (red & green). Microcontroller updates FPGA which then maintains clock display automatically.
 
@@ -42,6 +43,7 @@ reg		[9:0] 	cnt ;	// Divider register for clock.
 reg		[95:0] 	tmp;	// 8(leds) + 8(green segment) + 8(red segment) * 4 digits.
 reg		[2:0] 	segment = 3'b000;
 reg		[6:0] 	Seg = 7'b0000001;
+reg		[5:0]	Led = 6'b000001;
 
 // Internal Oscillator
 defparam OSCH_inst.NOM_FREQ = "2.08";		//  Set internal oscillator frequency.
@@ -54,123 +56,25 @@ OSCH OSCH_inst( .STDBY(1'b0), 		// 0=Enabled, 1=Disabled also Disabled with Band
 //	assign Digit1 = (oe) ? ledsout : 21'b000000000000000000000;
 //end
 
-always @(cnt[9])begin
-	heartbeat = cnt[9];
+always @(cnt[7])begin
+	heartbeat = cnt[7];
 end
 
-// Segment 1 controller. Worked on 9:6.
-always @(cnt[6])begin
-	case(cnt[9:6])		0  : begin
-				Digit1 <= {(RedD1 & Seg),7'b0000000,(ledA1 & 6'b000001)};
-				Digit2 <= {(RedD2 & Seg),7'b0000000,(ledA2 & 6'b000001)};
-				Digit3 <= {(RedD3 & Seg),7'b0000000,(ledA3 & 6'b000001)};
-				Digit4 <= {(RedD4 & Seg),7'b0000000,(ledA4 & 6'b000001)};
-			 end
-		1  : begin
-				Digit1 <= {(RedD1 & Seg),7'b0000000,(ledA1 & 6'b000010)};
-				Digit2 <= {(RedD2 & Seg),7'b0000000,(ledA2 & 6'b000010)};				
-				Digit3 <= {(RedD3 & Seg),7'b0000000,(ledA3 & 6'b000010)};				
-				Digit4 <= {(RedD4 & Seg),7'b0000000,(ledA4 & 6'b000010)};				
-			 end	
-		2  : begin
-				Digit1 <= {(RedD1 & Seg),7'b0000000,(ledA1 & 6'b000100)};
-				Digit2 <= {(RedD2 & Seg),7'b0000000,(ledA2 & 6'b000100)};				
-				Digit3 <= {(RedD3 & Seg),7'b0000000,(ledA3 & 6'b000100)};				
-				Digit4 <= {(RedD4 & Seg),7'b0000000,(ledA4 & 6'b000100)};				
-			 end
-		3  : begin
-				Digit1 <= {(RedD1 & Seg),7'b0000000,(ledA1 & 6'b001000)};
-				Digit2 <= {(RedD2 & Seg),7'b0000000,(ledA2 & 6'b001000)};				
-				Digit3 <= {(RedD3 & Seg),7'b0000000,(ledA3 & 6'b001000)};				
-				Digit4 <= {(RedD4 & Seg),7'b0000000,(ledA4 & 6'b001000)};				
-			 end
-		4  : begin
-				Digit1 <= {(RedD1 & Seg),7'b0000000,(ledA1 & 6'b010000)};
-				Digit2 <= {(RedD2 & Seg),7'b0000000,(ledA2 & 6'b010000)};				
-				Digit3 <= {(RedD3 & Seg),7'b0000000,(ledA3 & 6'b010000)};				
-				Digit4 <= {(RedD4 & Seg),7'b0000000,(ledA4 & 6'b010000)};				
-			 end
-		5  : begin
-				Digit1 <= {(RedD1 & Seg),7'b0000000,(ledA1 & 6'b100000)};
-				Digit2 <= {(RedD2 & Seg),7'b0000000,(ledA2 & 6'b100000)};				
-				Digit3 <= {(RedD3 & Seg),7'b0000000,(ledA3 & 6'b100000)};				
-				Digit4 <= {(RedD4 & Seg),7'b0000000,(ledA4 & 6'b100000)};				
-			 end	
-		6  : begin
-				Digit1 <= {7'b0000000,(GrnD1 & Seg),(ledA1 & 6'b000001)};
-				Digit2 <= {7'b0000000,(GrnD2 & Seg),(ledA2 & 6'b000001)};	
-				Digit3 <= {7'b0000000,(GrnD3 & Seg),(ledA3 & 6'b000001)};
-				Digit4 <= {7'b0000000,(GrnD4 & Seg),(ledA4 & 6'b000001)};					
-			 end	
-		7  : begin
-				Digit1 <= {7'b0000000,(GrnD1 & Seg),(ledA1 & 6'b000010)};
-				Digit2 <= {7'b0000000,(GrnD2 & Seg),(ledA2 & 6'b000010)};	
-				Digit3 <= {7'b0000000,(GrnD3 & Seg),(ledA3 & 6'b000010)};
-				Digit4 <= {7'b0000000,(GrnD4 & Seg),(ledA4 & 6'b000010)};					
-			 end
-		8  : begin
-				Digit1 <= {7'b0000000,(GrnD1 & Seg),(ledA1 & 6'b000100)};
-				Digit2 <= {7'b0000000,(GrnD2 & Seg),(ledA2 & 6'b000100)};	
-				Digit3 <= {7'b0000000,(GrnD3 & Seg),(ledA3 & 6'b000100)};
-				Digit4 <= {7'b0000000,(GrnD4 & Seg),(ledA4 & 6'b000100)};					
-			 end
-		9  : begin
-				Digit1 <= {7'b0000000,(GrnD1 & Seg),(ledA1 & 6'b001000)};
-				Digit2 <= {7'b0000000,(GrnD2 & Seg),(ledA2 & 6'b001000)};	
-				Digit3 <= {7'b0000000,(GrnD3 & Seg),(ledA3 & 6'b001000)};
-				Digit4 <= {7'b0000000,(GrnD4 & Seg),(ledA4 & 6'b001000)};					
-			 end
-		10 : begin
-				Digit1 <= {7'b0000000,(GrnD1 & Seg),(ledA1 & 6'b010000)};
-				Digit2 <= {7'b0000000,(GrnD2 & Seg),(ledA2 & 6'b010000)};	
-				Digit3 <= {7'b0000000,(GrnD3 & Seg),(ledA3 & 6'b010000)};
-				Digit4 <= {7'b0000000,(GrnD4 & Seg),(ledA4 & 6'b010000)};					
-			 end
-		11 : begin
-				Digit1 <= {7'b0000000,(GrnD1 & Seg),(ledA1 & 6'b100000)};
-				Digit2 <= {7'b0000000,(GrnD2 & Seg),(ledA2 & 6'b100000)};	
-				Digit3 <= {7'b0000000,(GrnD3 & Seg),(ledA3 & 6'b100000)};
-				Digit4 <= {7'b0000000,(GrnD4 & Seg),(ledA4 & 6'b100000)};					
-			 end	
-		12 : begin
-				Digit1 <= 20'b000000000000000000000;
-				Digit2 <= 20'b000000000000000000000;
-				Digit3 <= 20'b000000000000000000000;
-				Digit4 <= 20'b000000000000000000000;				
-			 end
-		13 : begin
-				Digit1 <= 20'b000000000000000000000;
-				Digit2 <= 20'b000000000000000000000;
-				Digit3 <= 20'b000000000000000000000;
-				Digit4 <= 20'b000000000000000000000;				
-			 end
-		14 : begin
-				Digit1 <= 20'b000000000000000000000;
-				Digit2 <= 20'b000000000000000000000;
-				Digit3 <= 20'b000000000000000000000;
-				Digit4 <= 20'b000000000000000000000;				
-			 end			 
-		15 : begin
-				segment = segment + 1;
-				if (segment == 3'b111)
-					segment = 3'b000;
-			 end	
-		default : Digit1 = 20'b000000000000000000000;
-	endcase
-end
+always @(Led)begin
+	Digit1 <= {(RedD1 & Seg),(GrnD1 & Seg),(ledA1 & Led)};
+	Digit2 <= {(RedD2 & Seg),(GrnD2 & Seg),(ledA2 & Led)};
+	Digit3 <= {(RedD3 & Seg),(GrnD3 & Seg),(ledA3 & Led)};
+	Digit4 <= {(RedD4 & Seg),(GrnD4 & Seg),(ledA4 & Led)};
+end	
 
-// Segment selector.
-always @(segment)begin 
-	case(segment)
-		0 : Seg = 7'b0000001;
-		1 : Seg = 7'b0000010;
-		2 : Seg = 7'b0000100;
-		3 : Seg = 7'b0001000;
-		4 : Seg = 7'b0010000;
-		5 : Seg = 7'b0100000;
-		6 : Seg = 7'b1000000;
-		default : Seg = 7'b0000001;
-	endcase	
+always @(posedge cnt[7])begin
+	Led = Led << 1;
+	if (Led == 0)begin
+		Led = 6'b000001;
+		Seg = Seg << 1;
+		if (Seg == 0)
+			Seg = 7'b0000001;
+	end
 end
 
 // Serial data register.

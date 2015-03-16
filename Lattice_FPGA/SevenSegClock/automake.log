@@ -7,7 +7,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Mar 16 03:27:53 2015
+Mon Mar 16 23:34:06 2015
 
 
 Command Line:  synthesis -f SevenSegClock_SevenSegClock_lattice.synproj -gui 
@@ -76,7 +76,7 @@ Technology check ok...
 Compile design.
 Compile Design Begin
 Top module name (Verilog): AutoShift
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(8): " arg1="AutoShift" arg2="/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v" arg3="8"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(9): " arg1="AutoShift" arg2="/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v" arg3="9"  />
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="/usr/local/diamond/3.3_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1793): " arg1="OSCH(NOM_FREQ=&quot;2.08&quot;)" arg2="/usr/local/diamond/3.3_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v" arg3="1793"  />
 Last elaborated design is AutoShift()
 Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
@@ -103,51 +103,53 @@ Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/or5g00/data/orc5glib.ngl
 
 Running DRC...
 
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="cnt_662_add_4_11/CO"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="cnt_662_add_4_11/S1"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="cnt_662_add_4_1/S0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="cnt_71_72_add_4_9/CO"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="cnt_71_72_add_4_9/S1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="cnt_71_72_add_4_1/S0"  />
     <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="3"  />
 
 Design Results:
-    434 blocks expanded
+    376 blocks expanded
 completed the first expansion
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file SevenSegClock_SevenSegClock.ngd.
 
 ################### Begin Area Report (AutoShift)######################
-Number of register bits => 268 of 964 (27 % )
-CCU2D => 6
-FD1S1I => 83
-FD1S3AX => 185
+Number of register bits => 196 of 964 (20 % )
+CCU2D => 5
+FD1P3AY => 1
+FD1P3IX => 6
+FD1S3AX => 183
+FD1S3AY => 1
+FD1S3IX => 5
 GSR => 1
 IB => 3
-LUT4 => 71
+LUT4 => 86
 OB => 81
 OSCH => 1
 ################### End Area Report ##################
 
 ################### Begin Clock Report ######################
 Clock Nets
-Number of Clocks: 5
+Number of Clocks: 4
   Net : clk_c, loads : 95
   Net : latch_c, loads : 80
-  Net : n845, loads : 80
-  Net : osc_clk_c_c, loads : 10
-  Net : n2601, loads : 3
+  Net : heartbeat_c, loads : 15
+  Net : osc_clk_c_c, loads : 8
 Clock Enable Nets
-Number of Clock Enables: 0
+Number of Clock Enables: 1
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : segment_0, loads : 60
-  Net : segment_1, loads : 59
-  Net : segment_2, loads : 58
-  Net : n2470, loads : 28
-  Net : n2448, loads : 28
-  Net : heartbeat_c, loads : 13
-  Net : cnt_8, loads : 12
-  Net : cnt_7, loads : 12
-  Net : cnt_6, loads : 10
-  Net : n2445, loads : 4
+  Net : n114, loads : 14
+  Net : Seg_5, loads : 10
+  Net : Seg_4, loads : 10
+  Net : Seg_3, loads : 10
+  Net : Seg_2, loads : 10
+  Net : Seg_1, loads : 10
+  Net : Seg_0, loads : 10
+  Net : Seg_6, loads : 8
+  Net : Led_4, loads : 6
+  Net : Led_3, loads : 6
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -157,7 +159,10 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk2 [get_nets osc_clk_c_c]             |            -|            -|     0  
+clk3 [get_nets osc_clk_c_c]             |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk2 [get_nets heartbeat_c]             |  200.000 MHz|  516.262 MHz|     1  
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
 clk1 [get_nets latch_c]                 |            -|            -|     0  
@@ -171,10 +176,10 @@ clk0 [get_nets clk_c]                   |  200.000 MHz|  644.745 MHz|     1
 All constraints were met.
 
 
-Peak Memory Usage: 180.781  MB
+Peak Memory Usage: 179.906  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.909  secs
+Elapsed CPU time for LSE flow : 0.598  secs
 --------------------------------------------------------------
 
 map -a "MachXO2" -p LCMXO2-640UHC -t TQFP144 -s 5 -oc Commercial   "SevenSegClock_SevenSegClock.ngd" -o "SevenSegClock_SevenSegClock_map.ncd" -pr "SevenSegClock_SevenSegClock.prf" -mp "SevenSegClock_SevenSegClock.mrp" "/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/SevenSegClock.lpf" -c 0            
@@ -211,17 +216,17 @@ Optimizing...
 
 
 Design Summary:
-   Number of registers:    268 out of   964 (28%)
-      PFU registers:          268 out of   640 (42%)
+   Number of registers:    196 out of   964 (20%)
+      PFU registers:          196 out of   640 (31%)
       PIO registers:            0 out of   324 (0%)
-   Number of SLICEs:       140 out of   320 (44%)
-      SLICEs as Logic/ROM:    140 out of   320 (44%)
+   Number of SLICEs:       101 out of   320 (32%)
+      SLICEs as Logic/ROM:    101 out of   320 (32%)
       SLICEs as RAM:            0 out of   240 (0%)
-      SLICEs as Carry:          6 out of   320 (2%)
-   Number of LUT4s:         83 out of   640 (13%)
-      Number of logic LUTs:       71
+      SLICEs as Carry:          5 out of   320 (2%)
+   Number of LUT4s:         96 out of   640 (15%)
+      Number of logic LUTs:       86
       Number of distributed RAM:   0 (0 LUT4s)
-      Number of ripple logic:      6 (12 LUT4s)
+      Number of ripple logic:      5 (10 LUT4s)
       Number of shift registers:   0
    Number of PIO sites used: 84 + 4(JTAG) out of 108 (81%)
    Number of block RAMs:  0 out of 7 (0%)
@@ -246,35 +251,28 @@ Design Summary:
    Notes:-
       1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
       2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
-   Number of clocks:  5
-     Net n845: 44 loads, 44 rising, 0 falling (Driver: i1258_1_lut_2_lut_4_lut )
+   Number of clocks:  4
      Net clk_c: 48 loads, 48 rising, 0 falling (Driver: PIO clk )
+     Net osc_clk_c_c: 5 loads, 5 rising, 0 falling (Driver: OSCH_inst )
      Net latch_c: 40 loads, 40 rising, 0 falling (Driver: PIO latch )
-     Net osc_clk_c_c: 6 loads, 6 rising, 0 falling (Driver: OSCH_inst )
-     Net n2601: 2 loads, 2 rising, 0 falling (Driver: i1256_2_lut_rep_8_4_lut )
-   Number of Clock Enables:  0
-   Number of LSRs:  9
-     Net n2414: 2 loads, 2 LSLICEs
-     Net n2399: 2 loads, 2 LSLICEs
-     Net n2294: 2 loads, 2 LSLICEs
-     Net n2448: 16 loads, 16 LSLICEs
-     Net n2470: 16 loads, 16 LSLICEs
-     Net n2445: 2 loads, 2 LSLICEs
-     Net n2464: 2 loads, 2 LSLICEs
-     Net n2447: 2 loads, 2 LSLICEs
-     Net n2444: 2 loads, 2 LSLICEs
+     Net heartbeat_c: 8 loads, 8 rising, 0 falling (Driver: cnt_71_72__i7 )
+   Number of Clock Enables:  1
+     Net n114: 4 loads, 4 LSLICEs
+   Number of LSRs:  2
+     Net n114: 3 loads, 3 LSLICEs
+     Net n668: 3 loads, 3 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net segment_0: 60 loads
-     Net segment_1: 59 loads
-     Net segment_2: 58 loads
-     Net n2448: 16 loads
-     Net n2470: 16 loads
-     Net heartbeat_c: 13 loads
-     Net cnt_7: 12 loads
-     Net cnt_8: 12 loads
-     Net cnt_6: 10 loads
-     Net n2414: 2 loads
+     Net Seg_0: 10 loads
+     Net Seg_1: 10 loads
+     Net Seg_2: 10 loads
+     Net Seg_3: 10 loads
+     Net Seg_4: 10 loads
+     Net Seg_5: 10 loads
+     Net n114: 9 loads
+     Net Seg_6: 8 loads
+     Net Led_0: 6 loads
+     Net Led_1: 6 loads
  
 
    Number of warnings:  0
@@ -284,7 +282,7 @@ Design Summary:
 
 Total CPU Time: 0 secs  
 Total REAL Time: 0 secs  
-Peak Memory Usage: 157 MB
+Peak Memory Usage: 156 MB
 
 Dumping design to file SevenSegClock_SevenSegClock_map.ncd.
 
@@ -300,7 +298,7 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "SevenSegClock_SevenSegClock_map.ncd"
-Mon Mar 16 03:27:56 2015
+Mon Mar 16 23:34:08 2015
 
 PAR: Place And Route Diamond (64-bit) 3.3.0.109.
 Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF SevenSegClock_SevenSegClock_map.ncd SevenSegClock_SevenSegClock.dir/5_1.ncd SevenSegClock_SevenSegClock.prf
@@ -327,29 +325,27 @@ Device utilization summary:
    PIO (prelim)   84+4(JTAG)/108     81% used
                   84+4(JTAG)/108     81% bonded
 
-   SLICE            140/320          43% used
+   SLICE            101/320          31% used
 
    OSC                1/1           100% used
 
 
-Number of Signals: 358
-Number of Connections: 826
+Number of Signals: 298
+Number of Connections: 576
 
 Pin Constraint Summary:
    24 out of 24 pins locked (100% locked).
 
-The following 3 signals are selected to use the primary clock routing resources:
+The following 2 signals are selected to use the primary clock routing resources:
     clk_c (driver: clk, clk load #: 48)
-    n845 (driver: SLICE_157, clk load #: 44)
     latch_c (driver: latch, clk load #: 40)
 
     <postMsg mid="61061008" type="Warning" dynamic="5" navigation="0" arg0="clk_c" arg1="Primary" arg2="clk" arg3="67" arg4="Primary"  />
     <postMsg mid="61061008" type="Warning" dynamic="5" navigation="0" arg0="latch_c" arg1="Primary" arg2="latch" arg3="65" arg4="Primary"  />
 
-The following 3 signals are selected to use the secondary clock routing resources:
-    n2448 (driver: SLICE_161, clk load #: 0, sr load #: 16, ce load #: 0)
-    n2470 (driver: SLICE_161, clk load #: 0, sr load #: 16, ce load #: 0)
-    osc_clk_c_c (driver: OSCH_inst, clk load #: 6, sr load #: 0, ce load #: 0)
+The following 2 signals are selected to use the secondary clock routing resources:
+    heartbeat_c (driver: SLICE_0, clk load #: 8, sr load #: 0, ce load #: 0)
+    osc_clk_c_c (driver: OSCH_inst, clk load #: 5, sr load #: 0, ce load #: 0)
 
 No signal is selected as Global Set/Reset.
 .
@@ -359,12 +355,12 @@ Finished Placer Phase 0.  REAL time: 0 secs
 
 Starting Placer Phase 1.
 ....................
-Placer score = 44258.
+Placer score = 56898.
 Finished Placer Phase 1.  REAL time: 8 secs 
 
 Starting Placer Phase 2.
 .
-Placer score =  44012
+Placer score =  56557
 Finished Placer Phase 2.  REAL time: 8 secs 
 
 
@@ -379,14 +375,12 @@ Global Clock Resources:
 
 Quadrants All (TL, TR, BL, BR) - Global Clocks:
   PRIMARY "clk_c" from comp "clk" on PIO site "67 (PB18D)", clk load = 48
-  PRIMARY "n845" from F1 on comp "SLICE_157" on site "R2C13C", clk load = 44
   PRIMARY "latch_c" from comp "latch" on PIO site "65 (PB18C)", clk load = 40
-  SECONDARY "n2448" from F1 on comp "SLICE_161" on site "R7C14B", clk load = 0, ce load = 0, sr load = 16
-  SECONDARY "n2470" from F0 on comp "SLICE_161" on site "R7C14B", clk load = 0, ce load = 0, sr load = 16
-  SECONDARY "osc_clk_c_c" from OSC on comp "OSCH_inst" on site "OSC", clk load = 6, ce load = 0, sr load = 0
+  SECONDARY "heartbeat_c" from Q0 on comp "SLICE_0" on site "R7C14A", clk load = 8, ce load = 0, sr load = 0
+  SECONDARY "osc_clk_c_c" from OSC on comp "OSCH_inst" on site "OSC", clk load = 5, ce load = 0, sr load = 0
 
-  PRIMARY  : 3 out of 8 (37%)
-  SECONDARY: 3 out of 8 (37%)
+  PRIMARY  : 2 out of 8 (25%)
+  SECONDARY: 2 out of 8 (25%)
 
 Edge Clocks:
   No edge clock selected.
@@ -404,26 +398,24 @@ I/O Bank Usage Summary:
 +----------+----------------+------------+-----------+
 | I/O Bank | Usage          | Bank Vccio | Bank Vref |
 +----------+----------------+------------+-----------+
-| 0        | 23 / 28 ( 82%) | 3.3V       | -         |
-| 1        | 15 / 26 ( 57%) | 3.3V       | -         |
+| 0        | 24 / 28 ( 85%) | 3.3V       | -         |
+| 1        | 19 / 26 ( 73%) | 3.3V       | -         |
 | 2        | 27 / 28 ( 96%) | 3.3V       | -         |
-| 3        | 19 / 26 ( 73%) | 3.3V       | -         |
+| 3        | 14 / 26 ( 53%) | 3.3V       | -         |
 +----------+----------------+------------+-----------+
 
-Total placer CPU time: 7 secs 
+Total placer CPU time: 8 secs 
 
 Dumping design to file SevenSegClock_SevenSegClock.dir/5_1.ncd.
 
-0 connections routed; 826 unrouted.
+0 connections routed; 576 unrouted.
 Starting router resource preassignment
     <postMsg mid="62061008" type="Warning" dynamic="1" navigation="0" arg0="clk_c"  />
     <postMsg mid="62061008" type="Warning" dynamic="1" navigation="0" arg0="latch_c"  />
 
-    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=n2601 loads=2 clock_loads=2"  />
-
 Completed router resource preassignment. Real time: 8 secs 
 
-Start NBR router at Mon Mar 16 03:28:04 UTC 2015
+Start NBR router at Mon Mar 16 23:34:16 UTC 2015
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -438,44 +430,35 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design. Thanks.                                       
 *****************************************************************
 
-Start NBR special constraint process at Mon Mar 16 03:28:04 UTC 2015
+Start NBR special constraint process at Mon Mar 16 23:34:16 UTC 2015
 
-Start NBR section for initial routing at Mon Mar 16 03:28:04 UTC 2015
+Start NBR section for initial routing at Mon Mar 16 23:34:16 UTC 2015
 Level 4, iteration 1
-16(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 478.293ns/0.000ns; real time: 9 secs 
+18(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 478.412ns/0.000ns; real time: 9 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at Mon Mar 16 03:28:05 UTC 2015
+Start NBR section for normal routing at Mon Mar 16 23:34:17 UTC 2015
 Level 4, iteration 1
-13(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 478.293ns/0.000ns; real time: 9 secs 
+9(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 478.412ns/0.000ns; real time: 9 secs 
 Level 4, iteration 2
-5(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 478.293ns/0.000ns; real time: 9 secs 
-Level 4, iteration 3
-3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 478.293ns/0.000ns; real time: 9 secs 
-Level 4, iteration 4
-3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 478.293ns/0.000ns; real time: 9 secs 
-Level 4, iteration 5
 2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 478.293ns/0.000ns; real time: 9 secs 
-Level 4, iteration 6
+Estimated worst slack/total negative slack<setup>: 478.412ns/0.000ns; real time: 9 secs 
+Level 4, iteration 3
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 478.293ns/0.000ns; real time: 9 secs 
+Estimated worst slack/total negative slack<setup>: 478.412ns/0.000ns; real time: 9 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at Mon Mar 16 03:28:05 UTC 2015
+Start NBR section for setup/hold timing optimization with effort level 3 at Mon Mar 16 23:34:17 UTC 2015
 
-Start NBR section for re-routing at Mon Mar 16 03:28:05 UTC 2015
+Start NBR section for re-routing at Mon Mar 16 23:34:17 UTC 2015
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 478.293ns/0.000ns; real time: 9 secs 
+Estimated worst slack/total negative slack<setup>: 478.412ns/0.000ns; real time: 9 secs 
 
-Start NBR section for post-routing at Mon Mar 16 03:28:05 UTC 2015
+Start NBR section for post-routing at Mon Mar 16 23:34:17 UTC 2015
 
 End NBR router with 0 unrouted connection
 
@@ -483,19 +466,17 @@ NBR Summary
 -----------
   Number of unrouted connections : 0 (0.00%)
   Number of connections with timing violations : 0 (0.00%)
-  Estimated worst slack<setup> : 478.293ns
+  Estimated worst slack<setup> : 478.412ns
   Timing score<setup> : 0
 -----------
 Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
 
 
 
-    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=n2601 loads=2 clock_loads=2"  />
-
 Total CPU time 9 secs 
 Total REAL time: 9 secs 
 Completely routed.
-End of route.  826 routed (100.00%); 0 unrouted.
+End of route.  576 routed (100.00%); 0 unrouted.
 Checking DRC ... 
 No errors found.
 
@@ -508,7 +489,7 @@ Dumping design to file SevenSegClock_SevenSegClock.dir/5_1.ncd.
 
 PAR_SUMMARY::Run status = completed
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack<setup/<ns>> = 478.293
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 478.412
 PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
 PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.395
 PAR_SUMMARY::Timing score<hold /<ns>> = 0.000

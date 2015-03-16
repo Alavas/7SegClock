@@ -22,21 +22,21 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-640UHCTQFP144
 Target Performance:   5
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.3.0.109
-Mapped on:  03/16/15  03:27:55
+Mapped on:  03/16/15  23:34:07
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of registers:    268 out of   964 (28%)
-      PFU registers:          268 out of   640 (42%)
+   Number of registers:    196 out of   964 (20%)
+      PFU registers:          196 out of   640 (31%)
       PIO registers:            0 out of   324 (0%)
-   Number of SLICEs:       140 out of   320 (44%)
-      SLICEs as Logic/ROM:    140 out of   320 (44%)
+   Number of SLICEs:       101 out of   320 (32%)
+      SLICEs as Logic/ROM:    101 out of   320 (32%)
       SLICEs as RAM:            0 out of   240 (0%)
-      SLICEs as Carry:          6 out of   320 (2%)
-   Number of LUT4s:         83 out of   640 (13%)
-      Number of logic LUTs:       71
+      SLICEs as Carry:          5 out of   320 (2%)
+   Number of LUT4s:         96 out of   640 (15%)
+      Number of logic LUTs:       86
       Number of distributed RAM:   0 (0 LUT4s)
-      Number of ripple logic:      6 (12 LUT4s)
+      Number of ripple logic:      5 (10 LUT4s)
       Number of shift registers:   0
    Number of PIO sites used: 84 + 4(JTAG) out of 108 (81%)
    Number of block RAMs:  0 out of 7 (0%)
@@ -63,37 +63,29 @@ Mapped on:  03/16/15  03:27:55
      distributed RAMs) + 2*(Number of ripple logic)
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
-   Number of clocks:  5
-     Net n845: 44 loads, 44 rising, 0 falling (Driver: i1258_1_lut_2_lut_4_lut )
-     
+   Number of clocks:  4
      Net clk_c: 48 loads, 48 rising, 0 falling (Driver: PIO clk )
-
+     Net osc_clk_c_c: 5 loads, 5 rising, 0 falling (Driver: OSCH_inst )
      Net latch_c: 40 loads, 40 rising, 0 falling (Driver: PIO latch )
-     Net osc_clk_c_c: 6 loads, 6 rising, 0 falling (Driver: OSCH_inst )
-     Net n2601: 2 loads, 2 rising, 0 falling (Driver: i1256_2_lut_rep_8_4_lut )
-   Number of Clock Enables:  0
-   Number of LSRs:  9
-     Net n2414: 2 loads, 2 LSLICEs
-     Net n2399: 2 loads, 2 LSLICEs
-     Net n2294: 2 loads, 2 LSLICEs
-     Net n2448: 16 loads, 16 LSLICEs
-     Net n2470: 16 loads, 16 LSLICEs
-     Net n2445: 2 loads, 2 LSLICEs
-     Net n2464: 2 loads, 2 LSLICEs
-     Net n2447: 2 loads, 2 LSLICEs
-     Net n2444: 2 loads, 2 LSLICEs
+
+     Net heartbeat_c: 8 loads, 8 rising, 0 falling (Driver: cnt_71_72__i7 )
+   Number of Clock Enables:  1
+     Net n114: 4 loads, 4 LSLICEs
+   Number of LSRs:  2
+     Net n114: 3 loads, 3 LSLICEs
+     Net n668: 3 loads, 3 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net segment_0: 60 loads
-     Net segment_1: 59 loads
-     Net segment_2: 58 loads
-     Net n2448: 16 loads
-     Net n2470: 16 loads
-     Net heartbeat_c: 13 loads
-     Net cnt_7: 12 loads
-     Net cnt_8: 12 loads
-     Net cnt_6: 10 loads
-     Net n2414: 2 loads
+     Net Seg_0: 10 loads
+     Net Seg_1: 10 loads
+     Net Seg_2: 10 loads
+     Net Seg_3: 10 loads
+     Net Seg_4: 10 loads
+     Net Seg_5: 10 loads
+     Net n114: 9 loads
+     Net Seg_6: 8 loads
+     Net Led_0: 6 loads
+     Net Led_1: 6 loads
 
 
 
@@ -127,7 +119,6 @@ Mapped on:  03/16/15  03:27:55
 +---------------------+-----------+-----------+------------+
 | Digit1[15]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-
 | Digit1[14]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | Digit1[13]          | OUTPUT    | LVCMOS33  |            |
@@ -136,6 +127,7 @@ Mapped on:  03/16/15  03:27:55
 +---------------------+-----------+-----------+------------+
 | Digit1[11]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
+
 | Digit1[10]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | Digit1[9]           | OUTPUT    | LVCMOS33  |            |
@@ -184,7 +176,6 @@ Mapped on:  03/16/15  03:27:55
 +---------------------+-----------+-----------+------------+
 | Digit2[7]           | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-
 | Digit2[6]           | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | Digit2[5]           | OUTPUT    | LVCMOS33  |            |
@@ -193,6 +184,7 @@ Mapped on:  03/16/15  03:27:55
 +---------------------+-----------+-----------+------------+
 | Digit2[3]           | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
+
 | Digit2[2]           | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | Digit2[1]           | OUTPUT    | LVCMOS33  |            |
@@ -241,7 +233,6 @@ Mapped on:  03/16/15  03:27:55
 +---------------------+-----------+-----------+------------+
 | Digit4[19]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-
 | Digit4[18]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | Digit4[17]          | OUTPUT    | LVCMOS33  |            |
@@ -250,6 +241,7 @@ Mapped on:  03/16/15  03:27:55
 +---------------------+-----------+-----------+------------+
 | Digit4[15]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
+
 | Digit4[14]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | Digit4[13]          | OUTPUT    | LVCMOS33  |            |
@@ -297,16 +289,16 @@ Block i2 undriven or does not drive anything - clipped.
 Block GSR_INST undriven or does not drive anything - clipped.
 Signal GND_net undriven or does not drive anything - clipped.
 Signal VCC_net undriven or does not drive anything - clipped.
-Signal cnt_662_add_4_1/S0 undriven or does not drive anything - clipped.
-Signal cnt_662_add_4_1/CI undriven or does not drive anything - clipped.
-
-Signal cnt_662_add_4_11/S1 undriven or does not drive anything - clipped.
-Signal cnt_662_add_4_11/CO undriven or does not drive anything - clipped.
+Signal cnt_71_72_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal cnt_71_72_add_4_1/CI undriven or does not drive anything - clipped.
+Signal cnt_71_72_add_4_9/S1 undriven or does not drive anything - clipped.
+Signal cnt_71_72_add_4_9/CO undriven or does not drive anything - clipped.
 Block i1 was optimized away.
 
 
 
 <A name="mrp_mem"></A><B><U><big>Memory Usage</big></U></B>
+
 
 
      
@@ -336,8 +328,16 @@ Instance Name: OSCH_inst
 
    Total CPU Time: 0 secs  
    Total REAL Time: 0 secs  
-   Peak Memory Usage: 157 MB
+   Peak Memory Usage: 156 MB
         
+
+
+
+
+
+
+
+
 
 
 
