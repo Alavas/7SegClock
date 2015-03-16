@@ -41,10 +41,10 @@ reg		[5:0]	ledA4;	// Digit 4 LED anodes.
 reg		[9:0] 	cnt ;	// Divider register for clock.
 reg		[95:0] 	tmp;	// 8(leds) + 8(green segment) + 8(red segment) * 4 digits.
 reg		[2:0] 	segment = 3'b000;
-reg		[6:0] 	Seg;
+reg		[6:0] 	Seg = 7'b0000001;
 
 // Internal Oscillator
-defparam OSCH_inst.NOM_FREQ = "2.08";		//  This is the default frequency
+defparam OSCH_inst.NOM_FREQ = "2.08";		//  Set internal oscillator frequency.
 
 OSCH OSCH_inst( .STDBY(1'b0), 		// 0=Enabled, 1=Disabled also Disabled with Bandgap=OFF
                 .OSC(osc_clk_c_c),
@@ -58,82 +58,99 @@ always @(cnt[9])begin
 	heartbeat = cnt[9];
 end
 
-// Segment 1 controller.
-always @(cnt[9:6])begin
+// Segment 1 controller. Worked on 9:6.
+always @(cnt[6])begin
 	case(cnt[9:6])		0  : begin
-				Digit1 = {(RedD1 & Seg),7'b0000000,(ledA1 & 6'b000001)};
-				Digit2 = {(RedD2 & Seg),7'b0000000,(ledA2 & 6'b000001)};
-				Digit3 = {(RedD3 & Seg),7'b0000000,(ledA3 & 6'b000001)};
-				Digit4 = {(RedD4 & Seg),7'b0000000,(ledA4 & 6'b000001)};
+				Digit1 <= {(RedD1 & Seg),7'b0000000,(ledA1 & 6'b000001)};
+				Digit2 <= {(RedD2 & Seg),7'b0000000,(ledA2 & 6'b000001)};
+				Digit3 <= {(RedD3 & Seg),7'b0000000,(ledA3 & 6'b000001)};
+				Digit4 <= {(RedD4 & Seg),7'b0000000,(ledA4 & 6'b000001)};
 			 end
 		1  : begin
-				Digit1 = {(RedD1 & Seg),7'b0000000,(ledA1 & 6'b000010)};
-				Digit2 = {(RedD2 & Seg),7'b0000000,(ledA2 & 6'b000010)};				
-				Digit3 = {(RedD3 & Seg),7'b0000000,(ledA3 & 6'b000010)};				
-				Digit4 = {(RedD4 & Seg),7'b0000000,(ledA4 & 6'b000010)};				
+				Digit1 <= {(RedD1 & Seg),7'b0000000,(ledA1 & 6'b000010)};
+				Digit2 <= {(RedD2 & Seg),7'b0000000,(ledA2 & 6'b000010)};				
+				Digit3 <= {(RedD3 & Seg),7'b0000000,(ledA3 & 6'b000010)};				
+				Digit4 <= {(RedD4 & Seg),7'b0000000,(ledA4 & 6'b000010)};				
 			 end	
 		2  : begin
-				Digit1 = {(RedD1 & Seg),7'b0000000,(ledA1 & 6'b000100)};
-				Digit2 = {(RedD2 & Seg),7'b0000000,(ledA2 & 6'b000100)};				
-				Digit3 = {(RedD3 & Seg),7'b0000000,(ledA3 & 6'b000100)};				
-				Digit4 = {(RedD4 & Seg),7'b0000000,(ledA4 & 6'b000100)};				
+				Digit1 <= {(RedD1 & Seg),7'b0000000,(ledA1 & 6'b000100)};
+				Digit2 <= {(RedD2 & Seg),7'b0000000,(ledA2 & 6'b000100)};				
+				Digit3 <= {(RedD3 & Seg),7'b0000000,(ledA3 & 6'b000100)};				
+				Digit4 <= {(RedD4 & Seg),7'b0000000,(ledA4 & 6'b000100)};				
 			 end
 		3  : begin
-				Digit1 = {(RedD1 & Seg),7'b0000000,(ledA1 & 6'b001000)};
-				Digit2 = {(RedD2 & Seg),7'b0000000,(ledA2 & 6'b001000)};				
-				Digit3 = {(RedD3 & Seg),7'b0000000,(ledA3 & 6'b001000)};				
-				Digit4 = {(RedD4 & Seg),7'b0000000,(ledA4 & 6'b001000)};				
+				Digit1 <= {(RedD1 & Seg),7'b0000000,(ledA1 & 6'b001000)};
+				Digit2 <= {(RedD2 & Seg),7'b0000000,(ledA2 & 6'b001000)};				
+				Digit3 <= {(RedD3 & Seg),7'b0000000,(ledA3 & 6'b001000)};				
+				Digit4 <= {(RedD4 & Seg),7'b0000000,(ledA4 & 6'b001000)};				
 			 end
 		4  : begin
-				Digit1 = {(RedD1 & Seg),7'b0000000,(ledA1 & 6'b010000)};
-				Digit2 = {(RedD2 & Seg),7'b0000000,(ledA2 & 6'b010000)};				
-				Digit3 = {(RedD3 & Seg),7'b0000000,(ledA3 & 6'b010000)};				
-				Digit4 = {(RedD4 & Seg),7'b0000000,(ledA4 & 6'b010000)};				
+				Digit1 <= {(RedD1 & Seg),7'b0000000,(ledA1 & 6'b010000)};
+				Digit2 <= {(RedD2 & Seg),7'b0000000,(ledA2 & 6'b010000)};				
+				Digit3 <= {(RedD3 & Seg),7'b0000000,(ledA3 & 6'b010000)};				
+				Digit4 <= {(RedD4 & Seg),7'b0000000,(ledA4 & 6'b010000)};				
 			 end
 		5  : begin
-				Digit1 = {(RedD1 & Seg),7'b0000000,(ledA1 & 6'b100000)};
-				Digit2 = {(RedD2 & Seg),7'b0000000,(ledA2 & 6'b100000)};				
-				Digit3 = {(RedD3 & Seg),7'b0000000,(ledA3 & 6'b100000)};				
-				Digit4 = {(RedD4 & Seg),7'b0000000,(ledA4 & 6'b100000)};				
+				Digit1 <= {(RedD1 & Seg),7'b0000000,(ledA1 & 6'b100000)};
+				Digit2 <= {(RedD2 & Seg),7'b0000000,(ledA2 & 6'b100000)};				
+				Digit3 <= {(RedD3 & Seg),7'b0000000,(ledA3 & 6'b100000)};				
+				Digit4 <= {(RedD4 & Seg),7'b0000000,(ledA4 & 6'b100000)};				
 			 end	
 		6  : begin
-				Digit1 = {7'b0000000,(GrnD1 & Seg),(ledA1 & 6'b000001)};
-				Digit2 = {7'b0000000,(GrnD2 & Seg),(ledA2 & 6'b000001)};	
-				Digit3 = {7'b0000000,(GrnD3 & Seg),(ledA3 & 6'b000001)};
-				Digit4 = {7'b0000000,(GrnD4 & Seg),(ledA4 & 6'b000001)};					
+				Digit1 <= {7'b0000000,(GrnD1 & Seg),(ledA1 & 6'b000001)};
+				Digit2 <= {7'b0000000,(GrnD2 & Seg),(ledA2 & 6'b000001)};	
+				Digit3 <= {7'b0000000,(GrnD3 & Seg),(ledA3 & 6'b000001)};
+				Digit4 <= {7'b0000000,(GrnD4 & Seg),(ledA4 & 6'b000001)};					
 			 end	
 		7  : begin
-				Digit1 = {7'b0000000,(GrnD1 & Seg),(ledA1 & 6'b000010)};
-				Digit2 = {7'b0000000,(GrnD2 & Seg),(ledA2 & 6'b000010)};	
-				Digit3 = {7'b0000000,(GrnD3 & Seg),(ledA3 & 6'b000010)};
-				Digit4 = {7'b0000000,(GrnD4 & Seg),(ledA4 & 6'b000010)};					
+				Digit1 <= {7'b0000000,(GrnD1 & Seg),(ledA1 & 6'b000010)};
+				Digit2 <= {7'b0000000,(GrnD2 & Seg),(ledA2 & 6'b000010)};	
+				Digit3 <= {7'b0000000,(GrnD3 & Seg),(ledA3 & 6'b000010)};
+				Digit4 <= {7'b0000000,(GrnD4 & Seg),(ledA4 & 6'b000010)};					
 			 end
 		8  : begin
-				Digit1 = {7'b0000000,(GrnD1 & Seg),(ledA1 & 6'b000100)};
-				Digit2 = {7'b0000000,(GrnD2 & Seg),(ledA2 & 6'b000100)};	
-				Digit3 = {7'b0000000,(GrnD3 & Seg),(ledA3 & 6'b000100)};
-				Digit4 = {7'b0000000,(GrnD4 & Seg),(ledA4 & 6'b000100)};					
+				Digit1 <= {7'b0000000,(GrnD1 & Seg),(ledA1 & 6'b000100)};
+				Digit2 <= {7'b0000000,(GrnD2 & Seg),(ledA2 & 6'b000100)};	
+				Digit3 <= {7'b0000000,(GrnD3 & Seg),(ledA3 & 6'b000100)};
+				Digit4 <= {7'b0000000,(GrnD4 & Seg),(ledA4 & 6'b000100)};					
 			 end
 		9  : begin
-				Digit1 = {7'b0000000,(GrnD1 & Seg),(ledA1 & 6'b001000)};
-				Digit2 = {7'b0000000,(GrnD2 & Seg),(ledA2 & 6'b001000)};	
-				Digit3 = {7'b0000000,(GrnD3 & Seg),(ledA3 & 6'b001000)};
-				Digit4 = {7'b0000000,(GrnD4 & Seg),(ledA4 & 6'b001000)};					
+				Digit1 <= {7'b0000000,(GrnD1 & Seg),(ledA1 & 6'b001000)};
+				Digit2 <= {7'b0000000,(GrnD2 & Seg),(ledA2 & 6'b001000)};	
+				Digit3 <= {7'b0000000,(GrnD3 & Seg),(ledA3 & 6'b001000)};
+				Digit4 <= {7'b0000000,(GrnD4 & Seg),(ledA4 & 6'b001000)};					
 			 end
 		10 : begin
-				Digit1 = {7'b0000000,(GrnD1 & Seg),(ledA1 & 6'b010000)};
-				Digit2 = {7'b0000000,(GrnD2 & Seg),(ledA2 & 6'b010000)};	
-				Digit3 = {7'b0000000,(GrnD3 & Seg),(ledA3 & 6'b010000)};
-				Digit4 = {7'b0000000,(GrnD4 & Seg),(ledA4 & 6'b010000)};					
+				Digit1 <= {7'b0000000,(GrnD1 & Seg),(ledA1 & 6'b010000)};
+				Digit2 <= {7'b0000000,(GrnD2 & Seg),(ledA2 & 6'b010000)};	
+				Digit3 <= {7'b0000000,(GrnD3 & Seg),(ledA3 & 6'b010000)};
+				Digit4 <= {7'b0000000,(GrnD4 & Seg),(ledA4 & 6'b010000)};					
 			 end
 		11 : begin
-				Digit1 = {7'b0000000,(GrnD1 & Seg),(ledA1 & 6'b100000)};
-				Digit2 = {7'b0000000,(GrnD2 & Seg),(ledA2 & 6'b100000)};	
-				Digit3 = {7'b0000000,(GrnD3 & Seg),(ledA3 & 6'b100000)};
-				Digit4 = {7'b0000000,(GrnD4 & Seg),(ledA4 & 6'b100000)};					
+				Digit1 <= {7'b0000000,(GrnD1 & Seg),(ledA1 & 6'b100000)};
+				Digit2 <= {7'b0000000,(GrnD2 & Seg),(ledA2 & 6'b100000)};	
+				Digit3 <= {7'b0000000,(GrnD3 & Seg),(ledA3 & 6'b100000)};
+				Digit4 <= {7'b0000000,(GrnD4 & Seg),(ledA4 & 6'b100000)};					
 			 end	
-		12 : Digit1 = 20'b000000000000000000000;		
+		12 : begin
+				Digit1 <= 20'b000000000000000000000;
+				Digit2 <= 20'b000000000000000000000;
+				Digit3 <= 20'b000000000000000000000;
+				Digit4 <= 20'b000000000000000000000;				
+			 end
 		13 : begin
+				Digit1 <= 20'b000000000000000000000;
+				Digit2 <= 20'b000000000000000000000;
+				Digit3 <= 20'b000000000000000000000;
+				Digit4 <= 20'b000000000000000000000;				
+			 end
+		14 : begin
+				Digit1 <= 20'b000000000000000000000;
+				Digit2 <= 20'b000000000000000000000;
+				Digit3 <= 20'b000000000000000000000;
+				Digit4 <= 20'b000000000000000000000;				
+			 end			 
+		15 : begin
 				segment = segment + 1;
 				if (segment == 3'b111)
 					segment = 3'b000;
@@ -164,9 +181,22 @@ end
 
 // LED controller latch.
 always @(posedge latch)begin
-		RedD1 = tmp[22:16];
-		GrnD1 = tmp[14:8];
-		ledA1 = tmp[6:0];
+// Digit 4
+		RedD4 <= tmp[94:88];
+		GrnD4 <= tmp[86:80];
+		ledA4 <= tmp[77:72];
+// Digit 3	
+		RedD3 <= tmp[70:64];
+		GrnD3 <= tmp[62:56];
+		ledA3 <= tmp[53:48];
+// Digit 2	
+		RedD2 <= tmp[46:40];
+		GrnD2 <= tmp[38:32];
+		ledA2 <= tmp[29:24];
+// Digit 1		
+		RedD1 <= tmp[22:16];
+		GrnD1 <= tmp[14:8];
+		ledA1 <= tmp[5:0];
 end
 
 // Counter for case selector.
