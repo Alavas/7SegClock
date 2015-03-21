@@ -22,23 +22,23 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-640UHCTQFP144
 Target Performance:   5
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.3.0.109
-Mapped on:  03/16/15  23:34:07
+Mapped on:  03/21/15  02:51:05
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of registers:    196 out of   964 (20%)
-      PFU registers:          196 out of   640 (31%)
+   Number of registers:    285 out of   964 (30%)
+      PFU registers:          285 out of   640 (45%)
       PIO registers:            0 out of   324 (0%)
-   Number of SLICEs:       101 out of   320 (32%)
-      SLICEs as Logic/ROM:    101 out of   320 (32%)
+   Number of SLICEs:       148 out of   320 (46%)
+      SLICEs as Logic/ROM:    148 out of   320 (46%)
       SLICEs as RAM:            0 out of   240 (0%)
       SLICEs as Carry:          5 out of   320 (2%)
-   Number of LUT4s:         96 out of   640 (15%)
-      Number of logic LUTs:       86
+   Number of LUT4s:        109 out of   640 (17%)
+      Number of logic LUTs:       99
       Number of distributed RAM:   0 (0 LUT4s)
       Number of ripple logic:      5 (10 LUT4s)
       Number of shift registers:   0
-   Number of PIO sites used: 84 + 4(JTAG) out of 108 (81%)
+   Number of PIO sites used: 85 + 4(JTAG) out of 108 (82%)
    Number of block RAMs:  0 out of 7 (0%)
    Number of GSRs:  0 out of 1 (0%)
    EFB used :       No
@@ -63,29 +63,31 @@ Mapped on:  03/16/15  23:34:07
      distributed RAMs) + 2*(Number of ripple logic)
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
-   Number of clocks:  4
+   Number of clocks:  5
+     Net osc_clk_c_c: 48 loads, 48 rising, 0 falling (Driver: OSCH_inst )
+     Net cnt[0]: 8 loads, 8 rising, 0 falling (Driver: cnt_94__i0 )
      Net clk_c: 48 loads, 48 rising, 0 falling (Driver: PIO clk )
-     Net osc_clk_c_c: 5 loads, 5 rising, 0 falling (Driver: OSCH_inst )
-     Net latch_c: 40 loads, 40 rising, 0 falling (Driver: PIO latch )
 
-     Net heartbeat_c: 8 loads, 8 rising, 0 falling (Driver: cnt_71_72__i7 )
+     Net latch_c: 40 loads, 40 rising, 0 falling (Driver: PIO latch )
+     Net pwm_c: 4 loads, 4 rising, 0 falling (Driver: PIO pwm )
    Number of Clock Enables:  1
-     Net n114: 4 loads, 4 LSLICEs
-   Number of LSRs:  2
-     Net n114: 3 loads, 3 LSLICEs
-     Net n668: 3 loads, 3 LSLICEs
+     Net n286: 4 loads, 4 LSLICEs
+   Number of LSRs:  3
+     Net n286: 3 loads, 3 LSLICEs
+     Net heartbeat_c: 42 loads, 42 LSLICEs
+     Net n935: 3 loads, 3 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
+     Net heartbeat_c: 43 loads
+     Net Seg_3: 11 loads
+     Net Seg_4: 11 loads
      Net Seg_0: 10 loads
      Net Seg_1: 10 loads
      Net Seg_2: 10 loads
-     Net Seg_3: 10 loads
-     Net Seg_4: 10 loads
      Net Seg_5: 10 loads
-     Net n114: 9 loads
+     Net n286: 9 loads
      Net Seg_6: 8 loads
      Net Led_0: 6 loads
-     Net Led_1: 6 loads
 
 
 
@@ -125,9 +127,9 @@ Mapped on:  03/16/15  23:34:07
 +---------------------+-----------+-----------+------------+
 | Digit1[12]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
+
 | Digit1[11]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-
 | Digit1[10]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | Digit1[9]           | OUTPUT    | LVCMOS33  |            |
@@ -182,9 +184,9 @@ Mapped on:  03/16/15  23:34:07
 +---------------------+-----------+-----------+------------+
 | Digit2[4]           | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
+
 | Digit2[3]           | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-
 | Digit2[2]           | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | Digit2[1]           | OUTPUT    | LVCMOS33  |            |
@@ -239,9 +241,9 @@ Mapped on:  03/16/15  23:34:07
 +---------------------+-----------+-----------+------------+
 | Digit4[16]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
+
 | Digit4[15]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-
 | Digit4[14]          | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | Digit4[13]          | OUTPUT    | LVCMOS33  |            |
@@ -274,6 +276,8 @@ Mapped on:  03/16/15  23:34:07
 +---------------------+-----------+-----------+------------+
 | heartbeat           | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
+| pwm                 | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
 | latch               | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | clk                 | INPUT     | LVCMOS33  |            |
@@ -287,18 +291,20 @@ Mapped on:  03/16/15  23:34:07
 
 Block i2 undriven or does not drive anything - clipped.
 Block GSR_INST undriven or does not drive anything - clipped.
+Signal n934 was merged into signal heartbeat_c
 Signal GND_net undriven or does not drive anything - clipped.
 Signal VCC_net undriven or does not drive anything - clipped.
-Signal cnt_71_72_add_4_1/S0 undriven or does not drive anything - clipped.
-Signal cnt_71_72_add_4_1/CI undriven or does not drive anything - clipped.
-Signal cnt_71_72_add_4_9/S1 undriven or does not drive anything - clipped.
-Signal cnt_71_72_add_4_9/CO undriven or does not drive anything - clipped.
+Signal cnt_94_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal cnt_94_add_4_1/CI undriven or does not drive anything - clipped.
+Signal cnt_94_add_4_9/S1 undriven or does not drive anything - clipped.
+Signal cnt_94_add_4_9/CO undriven or does not drive anything - clipped.
+Block i101_1_lut was optimized away.
+
 Block i1 was optimized away.
 
 
 
 <A name="mrp_mem"></A><B><U><big>Memory Usage</big></U></B>
-
 
 
      
@@ -311,7 +317,7 @@ OSC 1:                                     Pin/Node Value
   OSC Type:                                         OSCH
   STDBY Input:                                      NONE
   OSC Output:                              NODE     osc_clk_c_c
-  OSC Nominal Frequency (MHz):                      2.08
+  OSC Nominal Frequency (MHz):                      7.00
 
 
 
@@ -328,14 +334,8 @@ Instance Name: OSCH_inst
 
    Total CPU Time: 0 secs  
    Total REAL Time: 0 secs  
-   Peak Memory Usage: 156 MB
+   Peak Memory Usage: 157 MB
         
-
-
-
-
-
-
 
 
 

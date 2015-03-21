@@ -6,7 +6,7 @@
 // 4 seven segments displays with each segment made of 6 bi-color leds (red & green). Microcontroller updates FPGA which then maintains clock display automatically.
 
 
-module AutoShift(Digit1[19:0],Digit2[19:0],Digit3[19:0],Digit4[19:0], latch, clk, data, heartbeat);
+module AutoShift(Digit1[19:0],Digit2[19:0],Digit3[19:0],Digit4[19:0], pwm, latch, clk, data, heartbeat);
 
 output  Digit1;
 output	Digit2;
@@ -14,11 +14,12 @@ output 	Digit3;
 output	Digit4;
 output  heartbeat;
 
+input	pwm;
 input 	latch;
 input	clk;
 input	data;
-//input   oe;
 
+reg		oe;
 reg		heartbeat;
 reg		[19:0]	Digit1;	// Digit 1 output.
 reg		[19:0]	Digit2;	// Digit 2 output.
@@ -39,35 +40,56 @@ reg		[5:0]	ledA3;	// Digit 3 LED anodes.
 reg		[5:0]	ledA4;	// Digit 4 LED anodes.
 
 // Working registers.
-reg		[9:0] 	cnt ;	// Divider register for clock.
+reg		[19:0]	LEDS1;	// Digit 1 output.
+reg		[19:0]	LEDS2;	// Digit 2 output.
+reg		[19:0]	LEDS3;	// Digit 3 output.
+reg		[19:0]	LEDS4;	// Digit 4 output.
+reg		[7:0] 	cnt ;	// Divider register for clock.
 reg		[95:0] 	tmp;	// 8(leds) + 8(green segment) + 8(red segment) * 4 digits.
-reg		[2:0] 	segment = 3'b000;
+reg		[7:0]	bright;
 reg		[6:0] 	Seg = 7'b0000001;
 reg		[5:0]	Led = 6'b000001;
 
 // Internal Oscillator
-defparam OSCH_inst.NOM_FREQ = "2.08";		//  Set internal oscillator frequency.
+defparam OSCH_inst.NOM_FREQ = "7.00";		//  Set internal oscillator frequency.
 
 OSCH OSCH_inst( .STDBY(1'b0), 		// 0=Enabled, 1=Disabled also Disabled with Bandgap=OFF
                 .OSC(osc_clk_c_c),
                 .SEDSTDBY());		//  this signal is not required if not using SED - see TN1199 for more details. osc_clk_c_c
 
-//always @*begin	
-//	assign Digit1 = (oe) ? ledsout : 21'b000000000000000000000;
-//end
-
-always @(cnt[7])begin
-	heartbeat = cnt[7];
+always @(posedge osc_clk_c_c)begin
+	if (oe == 1)begin
+		Digit1 = LEDS1;
+		Digit2 = LEDS2;
+		Digit3 = LEDS3;
+		Digit4 = LEDS4;
+	end else begin
+		Digit1 = 20'b00000000000000000000;
+		Digit2 = 20'b00000000000000000000;
+		Digit3 = 20'b00000000000000000000;
+		Digit4 = 20'b00000000000000000000;		
+	end
 end
 
+
+always @(posedge osc_clk_c_c)begin
+	if (cnt< bright)begin
+		oe = 1;
+		heartbeat = 1;
+	end else begin
+		oe = 0;
+		heartbeat = 0;
+	end
+end		
+
 always @(Led)begin
-	Digit1 <= {(RedD1 & Seg),(GrnD1 & Seg),(ledA1 & Led)};
-	Digit2 <= {(RedD2 & Seg),(GrnD2 & Seg),(ledA2 & Led)};
-	Digit3 <= {(RedD3 & Seg),(GrnD3 & Seg),(ledA3 & Led)};
-	Digit4 <= {(RedD4 & Seg),(GrnD4 & Seg),(ledA4 & Led)};
+	LEDS1 <= {(RedD1 & Seg),(GrnD1 & Seg),(ledA1 & Led)};
+	LEDS2 <= {(RedD2 & Seg),(GrnD2 & Seg),(ledA2 & Led)};
+	LEDS3 <= {(RedD3 & Seg),(GrnD3 & Seg),(ledA3 & Led)};
+	LEDS4 <= {(RedD4 & Seg),(GrnD4 & Seg),(ledA4 & Led)};
 end	
 
-always @(posedge cnt[7])begin
+always @(posedge cnt[0])begin
 	Led = Led << 1;
 	if (Led == 0)begin
 		Led = 6'b000001;
@@ -101,6 +123,10 @@ always @(posedge latch)begin
 		RedD1 <= tmp[22:16];
 		GrnD1 <= tmp[14:8];
 		ledA1 <= tmp[5:0];
+end
+
+always @(posedge pwm)begin
+	bright = tmp[7:0];
 end
 
 // Counter for case selector.

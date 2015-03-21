@@ -20,7 +20,7 @@
             <ID>35901018</ID>
             <Severity>Info</Severity>
             <Dynamic>/usr/local/diamond/3.3_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1793): </Dynamic>
-            <Dynamic>OSCH(NOM_FREQ=&quot;2.08&quot;)</Dynamic>
+            <Dynamic>OSCH(NOM_FREQ=&quot;7.00&quot;)</Dynamic>
             <Navigation>/usr/local/diamond/3.3_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
             <Navigation>1793</Navigation>
         </Message>
@@ -32,19 +32,19 @@
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>cnt_71_72_add_4_9/CO</Dynamic>
+            <Dynamic>cnt_94_add_4_9/CO</Dynamic>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>cnt_71_72_add_4_9/S1</Dynamic>
+            <Dynamic>cnt_94_add_4_9/S1</Dynamic>
         </Message>
         <Message>
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>cnt_71_72_add_4_1/S0</Dynamic>
+            <Dynamic>cnt_94_add_4_1/S0</Dynamic>
         </Message>
         <Message>
             <ID>1163101</ID>
@@ -81,12 +81,17 @@
             <Severity>Warning</Severity>
             <Dynamic>latch_c</Dynamic>
         </Message>
-    </Task>
-    <Task name="TimingSimFileVHD">
         <Message>
-            <ID>35400250</ID>
-            <Severity>Info</Severity>
-            <Dynamic>0</Dynamic>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=pwm_c loads=4 clock_loads=4</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=pwm_c loads=4 clock_loads=4</Dynamic>
         </Message>
     </Task>
 </BaliMessageLog>
