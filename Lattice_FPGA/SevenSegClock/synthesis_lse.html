@@ -14,7 +14,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Sat Mar 21 02:49:15 2015
+Wed Mar 25 01:37:01 2015
 
 
 Command Line:  synthesis -f SevenSegClock_SevenSegClock_lattice.synproj -gui 
@@ -105,51 +105,51 @@ Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/xo2c00a/data/xo2alib.ngl
 Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
 Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/or5g00/data/orc5glib.ngl'...
-WARNING - synthesis: logical net 'cnt_94_add_4_9/CO' has no load.
-WARNING - synthesis: logical net 'cnt_94_add_4_9/S1' has no load.
 WARNING - synthesis: logical net 'cnt_94_add_4_1/S0' has no load.
+WARNING - synthesis: logical net 'cnt_94_add_4_13/CO' has no load.
+WARNING - synthesis: logical net 'cnt_94_add_4_13/S1' has no load.
 WARNING - synthesis: DRC complete with 3 warnings.
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file SevenSegClock_SevenSegClock.ngd.
 
 ################### Begin Area Report (AutoShift)######################
-Number of register bits => 285 of 964 (29 % )
-CCU2D => 5
+Number of register bits => 302 of 964 (31 % )
+CCU2D => 7
 FD1P3AY => 1
 FD1P3IX => 6
-FD1S3AX => 192
+FD1S3AX => 204
 FD1S3AY => 1
-FD1S3IX => 85
+FD1S3IX => 90
 GSR => 1
 IB => 4
-LUT4 => 100
-OB => 81
+L6MUX21 => 1
+LUT4 => 116
+OB => 85
 OSCH => 1
-PFUMX => 1
+PFUMX => 2
 ################### End Area Report ##################
 
 ################### Begin Clock Report ######################
 Clock Nets
-Number of Clocks: 5
+Number of Clocks: 4
+  Net : osc_clk_c_c, loads : 111
   Net : clk_c, loads : 95
-  Net : osc_clk_c_c, loads : 89
-  Net : latch_c, loads : 80
-  Net : cnt_0, loads : 15
-  Net : pwm_c, loads : 8
+  Net : latch_c, loads : 84
+  Net : pwm_c, loads : 12
 Clock Enable Nets
 Number of Clock Enables: 1
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : n934, loads : 80
-  Net : n286, loads : 14
-  Net : Seg_4, loads : 11
-  Net : Seg_3, loads : 11
+  Net : n985, loads : 84
+  Net : n299, loads : 15
   Net : Seg_5, loads : 10
+  Net : Seg_4, loads : 10
+  Net : Seg_3, loads : 10
   Net : Seg_2, loads : 10
   Net : Seg_1, loads : 10
   Net : Seg_0, loads : 10
   Net : Seg_6, loads : 8
-  Net : Led_4, loads : 6
+  Net : Led_5, loads : 6
 ################### End Clock Report ##################
 
 <A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
@@ -159,16 +159,13 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk4 [get_nets pwm_c]                   |            -|            -|     0  
+clk3 [get_nets pwm_c]                   |            -|            -|     0  
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk3 [get_nets latch_c]                 |            -|            -|     0  
+clk2 [get_nets latch_c]                 |            -|            -|     0  
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk2 [get_nets clk_c]                   |  200.000 MHz|  606.796 MHz|     1  
-                                        |             |             |
-create_clock -period 5.000000 -name     |             |             |
-clk1 [get_nets cnt[0]]                  |  200.000 MHz|  510.204 MHz|     1  
+clk1 [get_nets clk_c]                   |  200.000 MHz|  606.796 MHz|     1  
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
 clk0 [get_nets osc_clk_c_c]             |            -|            -|     0  
@@ -179,10 +176,10 @@ clk0 [get_nets osc_clk_c_c]             |            -|            -|     0
 All constraints were met.
 
 
-Peak Memory Usage: 180.535  MB
+Peak Memory Usage: 183.332  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.659  secs
+Elapsed CPU time for LSE flow : 0.749  secs
 --------------------------------------------------------------
 
 

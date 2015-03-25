@@ -32,19 +32,19 @@
             <ID>1166052</ID>
             <Severity>Warning</Severity>
             <Dynamic>logical</Dynamic>
-            <Dynamic>cnt_94_add_4_9/CO</Dynamic>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>cnt_94_add_4_9/S1</Dynamic>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
             <Dynamic>cnt_94_add_4_1/S0</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cnt_94_add_4_13/CO</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>cnt_94_add_4_13/S1</Dynamic>
         </Message>
         <Message>
             <ID>1163101</ID>
@@ -72,6 +72,15 @@
             <Dynamic>Primary</Dynamic>
         </Message>
         <Message>
+            <ID>61061008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>pwm_c</Dynamic>
+            <Dynamic>Secondary</Dynamic>
+            <Dynamic>pwm</Dynamic>
+            <Dynamic>50</Dynamic>
+            <Dynamic>Secondary</Dynamic>
+        </Message>
+        <Message>
             <ID>62061008</ID>
             <Severity>Warning</Severity>
             <Dynamic>clk_c</Dynamic>
@@ -80,18 +89,6 @@
             <ID>62061008</ID>
             <Severity>Warning</Severity>
             <Dynamic>latch_c</Dynamic>
-        </Message>
-        <Message>
-            <ID>66011008</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>
-   Signal=pwm_c loads=4 clock_loads=4</Dynamic>
-        </Message>
-        <Message>
-            <ID>66011008</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>
-   Signal=pwm_c loads=4 clock_loads=4</Dynamic>
         </Message>
     </Task>
 </BaliMessageLog>

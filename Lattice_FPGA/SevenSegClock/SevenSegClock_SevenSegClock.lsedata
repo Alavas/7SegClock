@@ -4,13 +4,12 @@
     <clockitem name = "pwm"  type = "port" />
     <clockitem name = "latch"  type = "port" />
     <clockitem name = "clk"  type = "port" />
-    <clockitem name = "cnt[0]"  type = "net" />
     <clockitem name = "osc_clk_c_c"  type = "net" />
 </clocks>
 
 <!--
     //=============================================================
-    //  Number of Clocks processed: 5
+    //  Number of Clocks processed: 4
     //
     //  If a clock cannot be found in the top level pins section,
     //  that means it is an internal clock.
@@ -23,10 +22,11 @@
 <unit name = "AutoShift">
 
     <!--
-        Top Level Pins: 85
+        Top Level Pins: 89
     -->
 
     <pins>
+        <pitem  name = "Digit1[20]"  direction = "out"  />
         <pitem  name = "Digit1[19]"  direction = "out"  />
         <pitem  name = "Digit1[18]"  direction = "out"  />
         <pitem  name = "Digit1[17]"  direction = "out"  />
@@ -47,6 +47,7 @@
         <pitem  name = "Digit1[2]"  direction = "out"  />
         <pitem  name = "Digit1[1]"  direction = "out"  />
         <pitem  name = "Digit1[0]"  direction = "out"  />
+        <pitem  name = "Digit2[20]"  direction = "out"  />
         <pitem  name = "Digit2[19]"  direction = "out"  />
         <pitem  name = "Digit2[18]"  direction = "out"  />
         <pitem  name = "Digit2[17]"  direction = "out"  />
@@ -67,6 +68,7 @@
         <pitem  name = "Digit2[2]"  direction = "out"  />
         <pitem  name = "Digit2[1]"  direction = "out"  />
         <pitem  name = "Digit2[0]"  direction = "out"  />
+        <pitem  name = "Digit3[20]"  direction = "out"  />
         <pitem  name = "Digit3[19]"  direction = "out"  />
         <pitem  name = "Digit3[18]"  direction = "out"  />
         <pitem  name = "Digit3[17]"  direction = "out"  />
@@ -87,6 +89,7 @@
         <pitem  name = "Digit3[2]"  direction = "out"  />
         <pitem  name = "Digit3[1]"  direction = "out"  />
         <pitem  name = "Digit3[0]"  direction = "out"  />
+        <pitem  name = "Digit4[20]"  direction = "out"  />
         <pitem  name = "Digit4[19]"  direction = "out"  />
         <pitem  name = "Digit4[18]"  direction = "out"  />
         <pitem  name = "Digit4[17]"  direction = "out"  />
@@ -229,6 +232,7 @@
 
     <instance  name = "mux_4"  library = "work"  arch = ""  type = "comb">
         <pins>
+        <pitem  name = "d0[20]"  direction = "in"  />
         <pitem  name = "d0[19]"  direction = "in"  />
         <pitem  name = "d0[18]"  direction = "in"  />
         <pitem  name = "d0[17]"  direction = "in"  />
@@ -249,6 +253,7 @@
         <pitem  name = "d0[2]"  direction = "in"  />
         <pitem  name = "d0[1]"  direction = "in"  />
         <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "d1[20]"  direction = "in"  />
         <pitem  name = "d1[19]"  direction = "in"  />
         <pitem  name = "d1[18]"  direction = "in"  />
         <pitem  name = "d1[17]"  direction = "in"  />
@@ -270,6 +275,7 @@
         <pitem  name = "d1[1]"  direction = "in"  />
         <pitem  name = "d1[0]"  direction = "in"  />
         <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "o[20]"  direction = "out"  />
         <pitem  name = "o[19]"  direction = "out"  />
         <pitem  name = "o[18]"  direction = "out"  />
         <pitem  name = "o[17]"  direction = "out"  />
@@ -294,6 +300,7 @@
 
         <nets>
         <nitem  name = "n1"  />
+        <nitem  name = "LEDS1[20]"  />
         <nitem  name = "LEDS1[19]"  />
         <nitem  name = "LEDS1[18]"  />
         <nitem  name = "LEDS1[17]"  />
@@ -335,11 +342,13 @@
         <nitem  name = "n25"  />
         <nitem  name = "n26"  />
         <nitem  name = "n27"  />
+        <nitem  name = "n28"  />
         </nets>
     </instance>
 
     <instance  name = "mux_5"  library = "work"  arch = ""  type = "comb">
         <pins>
+        <pitem  name = "d0[20]"  direction = "in"  />
         <pitem  name = "d0[19]"  direction = "in"  />
         <pitem  name = "d0[18]"  direction = "in"  />
         <pitem  name = "d0[17]"  direction = "in"  />
@@ -360,6 +369,7 @@
         <pitem  name = "d0[2]"  direction = "in"  />
         <pitem  name = "d0[1]"  direction = "in"  />
         <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "d1[20]"  direction = "in"  />
         <pitem  name = "d1[19]"  direction = "in"  />
         <pitem  name = "d1[18]"  direction = "in"  />
         <pitem  name = "d1[17]"  direction = "in"  />
@@ -381,6 +391,7 @@
         <pitem  name = "d1[1]"  direction = "in"  />
         <pitem  name = "d1[0]"  direction = "in"  />
         <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "o[20]"  direction = "out"  />
         <pitem  name = "o[19]"  direction = "out"  />
         <pitem  name = "o[18]"  direction = "out"  />
         <pitem  name = "o[17]"  direction = "out"  />
@@ -405,6 +416,7 @@
 
         <nets>
         <nitem  name = "n1"  />
+        <nitem  name = "LEDS2[20]"  />
         <nitem  name = "LEDS2[19]"  />
         <nitem  name = "LEDS2[18]"  />
         <nitem  name = "LEDS2[17]"  />
@@ -426,7 +438,6 @@
         <nitem  name = "LEDS2[1]"  />
         <nitem  name = "LEDS2[0]"  />
         <nitem  name = "n6"  />
-        <nitem  name = "n29"  />
         <nitem  name = "n30"  />
         <nitem  name = "n31"  />
         <nitem  name = "n32"  />
@@ -446,11 +457,14 @@
         <nitem  name = "n46"  />
         <nitem  name = "n47"  />
         <nitem  name = "n48"  />
+        <nitem  name = "n49"  />
+        <nitem  name = "n50"  />
         </nets>
     </instance>
 
     <instance  name = "mux_6"  library = "work"  arch = ""  type = "comb">
         <pins>
+        <pitem  name = "d0[20]"  direction = "in"  />
         <pitem  name = "d0[19]"  direction = "in"  />
         <pitem  name = "d0[18]"  direction = "in"  />
         <pitem  name = "d0[17]"  direction = "in"  />
@@ -471,6 +485,7 @@
         <pitem  name = "d0[2]"  direction = "in"  />
         <pitem  name = "d0[1]"  direction = "in"  />
         <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "d1[20]"  direction = "in"  />
         <pitem  name = "d1[19]"  direction = "in"  />
         <pitem  name = "d1[18]"  direction = "in"  />
         <pitem  name = "d1[17]"  direction = "in"  />
@@ -492,6 +507,7 @@
         <pitem  name = "d1[1]"  direction = "in"  />
         <pitem  name = "d1[0]"  direction = "in"  />
         <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "o[20]"  direction = "out"  />
         <pitem  name = "o[19]"  direction = "out"  />
         <pitem  name = "o[18]"  direction = "out"  />
         <pitem  name = "o[17]"  direction = "out"  />
@@ -516,6 +532,7 @@
 
         <nets>
         <nitem  name = "n1"  />
+        <nitem  name = "LEDS3[20]"  />
         <nitem  name = "LEDS3[19]"  />
         <nitem  name = "LEDS3[18]"  />
         <nitem  name = "LEDS3[17]"  />
@@ -537,8 +554,6 @@
         <nitem  name = "LEDS3[1]"  />
         <nitem  name = "LEDS3[0]"  />
         <nitem  name = "n6"  />
-        <nitem  name = "n50"  />
-        <nitem  name = "n51"  />
         <nitem  name = "n52"  />
         <nitem  name = "n53"  />
         <nitem  name = "n54"  />
@@ -557,11 +572,15 @@
         <nitem  name = "n67"  />
         <nitem  name = "n68"  />
         <nitem  name = "n69"  />
+        <nitem  name = "n70"  />
+        <nitem  name = "n71"  />
+        <nitem  name = "n72"  />
         </nets>
     </instance>
 
     <instance  name = "mux_7"  library = "work"  arch = ""  type = "comb">
         <pins>
+        <pitem  name = "d0[20]"  direction = "in"  />
         <pitem  name = "d0[19]"  direction = "in"  />
         <pitem  name = "d0[18]"  direction = "in"  />
         <pitem  name = "d0[17]"  direction = "in"  />
@@ -582,6 +601,7 @@
         <pitem  name = "d0[2]"  direction = "in"  />
         <pitem  name = "d0[1]"  direction = "in"  />
         <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "d1[20]"  direction = "in"  />
         <pitem  name = "d1[19]"  direction = "in"  />
         <pitem  name = "d1[18]"  direction = "in"  />
         <pitem  name = "d1[17]"  direction = "in"  />
@@ -603,6 +623,7 @@
         <pitem  name = "d1[1]"  direction = "in"  />
         <pitem  name = "d1[0]"  direction = "in"  />
         <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "o[20]"  direction = "out"  />
         <pitem  name = "o[19]"  direction = "out"  />
         <pitem  name = "o[18]"  direction = "out"  />
         <pitem  name = "o[17]"  direction = "out"  />
@@ -627,6 +648,7 @@
 
         <nets>
         <nitem  name = "n1"  />
+        <nitem  name = "LEDS4[20]"  />
         <nitem  name = "LEDS4[19]"  />
         <nitem  name = "LEDS4[18]"  />
         <nitem  name = "LEDS4[17]"  />
@@ -648,9 +670,6 @@
         <nitem  name = "LEDS4[1]"  />
         <nitem  name = "LEDS4[0]"  />
         <nitem  name = "n6"  />
-        <nitem  name = "n71"  />
-        <nitem  name = "n72"  />
-        <nitem  name = "n73"  />
         <nitem  name = "n74"  />
         <nitem  name = "n75"  />
         <nitem  name = "n76"  />
@@ -668,11 +687,16 @@
         <nitem  name = "n88"  />
         <nitem  name = "n89"  />
         <nitem  name = "n90"  />
+        <nitem  name = "n91"  />
+        <nitem  name = "n92"  />
+        <nitem  name = "n93"  />
+        <nitem  name = "n94"  />
         </nets>
     </instance>
 
     <instance  name = "Digit2"  library = "work"  arch = ""  type = "reg">
         <pins>
+        <pitem  name = "d[20]"  direction = "in"  />
         <pitem  name = "d[19]"  direction = "in"  />
         <pitem  name = "d[18]"  direction = "in"  />
         <pitem  name = "d[17]"  direction = "in"  />
@@ -693,6 +717,7 @@
         <pitem  name = "d[2]"  direction = "in"  />
         <pitem  name = "d[1]"  direction = "in"  />
         <pitem  name = "d[0]"  direction = "in"  />
+        <pitem  name = "set[20]"  direction = "in"  />
         <pitem  name = "set[19]"  direction = "in"  />
         <pitem  name = "set[18]"  direction = "in"  />
         <pitem  name = "set[17]"  direction = "in"  />
@@ -713,6 +738,7 @@
         <pitem  name = "set[2]"  direction = "in"  />
         <pitem  name = "set[1]"  direction = "in"  />
         <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[20]"  direction = "in"  />
         <pitem  name = "reset[19]"  direction = "in"  />
         <pitem  name = "reset[18]"  direction = "in"  />
         <pitem  name = "reset[17]"  direction = "in"  />
@@ -734,6 +760,7 @@
         <pitem  name = "reset[1]"  direction = "in"  />
         <pitem  name = "reset[0]"  direction = "in"  />
         <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[20]"  direction = "out"  />
         <pitem  name = "q[19]"  direction = "out"  />
         <pitem  name = "q[18]"  direction = "out"  />
         <pitem  name = "q[17]"  direction = "out"  />
@@ -757,7 +784,6 @@
         </pins>
 
         <nets>
-        <nitem  name = "n29"  />
         <nitem  name = "n30"  />
         <nitem  name = "n31"  />
         <nitem  name = "n32"  />
@@ -777,8 +803,11 @@
         <nitem  name = "n46"  />
         <nitem  name = "n47"  />
         <nitem  name = "n48"  />
+        <nitem  name = "n49"  />
+        <nitem  name = "n50"  />
         <nitem  name = "n1"  />
         <nitem  name = "osc_clk_c_c"  />
+        <nitem  name = "Digit2[20]"  />
         <nitem  name = "Digit2[19]"  />
         <nitem  name = "Digit2[18]"  />
         <nitem  name = "Digit2[17]"  />
@@ -804,6 +833,7 @@
 
     <instance  name = "Digit3"  library = "work"  arch = ""  type = "reg">
         <pins>
+        <pitem  name = "d[20]"  direction = "in"  />
         <pitem  name = "d[19]"  direction = "in"  />
         <pitem  name = "d[18]"  direction = "in"  />
         <pitem  name = "d[17]"  direction = "in"  />
@@ -824,6 +854,7 @@
         <pitem  name = "d[2]"  direction = "in"  />
         <pitem  name = "d[1]"  direction = "in"  />
         <pitem  name = "d[0]"  direction = "in"  />
+        <pitem  name = "set[20]"  direction = "in"  />
         <pitem  name = "set[19]"  direction = "in"  />
         <pitem  name = "set[18]"  direction = "in"  />
         <pitem  name = "set[17]"  direction = "in"  />
@@ -844,6 +875,7 @@
         <pitem  name = "set[2]"  direction = "in"  />
         <pitem  name = "set[1]"  direction = "in"  />
         <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[20]"  direction = "in"  />
         <pitem  name = "reset[19]"  direction = "in"  />
         <pitem  name = "reset[18]"  direction = "in"  />
         <pitem  name = "reset[17]"  direction = "in"  />
@@ -865,6 +897,7 @@
         <pitem  name = "reset[1]"  direction = "in"  />
         <pitem  name = "reset[0]"  direction = "in"  />
         <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[20]"  direction = "out"  />
         <pitem  name = "q[19]"  direction = "out"  />
         <pitem  name = "q[18]"  direction = "out"  />
         <pitem  name = "q[17]"  direction = "out"  />
@@ -888,8 +921,6 @@
         </pins>
 
         <nets>
-        <nitem  name = "n50"  />
-        <nitem  name = "n51"  />
         <nitem  name = "n52"  />
         <nitem  name = "n53"  />
         <nitem  name = "n54"  />
@@ -908,8 +939,12 @@
         <nitem  name = "n67"  />
         <nitem  name = "n68"  />
         <nitem  name = "n69"  />
+        <nitem  name = "n70"  />
+        <nitem  name = "n71"  />
+        <nitem  name = "n72"  />
         <nitem  name = "n1"  />
         <nitem  name = "osc_clk_c_c"  />
+        <nitem  name = "Digit3[20]"  />
         <nitem  name = "Digit3[19]"  />
         <nitem  name = "Digit3[18]"  />
         <nitem  name = "Digit3[17]"  />
@@ -935,6 +970,7 @@
 
     <instance  name = "Digit4"  library = "work"  arch = ""  type = "reg">
         <pins>
+        <pitem  name = "d[20]"  direction = "in"  />
         <pitem  name = "d[19]"  direction = "in"  />
         <pitem  name = "d[18]"  direction = "in"  />
         <pitem  name = "d[17]"  direction = "in"  />
@@ -955,6 +991,7 @@
         <pitem  name = "d[2]"  direction = "in"  />
         <pitem  name = "d[1]"  direction = "in"  />
         <pitem  name = "d[0]"  direction = "in"  />
+        <pitem  name = "set[20]"  direction = "in"  />
         <pitem  name = "set[19]"  direction = "in"  />
         <pitem  name = "set[18]"  direction = "in"  />
         <pitem  name = "set[17]"  direction = "in"  />
@@ -975,6 +1012,7 @@
         <pitem  name = "set[2]"  direction = "in"  />
         <pitem  name = "set[1]"  direction = "in"  />
         <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[20]"  direction = "in"  />
         <pitem  name = "reset[19]"  direction = "in"  />
         <pitem  name = "reset[18]"  direction = "in"  />
         <pitem  name = "reset[17]"  direction = "in"  />
@@ -996,6 +1034,7 @@
         <pitem  name = "reset[1]"  direction = "in"  />
         <pitem  name = "reset[0]"  direction = "in"  />
         <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[20]"  direction = "out"  />
         <pitem  name = "q[19]"  direction = "out"  />
         <pitem  name = "q[18]"  direction = "out"  />
         <pitem  name = "q[17]"  direction = "out"  />
@@ -1019,9 +1058,6 @@
         </pins>
 
         <nets>
-        <nitem  name = "n71"  />
-        <nitem  name = "n72"  />
-        <nitem  name = "n73"  />
         <nitem  name = "n74"  />
         <nitem  name = "n75"  />
         <nitem  name = "n76"  />
@@ -1039,8 +1075,13 @@
         <nitem  name = "n88"  />
         <nitem  name = "n89"  />
         <nitem  name = "n90"  />
+        <nitem  name = "n91"  />
+        <nitem  name = "n92"  />
+        <nitem  name = "n93"  />
+        <nitem  name = "n94"  />
         <nitem  name = "n1"  />
         <nitem  name = "osc_clk_c_c"  />
+        <nitem  name = "Digit4[20]"  />
         <nitem  name = "Digit4[19]"  />
         <nitem  name = "Digit4[18]"  />
         <nitem  name = "Digit4[17]"  />
@@ -1067,6 +1108,10 @@
     <instance  name = "LessThan_12"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "a[11]"  direction = "in"  />
+        <pitem  name = "a[10]"  direction = "in"  />
+        <pitem  name = "a[9]"  direction = "in"  />
+        <pitem  name = "a[8]"  direction = "in"  />
         <pitem  name = "a[7]"  direction = "in"  />
         <pitem  name = "a[6]"  direction = "in"  />
         <pitem  name = "a[5]"  direction = "in"  />
@@ -1075,6 +1120,10 @@
         <pitem  name = "a[2]"  direction = "in"  />
         <pitem  name = "a[1]"  direction = "in"  />
         <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[11]"  direction = "in"  />
+        <pitem  name = "b[10]"  direction = "in"  />
+        <pitem  name = "b[9]"  direction = "in"  />
+        <pitem  name = "b[8]"  direction = "in"  />
         <pitem  name = "b[7]"  direction = "in"  />
         <pitem  name = "b[6]"  direction = "in"  />
         <pitem  name = "b[5]"  direction = "in"  />
@@ -1087,7 +1136,11 @@
         </pins>
 
         <nets>
-        <nitem  name = "n1"  />
+        <nitem  name = "n2"  />
+        <nitem  name = "cnt[11]"  />
+        <nitem  name = "cnt[10]"  />
+        <nitem  name = "cnt[9]"  />
+        <nitem  name = "cnt[8]"  />
         <nitem  name = "cnt[7]"  />
         <nitem  name = "cnt[6]"  />
         <nitem  name = "cnt[5]"  />
@@ -1096,6 +1149,10 @@
         <nitem  name = "cnt[2]"  />
         <nitem  name = "cnt[1]"  />
         <nitem  name = "cnt[0]"  />
+        <nitem  name = "bright[11]"  />
+        <nitem  name = "bright[10]"  />
+        <nitem  name = "bright[9]"  />
+        <nitem  name = "bright[8]"  />
         <nitem  name = "bright[7]"  />
         <nitem  name = "bright[6]"  />
         <nitem  name = "bright[5]"  />
@@ -1104,7 +1161,7 @@
         <nitem  name = "bright[2]"  />
         <nitem  name = "bright[1]"  />
         <nitem  name = "bright[0]"  />
-        <nitem  name = "n175"  />
+        <nitem  name = "n183"  />
         </nets>
     </instance>
 
@@ -1118,7 +1175,7 @@
         </pins>
 
         <nets>
-        <nitem  name = "n175"  />
+        <nitem  name = "n183"  />
         <nitem  name = "osc_clk_c_c"  />
         <nitem  name = "n1"  />
         <nitem  name = "heartbeat"  />
@@ -1127,18 +1184,21 @@
 
     <instance  name = "Led"  library = "work"  arch = ""  type = "reg">
         <pins>
+        <pitem  name = "d[6]"  direction = "in"  />
         <pitem  name = "d[5]"  direction = "in"  />
         <pitem  name = "d[4]"  direction = "in"  />
         <pitem  name = "d[3]"  direction = "in"  />
         <pitem  name = "d[2]"  direction = "in"  />
         <pitem  name = "d[1]"  direction = "in"  />
         <pitem  name = "d[0]"  direction = "in"  />
+        <pitem  name = "set[6]"  direction = "in"  />
         <pitem  name = "set[5]"  direction = "in"  />
         <pitem  name = "set[4]"  direction = "in"  />
         <pitem  name = "set[3]"  direction = "in"  />
         <pitem  name = "set[2]"  direction = "in"  />
         <pitem  name = "set[1]"  direction = "in"  />
         <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[6]"  direction = "in"  />
         <pitem  name = "reset[5]"  direction = "in"  />
         <pitem  name = "reset[4]"  direction = "in"  />
         <pitem  name = "reset[3]"  direction = "in"  />
@@ -1146,6 +1206,7 @@
         <pitem  name = "reset[1]"  direction = "in"  />
         <pitem  name = "reset[0]"  direction = "in"  />
         <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[6]"  direction = "out"  />
         <pitem  name = "q[5]"  direction = "out"  />
         <pitem  name = "q[4]"  direction = "out"  />
         <pitem  name = "q[3]"  direction = "out"  />
@@ -1155,14 +1216,16 @@
         </pins>
 
         <nets>
-        <nitem  name = "n281"  />
-        <nitem  name = "n282"  />
-        <nitem  name = "n283"  />
-        <nitem  name = "n284"  />
-        <nitem  name = "n285"  />
-        <nitem  name = "n286"  />
+        <nitem  name = "n293"  />
+        <nitem  name = "n294"  />
+        <nitem  name = "n295"  />
+        <nitem  name = "n296"  />
+        <nitem  name = "n297"  />
+        <nitem  name = "n298"  />
+        <nitem  name = "n299"  />
         <nitem  name = "n1"  />
-        <nitem  name = "cnt[0]"  />
+        <nitem  name = "osc_clk_c_c"  />
+        <nitem  name = "Led[6]"  />
         <nitem  name = "Led[5]"  />
         <nitem  name = "Led[4]"  />
         <nitem  name = "Led[3]"  />
@@ -1212,13 +1275,13 @@
         <nitem  name = "Seg[2]"  />
         <nitem  name = "Seg[1]"  />
         <nitem  name = "Seg[0]"  />
+        <nitem  name = "LEDS1[20]"  />
         <nitem  name = "LEDS1[19]"  />
         <nitem  name = "LEDS1[18]"  />
         <nitem  name = "LEDS1[17]"  />
         <nitem  name = "LEDS1[16]"  />
         <nitem  name = "LEDS1[15]"  />
         <nitem  name = "LEDS1[14]"  />
-        <nitem  name = "LEDS1[13]"  />
         </nets>
     </instance>
 
@@ -1262,30 +1325,33 @@
         <nitem  name = "Seg[2]"  />
         <nitem  name = "Seg[1]"  />
         <nitem  name = "Seg[0]"  />
+        <nitem  name = "LEDS1[13]"  />
         <nitem  name = "LEDS1[12]"  />
         <nitem  name = "LEDS1[11]"  />
         <nitem  name = "LEDS1[10]"  />
         <nitem  name = "LEDS1[9]"  />
         <nitem  name = "LEDS1[8]"  />
         <nitem  name = "LEDS1[7]"  />
-        <nitem  name = "LEDS1[6]"  />
         </nets>
     </instance>
 
     <instance  name = "and_17"  library = "work"  arch = ""  type = "comb">
         <pins>
+        <pitem  name = "a[6]"  direction = "in"  />
         <pitem  name = "a[5]"  direction = "in"  />
         <pitem  name = "a[4]"  direction = "in"  />
         <pitem  name = "a[3]"  direction = "in"  />
         <pitem  name = "a[2]"  direction = "in"  />
         <pitem  name = "a[1]"  direction = "in"  />
         <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
         <pitem  name = "b[5]"  direction = "in"  />
         <pitem  name = "b[4]"  direction = "in"  />
         <pitem  name = "b[3]"  direction = "in"  />
         <pitem  name = "b[2]"  direction = "in"  />
         <pitem  name = "b[1]"  direction = "in"  />
         <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[6]"  direction = "out"  />
         <pitem  name = "o[5]"  direction = "out"  />
         <pitem  name = "o[4]"  direction = "out"  />
         <pitem  name = "o[3]"  direction = "out"  />
@@ -1295,18 +1361,21 @@
         </pins>
 
         <nets>
+        <nitem  name = "ledA1[6]"  />
         <nitem  name = "ledA1[5]"  />
         <nitem  name = "ledA1[4]"  />
         <nitem  name = "ledA1[3]"  />
         <nitem  name = "ledA1[2]"  />
         <nitem  name = "ledA1[1]"  />
         <nitem  name = "ledA1[0]"  />
+        <nitem  name = "Led[6]"  />
         <nitem  name = "Led[5]"  />
         <nitem  name = "Led[4]"  />
         <nitem  name = "Led[3]"  />
         <nitem  name = "Led[2]"  />
         <nitem  name = "Led[1]"  />
         <nitem  name = "Led[0]"  />
+        <nitem  name = "LEDS1[6]"  />
         <nitem  name = "LEDS1[5]"  />
         <nitem  name = "LEDS1[4]"  />
         <nitem  name = "LEDS1[3]"  />
@@ -1356,13 +1425,13 @@
         <nitem  name = "Seg[2]"  />
         <nitem  name = "Seg[1]"  />
         <nitem  name = "Seg[0]"  />
+        <nitem  name = "LEDS2[20]"  />
         <nitem  name = "LEDS2[19]"  />
         <nitem  name = "LEDS2[18]"  />
         <nitem  name = "LEDS2[17]"  />
         <nitem  name = "LEDS2[16]"  />
         <nitem  name = "LEDS2[15]"  />
         <nitem  name = "LEDS2[14]"  />
-        <nitem  name = "LEDS2[13]"  />
         </nets>
     </instance>
 
@@ -1406,30 +1475,33 @@
         <nitem  name = "Seg[2]"  />
         <nitem  name = "Seg[1]"  />
         <nitem  name = "Seg[0]"  />
+        <nitem  name = "LEDS2[13]"  />
         <nitem  name = "LEDS2[12]"  />
         <nitem  name = "LEDS2[11]"  />
         <nitem  name = "LEDS2[10]"  />
         <nitem  name = "LEDS2[9]"  />
         <nitem  name = "LEDS2[8]"  />
         <nitem  name = "LEDS2[7]"  />
-        <nitem  name = "LEDS2[6]"  />
         </nets>
     </instance>
 
     <instance  name = "and_20"  library = "work"  arch = ""  type = "comb">
         <pins>
+        <pitem  name = "a[6]"  direction = "in"  />
         <pitem  name = "a[5]"  direction = "in"  />
         <pitem  name = "a[4]"  direction = "in"  />
         <pitem  name = "a[3]"  direction = "in"  />
         <pitem  name = "a[2]"  direction = "in"  />
         <pitem  name = "a[1]"  direction = "in"  />
         <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
         <pitem  name = "b[5]"  direction = "in"  />
         <pitem  name = "b[4]"  direction = "in"  />
         <pitem  name = "b[3]"  direction = "in"  />
         <pitem  name = "b[2]"  direction = "in"  />
         <pitem  name = "b[1]"  direction = "in"  />
         <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[6]"  direction = "out"  />
         <pitem  name = "o[5]"  direction = "out"  />
         <pitem  name = "o[4]"  direction = "out"  />
         <pitem  name = "o[3]"  direction = "out"  />
@@ -1439,18 +1511,21 @@
         </pins>
 
         <nets>
+        <nitem  name = "ledA2[6]"  />
         <nitem  name = "ledA2[5]"  />
         <nitem  name = "ledA2[4]"  />
         <nitem  name = "ledA2[3]"  />
         <nitem  name = "ledA2[2]"  />
         <nitem  name = "ledA2[1]"  />
         <nitem  name = "ledA2[0]"  />
+        <nitem  name = "Led[6]"  />
         <nitem  name = "Led[5]"  />
         <nitem  name = "Led[4]"  />
         <nitem  name = "Led[3]"  />
         <nitem  name = "Led[2]"  />
         <nitem  name = "Led[1]"  />
         <nitem  name = "Led[0]"  />
+        <nitem  name = "LEDS2[6]"  />
         <nitem  name = "LEDS2[5]"  />
         <nitem  name = "LEDS2[4]"  />
         <nitem  name = "LEDS2[3]"  />
@@ -1500,13 +1575,13 @@
         <nitem  name = "Seg[2]"  />
         <nitem  name = "Seg[1]"  />
         <nitem  name = "Seg[0]"  />
+        <nitem  name = "LEDS3[20]"  />
         <nitem  name = "LEDS3[19]"  />
         <nitem  name = "LEDS3[18]"  />
         <nitem  name = "LEDS3[17]"  />
         <nitem  name = "LEDS3[16]"  />
         <nitem  name = "LEDS3[15]"  />
         <nitem  name = "LEDS3[14]"  />
-        <nitem  name = "LEDS3[13]"  />
         </nets>
     </instance>
 
@@ -1550,30 +1625,33 @@
         <nitem  name = "Seg[2]"  />
         <nitem  name = "Seg[1]"  />
         <nitem  name = "Seg[0]"  />
+        <nitem  name = "LEDS3[13]"  />
         <nitem  name = "LEDS3[12]"  />
         <nitem  name = "LEDS3[11]"  />
         <nitem  name = "LEDS3[10]"  />
         <nitem  name = "LEDS3[9]"  />
         <nitem  name = "LEDS3[8]"  />
         <nitem  name = "LEDS3[7]"  />
-        <nitem  name = "LEDS3[6]"  />
         </nets>
     </instance>
 
     <instance  name = "and_23"  library = "work"  arch = ""  type = "comb">
         <pins>
+        <pitem  name = "a[6]"  direction = "in"  />
         <pitem  name = "a[5]"  direction = "in"  />
         <pitem  name = "a[4]"  direction = "in"  />
         <pitem  name = "a[3]"  direction = "in"  />
         <pitem  name = "a[2]"  direction = "in"  />
         <pitem  name = "a[1]"  direction = "in"  />
         <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
         <pitem  name = "b[5]"  direction = "in"  />
         <pitem  name = "b[4]"  direction = "in"  />
         <pitem  name = "b[3]"  direction = "in"  />
         <pitem  name = "b[2]"  direction = "in"  />
         <pitem  name = "b[1]"  direction = "in"  />
         <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[6]"  direction = "out"  />
         <pitem  name = "o[5]"  direction = "out"  />
         <pitem  name = "o[4]"  direction = "out"  />
         <pitem  name = "o[3]"  direction = "out"  />
@@ -1583,18 +1661,21 @@
         </pins>
 
         <nets>
+        <nitem  name = "ledA3[6]"  />
         <nitem  name = "ledA3[5]"  />
         <nitem  name = "ledA3[4]"  />
         <nitem  name = "ledA3[3]"  />
         <nitem  name = "ledA3[2]"  />
         <nitem  name = "ledA3[1]"  />
         <nitem  name = "ledA3[0]"  />
+        <nitem  name = "Led[6]"  />
         <nitem  name = "Led[5]"  />
         <nitem  name = "Led[4]"  />
         <nitem  name = "Led[3]"  />
         <nitem  name = "Led[2]"  />
         <nitem  name = "Led[1]"  />
         <nitem  name = "Led[0]"  />
+        <nitem  name = "LEDS3[6]"  />
         <nitem  name = "LEDS3[5]"  />
         <nitem  name = "LEDS3[4]"  />
         <nitem  name = "LEDS3[3]"  />
@@ -1644,13 +1725,13 @@
         <nitem  name = "Seg[2]"  />
         <nitem  name = "Seg[1]"  />
         <nitem  name = "Seg[0]"  />
+        <nitem  name = "LEDS4[20]"  />
         <nitem  name = "LEDS4[19]"  />
         <nitem  name = "LEDS4[18]"  />
         <nitem  name = "LEDS4[17]"  />
         <nitem  name = "LEDS4[16]"  />
         <nitem  name = "LEDS4[15]"  />
         <nitem  name = "LEDS4[14]"  />
-        <nitem  name = "LEDS4[13]"  />
         </nets>
     </instance>
 
@@ -1694,30 +1775,33 @@
         <nitem  name = "Seg[2]"  />
         <nitem  name = "Seg[1]"  />
         <nitem  name = "Seg[0]"  />
+        <nitem  name = "LEDS4[13]"  />
         <nitem  name = "LEDS4[12]"  />
         <nitem  name = "LEDS4[11]"  />
         <nitem  name = "LEDS4[10]"  />
         <nitem  name = "LEDS4[9]"  />
         <nitem  name = "LEDS4[8]"  />
         <nitem  name = "LEDS4[7]"  />
-        <nitem  name = "LEDS4[6]"  />
         </nets>
     </instance>
 
     <instance  name = "and_26"  library = "work"  arch = ""  type = "comb">
         <pins>
+        <pitem  name = "a[6]"  direction = "in"  />
         <pitem  name = "a[5]"  direction = "in"  />
         <pitem  name = "a[4]"  direction = "in"  />
         <pitem  name = "a[3]"  direction = "in"  />
         <pitem  name = "a[2]"  direction = "in"  />
         <pitem  name = "a[1]"  direction = "in"  />
         <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
         <pitem  name = "b[5]"  direction = "in"  />
         <pitem  name = "b[4]"  direction = "in"  />
         <pitem  name = "b[3]"  direction = "in"  />
         <pitem  name = "b[2]"  direction = "in"  />
         <pitem  name = "b[1]"  direction = "in"  />
         <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[6]"  direction = "out"  />
         <pitem  name = "o[5]"  direction = "out"  />
         <pitem  name = "o[4]"  direction = "out"  />
         <pitem  name = "o[3]"  direction = "out"  />
@@ -1727,18 +1811,21 @@
         </pins>
 
         <nets>
+        <nitem  name = "ledA4[6]"  />
         <nitem  name = "ledA4[5]"  />
         <nitem  name = "ledA4[4]"  />
         <nitem  name = "ledA4[3]"  />
         <nitem  name = "ledA4[2]"  />
         <nitem  name = "ledA4[1]"  />
         <nitem  name = "ledA4[0]"  />
+        <nitem  name = "Led[6]"  />
         <nitem  name = "Led[5]"  />
         <nitem  name = "Led[4]"  />
         <nitem  name = "Led[3]"  />
         <nitem  name = "Led[2]"  />
         <nitem  name = "Led[1]"  />
         <nitem  name = "Led[0]"  />
+        <nitem  name = "LEDS4[6]"  />
         <nitem  name = "LEDS4[5]"  />
         <nitem  name = "LEDS4[4]"  />
         <nitem  name = "LEDS4[3]"  />
@@ -1819,12 +1906,13 @@
 
         <nets>
         <nitem  name = "n1"  />
+        <nitem  name = "Led[5]"  />
         <nitem  name = "Led[4]"  />
         <nitem  name = "Led[3]"  />
         <nitem  name = "Led[2]"  />
         <nitem  name = "Led[1]"  />
         <nitem  name = "Led[0]"  />
-        <nitem  name = "n270"  />
+        <nitem  name = "n282"  />
         </nets>
     </instance>
 
@@ -1905,7 +1993,7 @@
         <nitem  name = "Seg[2]"  />
         <nitem  name = "Seg[1]"  />
         <nitem  name = "Seg[0]"  />
-        <nitem  name = "n271"  />
+        <nitem  name = "n283"  />
         </nets>
     </instance>
 
@@ -1944,25 +2032,27 @@
         <nitem  name = "Seg[0]"  />
         <nitem  name = "n1"  />
         <nitem  name = "n2"  />
-        <nitem  name = "n271"  />
-        <nitem  name = "n273"  />
-        <nitem  name = "n274"  />
-        <nitem  name = "n275"  />
-        <nitem  name = "n276"  />
-        <nitem  name = "n277"  />
-        <nitem  name = "n278"  />
-        <nitem  name = "n279"  />
+        <nitem  name = "n283"  />
+        <nitem  name = "n285"  />
+        <nitem  name = "n286"  />
+        <nitem  name = "n287"  />
+        <nitem  name = "n288"  />
+        <nitem  name = "n289"  />
+        <nitem  name = "n290"  />
+        <nitem  name = "n291"  />
         </nets>
     </instance>
 
     <instance  name = "mux_30"  library = "work"  arch = ""  type = "comb">
         <pins>
+        <pitem  name = "d0[6]"  direction = "in"  />
         <pitem  name = "d0[5]"  direction = "in"  />
         <pitem  name = "d0[4]"  direction = "in"  />
         <pitem  name = "d0[3]"  direction = "in"  />
         <pitem  name = "d0[2]"  direction = "in"  />
         <pitem  name = "d0[1]"  direction = "in"  />
         <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "d1[6]"  direction = "in"  />
         <pitem  name = "d1[5]"  direction = "in"  />
         <pitem  name = "d1[4]"  direction = "in"  />
         <pitem  name = "d1[3]"  direction = "in"  />
@@ -1970,6 +2060,7 @@
         <pitem  name = "d1[1]"  direction = "in"  />
         <pitem  name = "d1[0]"  direction = "in"  />
         <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "o[6]"  direction = "out"  />
         <pitem  name = "o[5]"  direction = "out"  />
         <pitem  name = "o[4]"  direction = "out"  />
         <pitem  name = "o[3]"  direction = "out"  />
@@ -1979,6 +2070,7 @@
         </pins>
 
         <nets>
+        <nitem  name = "Led[5]"  />
         <nitem  name = "Led[4]"  />
         <nitem  name = "Led[3]"  />
         <nitem  name = "Led[2]"  />
@@ -1986,13 +2078,14 @@
         <nitem  name = "Led[0]"  />
         <nitem  name = "n1"  />
         <nitem  name = "n2"  />
-        <nitem  name = "n270"  />
-        <nitem  name = "n281"  />
         <nitem  name = "n282"  />
-        <nitem  name = "n283"  />
-        <nitem  name = "n284"  />
-        <nitem  name = "n285"  />
-        <nitem  name = "n286"  />
+        <nitem  name = "n293"  />
+        <nitem  name = "n294"  />
+        <nitem  name = "n295"  />
+        <nitem  name = "n296"  />
+        <nitem  name = "n297"  />
+        <nitem  name = "n298"  />
+        <nitem  name = "n299"  />
         </nets>
     </instance>
 
@@ -2030,21 +2123,21 @@
         <nitem  name = "Seg[2]"  />
         <nitem  name = "Seg[1]"  />
         <nitem  name = "Seg[0]"  />
-        <nitem  name = "n273"  />
-        <nitem  name = "n274"  />
-        <nitem  name = "n275"  />
-        <nitem  name = "n276"  />
-        <nitem  name = "n277"  />
-        <nitem  name = "n278"  />
-        <nitem  name = "n279"  />
-        <nitem  name = "n270"  />
+        <nitem  name = "n285"  />
+        <nitem  name = "n286"  />
+        <nitem  name = "n287"  />
         <nitem  name = "n288"  />
         <nitem  name = "n289"  />
         <nitem  name = "n290"  />
         <nitem  name = "n291"  />
-        <nitem  name = "n292"  />
-        <nitem  name = "n293"  />
-        <nitem  name = "n294"  />
+        <nitem  name = "n282"  />
+        <nitem  name = "n301"  />
+        <nitem  name = "n302"  />
+        <nitem  name = "n303"  />
+        <nitem  name = "n304"  />
+        <nitem  name = "n305"  />
+        <nitem  name = "n306"  />
+        <nitem  name = "n307"  />
         </nets>
     </instance>
 
@@ -2082,15 +2175,15 @@
         </pins>
 
         <nets>
-        <nitem  name = "n288"  />
-        <nitem  name = "n289"  />
-        <nitem  name = "n290"  />
-        <nitem  name = "n291"  />
-        <nitem  name = "n292"  />
-        <nitem  name = "n293"  />
-        <nitem  name = "n294"  />
+        <nitem  name = "n301"  />
+        <nitem  name = "n302"  />
+        <nitem  name = "n303"  />
+        <nitem  name = "n304"  />
+        <nitem  name = "n305"  />
+        <nitem  name = "n306"  />
+        <nitem  name = "n307"  />
         <nitem  name = "n1"  />
-        <nitem  name = "cnt[0]"  />
+        <nitem  name = "osc_clk_c_c"  />
         <nitem  name = "Seg[6]"  />
         <nitem  name = "Seg[5]"  />
         <nitem  name = "Seg[4]"  />
@@ -2696,18 +2789,21 @@
 
     <instance  name = "ledA4"  library = "work"  arch = ""  type = "reg">
         <pins>
+        <pitem  name = "d[6]"  direction = "in"  />
         <pitem  name = "d[5]"  direction = "in"  />
         <pitem  name = "d[4]"  direction = "in"  />
         <pitem  name = "d[3]"  direction = "in"  />
         <pitem  name = "d[2]"  direction = "in"  />
         <pitem  name = "d[1]"  direction = "in"  />
         <pitem  name = "d[0]"  direction = "in"  />
+        <pitem  name = "set[6]"  direction = "in"  />
         <pitem  name = "set[5]"  direction = "in"  />
         <pitem  name = "set[4]"  direction = "in"  />
         <pitem  name = "set[3]"  direction = "in"  />
         <pitem  name = "set[2]"  direction = "in"  />
         <pitem  name = "set[1]"  direction = "in"  />
         <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[6]"  direction = "in"  />
         <pitem  name = "reset[5]"  direction = "in"  />
         <pitem  name = "reset[4]"  direction = "in"  />
         <pitem  name = "reset[3]"  direction = "in"  />
@@ -2715,6 +2811,7 @@
         <pitem  name = "reset[1]"  direction = "in"  />
         <pitem  name = "reset[0]"  direction = "in"  />
         <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[6]"  direction = "out"  />
         <pitem  name = "q[5]"  direction = "out"  />
         <pitem  name = "q[4]"  direction = "out"  />
         <pitem  name = "q[3]"  direction = "out"  />
@@ -2724,6 +2821,7 @@
         </pins>
 
         <nets>
+        <nitem  name = "tmp[78]"  />
         <nitem  name = "tmp[77]"  />
         <nitem  name = "tmp[76]"  />
         <nitem  name = "tmp[75]"  />
@@ -2732,6 +2830,7 @@
         <nitem  name = "tmp[72]"  />
         <nitem  name = "n1"  />
         <nitem  name = "latch"  />
+        <nitem  name = "ledA4[6]"  />
         <nitem  name = "ledA4[5]"  />
         <nitem  name = "ledA4[4]"  />
         <nitem  name = "ledA4[3]"  />
@@ -2849,18 +2948,21 @@
 
     <instance  name = "ledA3"  library = "work"  arch = ""  type = "reg">
         <pins>
+        <pitem  name = "d[6]"  direction = "in"  />
         <pitem  name = "d[5]"  direction = "in"  />
         <pitem  name = "d[4]"  direction = "in"  />
         <pitem  name = "d[3]"  direction = "in"  />
         <pitem  name = "d[2]"  direction = "in"  />
         <pitem  name = "d[1]"  direction = "in"  />
         <pitem  name = "d[0]"  direction = "in"  />
+        <pitem  name = "set[6]"  direction = "in"  />
         <pitem  name = "set[5]"  direction = "in"  />
         <pitem  name = "set[4]"  direction = "in"  />
         <pitem  name = "set[3]"  direction = "in"  />
         <pitem  name = "set[2]"  direction = "in"  />
         <pitem  name = "set[1]"  direction = "in"  />
         <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[6]"  direction = "in"  />
         <pitem  name = "reset[5]"  direction = "in"  />
         <pitem  name = "reset[4]"  direction = "in"  />
         <pitem  name = "reset[3]"  direction = "in"  />
@@ -2868,6 +2970,7 @@
         <pitem  name = "reset[1]"  direction = "in"  />
         <pitem  name = "reset[0]"  direction = "in"  />
         <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[6]"  direction = "out"  />
         <pitem  name = "q[5]"  direction = "out"  />
         <pitem  name = "q[4]"  direction = "out"  />
         <pitem  name = "q[3]"  direction = "out"  />
@@ -2877,6 +2980,7 @@
         </pins>
 
         <nets>
+        <nitem  name = "tmp[54]"  />
         <nitem  name = "tmp[53]"  />
         <nitem  name = "tmp[52]"  />
         <nitem  name = "tmp[51]"  />
@@ -2885,6 +2989,7 @@
         <nitem  name = "tmp[48]"  />
         <nitem  name = "n1"  />
         <nitem  name = "latch"  />
+        <nitem  name = "ledA3[6]"  />
         <nitem  name = "ledA3[5]"  />
         <nitem  name = "ledA3[4]"  />
         <nitem  name = "ledA3[3]"  />
@@ -3002,18 +3107,21 @@
 
     <instance  name = "ledA2"  library = "work"  arch = ""  type = "reg">
         <pins>
+        <pitem  name = "d[6]"  direction = "in"  />
         <pitem  name = "d[5]"  direction = "in"  />
         <pitem  name = "d[4]"  direction = "in"  />
         <pitem  name = "d[3]"  direction = "in"  />
         <pitem  name = "d[2]"  direction = "in"  />
         <pitem  name = "d[1]"  direction = "in"  />
         <pitem  name = "d[0]"  direction = "in"  />
+        <pitem  name = "set[6]"  direction = "in"  />
         <pitem  name = "set[5]"  direction = "in"  />
         <pitem  name = "set[4]"  direction = "in"  />
         <pitem  name = "set[3]"  direction = "in"  />
         <pitem  name = "set[2]"  direction = "in"  />
         <pitem  name = "set[1]"  direction = "in"  />
         <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[6]"  direction = "in"  />
         <pitem  name = "reset[5]"  direction = "in"  />
         <pitem  name = "reset[4]"  direction = "in"  />
         <pitem  name = "reset[3]"  direction = "in"  />
@@ -3021,6 +3129,7 @@
         <pitem  name = "reset[1]"  direction = "in"  />
         <pitem  name = "reset[0]"  direction = "in"  />
         <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[6]"  direction = "out"  />
         <pitem  name = "q[5]"  direction = "out"  />
         <pitem  name = "q[4]"  direction = "out"  />
         <pitem  name = "q[3]"  direction = "out"  />
@@ -3030,6 +3139,7 @@
         </pins>
 
         <nets>
+        <nitem  name = "tmp[30]"  />
         <nitem  name = "tmp[29]"  />
         <nitem  name = "tmp[28]"  />
         <nitem  name = "tmp[27]"  />
@@ -3038,6 +3148,7 @@
         <nitem  name = "tmp[24]"  />
         <nitem  name = "n1"  />
         <nitem  name = "latch"  />
+        <nitem  name = "ledA2[6]"  />
         <nitem  name = "ledA2[5]"  />
         <nitem  name = "ledA2[4]"  />
         <nitem  name = "ledA2[3]"  />
@@ -3155,18 +3266,21 @@
 
     <instance  name = "ledA1"  library = "work"  arch = ""  type = "reg">
         <pins>
+        <pitem  name = "d[6]"  direction = "in"  />
         <pitem  name = "d[5]"  direction = "in"  />
         <pitem  name = "d[4]"  direction = "in"  />
         <pitem  name = "d[3]"  direction = "in"  />
         <pitem  name = "d[2]"  direction = "in"  />
         <pitem  name = "d[1]"  direction = "in"  />
         <pitem  name = "d[0]"  direction = "in"  />
+        <pitem  name = "set[6]"  direction = "in"  />
         <pitem  name = "set[5]"  direction = "in"  />
         <pitem  name = "set[4]"  direction = "in"  />
         <pitem  name = "set[3]"  direction = "in"  />
         <pitem  name = "set[2]"  direction = "in"  />
         <pitem  name = "set[1]"  direction = "in"  />
         <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[6]"  direction = "in"  />
         <pitem  name = "reset[5]"  direction = "in"  />
         <pitem  name = "reset[4]"  direction = "in"  />
         <pitem  name = "reset[3]"  direction = "in"  />
@@ -3174,6 +3288,7 @@
         <pitem  name = "reset[1]"  direction = "in"  />
         <pitem  name = "reset[0]"  direction = "in"  />
         <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[6]"  direction = "out"  />
         <pitem  name = "q[5]"  direction = "out"  />
         <pitem  name = "q[4]"  direction = "out"  />
         <pitem  name = "q[3]"  direction = "out"  />
@@ -3183,6 +3298,7 @@
         </pins>
 
         <nets>
+        <nitem  name = "tmp[6]"  />
         <nitem  name = "tmp[5]"  />
         <nitem  name = "tmp[4]"  />
         <nitem  name = "tmp[3]"  />
@@ -3191,6 +3307,7 @@
         <nitem  name = "tmp[0]"  />
         <nitem  name = "n1"  />
         <nitem  name = "latch"  />
+        <nitem  name = "ledA1[6]"  />
         <nitem  name = "ledA1[5]"  />
         <nitem  name = "ledA1[4]"  />
         <nitem  name = "ledA1[3]"  />
@@ -3202,6 +3319,10 @@
 
     <instance  name = "bright"  library = "work"  arch = ""  type = "reg">
         <pins>
+        <pitem  name = "d[11]"  direction = "in"  />
+        <pitem  name = "d[10]"  direction = "in"  />
+        <pitem  name = "d[9]"  direction = "in"  />
+        <pitem  name = "d[8]"  direction = "in"  />
         <pitem  name = "d[7]"  direction = "in"  />
         <pitem  name = "d[6]"  direction = "in"  />
         <pitem  name = "d[5]"  direction = "in"  />
@@ -3210,6 +3331,10 @@
         <pitem  name = "d[2]"  direction = "in"  />
         <pitem  name = "d[1]"  direction = "in"  />
         <pitem  name = "d[0]"  direction = "in"  />
+        <pitem  name = "set[11]"  direction = "in"  />
+        <pitem  name = "set[10]"  direction = "in"  />
+        <pitem  name = "set[9]"  direction = "in"  />
+        <pitem  name = "set[8]"  direction = "in"  />
         <pitem  name = "set[7]"  direction = "in"  />
         <pitem  name = "set[6]"  direction = "in"  />
         <pitem  name = "set[5]"  direction = "in"  />
@@ -3218,6 +3343,10 @@
         <pitem  name = "set[2]"  direction = "in"  />
         <pitem  name = "set[1]"  direction = "in"  />
         <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[11]"  direction = "in"  />
+        <pitem  name = "reset[10]"  direction = "in"  />
+        <pitem  name = "reset[9]"  direction = "in"  />
+        <pitem  name = "reset[8]"  direction = "in"  />
         <pitem  name = "reset[7]"  direction = "in"  />
         <pitem  name = "reset[6]"  direction = "in"  />
         <pitem  name = "reset[5]"  direction = "in"  />
@@ -3227,6 +3356,10 @@
         <pitem  name = "reset[1]"  direction = "in"  />
         <pitem  name = "reset[0]"  direction = "in"  />
         <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[11]"  direction = "out"  />
+        <pitem  name = "q[10]"  direction = "out"  />
+        <pitem  name = "q[9]"  direction = "out"  />
+        <pitem  name = "q[8]"  direction = "out"  />
         <pitem  name = "q[7]"  direction = "out"  />
         <pitem  name = "q[6]"  direction = "out"  />
         <pitem  name = "q[5]"  direction = "out"  />
@@ -3238,6 +3371,10 @@
         </pins>
 
         <nets>
+        <nitem  name = "tmp[11]"  />
+        <nitem  name = "tmp[10]"  />
+        <nitem  name = "tmp[9]"  />
+        <nitem  name = "tmp[8]"  />
         <nitem  name = "tmp[7]"  />
         <nitem  name = "tmp[6]"  />
         <nitem  name = "tmp[5]"  />
@@ -3248,6 +3385,10 @@
         <nitem  name = "tmp[0]"  />
         <nitem  name = "n1"  />
         <nitem  name = "pwm"  />
+        <nitem  name = "bright[11]"  />
+        <nitem  name = "bright[10]"  />
+        <nitem  name = "bright[9]"  />
+        <nitem  name = "bright[8]"  />
         <nitem  name = "bright[7]"  />
         <nitem  name = "bright[6]"  />
         <nitem  name = "bright[5]"  />
@@ -3261,6 +3402,10 @@
 
     <instance  name = "cnt"  library = "work"  arch = ""  type = "reg">
         <pins>
+        <pitem  name = "d[11]"  direction = "in"  />
+        <pitem  name = "d[10]"  direction = "in"  />
+        <pitem  name = "d[9]"  direction = "in"  />
+        <pitem  name = "d[8]"  direction = "in"  />
         <pitem  name = "d[7]"  direction = "in"  />
         <pitem  name = "d[6]"  direction = "in"  />
         <pitem  name = "d[5]"  direction = "in"  />
@@ -3269,6 +3414,10 @@
         <pitem  name = "d[2]"  direction = "in"  />
         <pitem  name = "d[1]"  direction = "in"  />
         <pitem  name = "d[0]"  direction = "in"  />
+        <pitem  name = "set[11]"  direction = "in"  />
+        <pitem  name = "set[10]"  direction = "in"  />
+        <pitem  name = "set[9]"  direction = "in"  />
+        <pitem  name = "set[8]"  direction = "in"  />
         <pitem  name = "set[7]"  direction = "in"  />
         <pitem  name = "set[6]"  direction = "in"  />
         <pitem  name = "set[5]"  direction = "in"  />
@@ -3277,6 +3426,10 @@
         <pitem  name = "set[2]"  direction = "in"  />
         <pitem  name = "set[1]"  direction = "in"  />
         <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[11]"  direction = "in"  />
+        <pitem  name = "reset[10]"  direction = "in"  />
+        <pitem  name = "reset[9]"  direction = "in"  />
+        <pitem  name = "reset[8]"  direction = "in"  />
         <pitem  name = "reset[7]"  direction = "in"  />
         <pitem  name = "reset[6]"  direction = "in"  />
         <pitem  name = "reset[5]"  direction = "in"  />
@@ -3286,6 +3439,10 @@
         <pitem  name = "reset[1]"  direction = "in"  />
         <pitem  name = "reset[0]"  direction = "in"  />
         <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[11]"  direction = "out"  />
+        <pitem  name = "q[10]"  direction = "out"  />
+        <pitem  name = "q[9]"  direction = "out"  />
+        <pitem  name = "q[8]"  direction = "out"  />
         <pitem  name = "q[7]"  direction = "out"  />
         <pitem  name = "q[6]"  direction = "out"  />
         <pitem  name = "q[5]"  direction = "out"  />
@@ -3297,16 +3454,24 @@
         </pins>
 
         <nets>
-        <nitem  name = "n510"  />
-        <nitem  name = "n511"  />
-        <nitem  name = "n512"  />
-        <nitem  name = "n513"  />
-        <nitem  name = "n514"  />
-        <nitem  name = "n515"  />
-        <nitem  name = "n516"  />
-        <nitem  name = "n517"  />
+        <nitem  name = "n532"  />
+        <nitem  name = "n533"  />
+        <nitem  name = "n534"  />
+        <nitem  name = "n535"  />
+        <nitem  name = "n536"  />
+        <nitem  name = "n537"  />
+        <nitem  name = "n538"  />
+        <nitem  name = "n539"  />
+        <nitem  name = "n540"  />
+        <nitem  name = "n541"  />
+        <nitem  name = "n542"  />
+        <nitem  name = "n543"  />
         <nitem  name = "n1"  />
         <nitem  name = "osc_clk_c_c"  />
+        <nitem  name = "cnt[11]"  />
+        <nitem  name = "cnt[10]"  />
+        <nitem  name = "cnt[9]"  />
+        <nitem  name = "cnt[8]"  />
         <nitem  name = "cnt[7]"  />
         <nitem  name = "cnt[6]"  />
         <nitem  name = "cnt[5]"  />
@@ -3321,6 +3486,10 @@
     <instance  name = "add_48"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "a[11]"  direction = "in"  />
+        <pitem  name = "a[10]"  direction = "in"  />
+        <pitem  name = "a[9]"  direction = "in"  />
+        <pitem  name = "a[8]"  direction = "in"  />
         <pitem  name = "a[7]"  direction = "in"  />
         <pitem  name = "a[6]"  direction = "in"  />
         <pitem  name = "a[5]"  direction = "in"  />
@@ -3329,6 +3498,10 @@
         <pitem  name = "a[2]"  direction = "in"  />
         <pitem  name = "a[1]"  direction = "in"  />
         <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[11]"  direction = "in"  />
+        <pitem  name = "b[10]"  direction = "in"  />
+        <pitem  name = "b[9]"  direction = "in"  />
+        <pitem  name = "b[8]"  direction = "in"  />
         <pitem  name = "b[7]"  direction = "in"  />
         <pitem  name = "b[6]"  direction = "in"  />
         <pitem  name = "b[5]"  direction = "in"  />
@@ -3337,6 +3510,10 @@
         <pitem  name = "b[2]"  direction = "in"  />
         <pitem  name = "b[1]"  direction = "in"  />
         <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[11]"  direction = "out"  />
+        <pitem  name = "o[10]"  direction = "out"  />
+        <pitem  name = "o[9]"  direction = "out"  />
+        <pitem  name = "o[8]"  direction = "out"  />
         <pitem  name = "o[7]"  direction = "out"  />
         <pitem  name = "o[6]"  direction = "out"  />
         <pitem  name = "o[5]"  direction = "out"  />
@@ -3349,6 +3526,10 @@
 
         <nets>
         <nitem  name = "n1"  />
+        <nitem  name = "cnt[11]"  />
+        <nitem  name = "cnt[10]"  />
+        <nitem  name = "cnt[9]"  />
+        <nitem  name = "cnt[8]"  />
         <nitem  name = "cnt[7]"  />
         <nitem  name = "cnt[6]"  />
         <nitem  name = "cnt[5]"  />
@@ -3358,19 +3539,24 @@
         <nitem  name = "cnt[1]"  />
         <nitem  name = "cnt[0]"  />
         <nitem  name = "n2"  />
-        <nitem  name = "n510"  />
-        <nitem  name = "n511"  />
-        <nitem  name = "n512"  />
-        <nitem  name = "n513"  />
-        <nitem  name = "n514"  />
-        <nitem  name = "n515"  />
-        <nitem  name = "n516"  />
-        <nitem  name = "n517"  />
+        <nitem  name = "n532"  />
+        <nitem  name = "n533"  />
+        <nitem  name = "n534"  />
+        <nitem  name = "n535"  />
+        <nitem  name = "n536"  />
+        <nitem  name = "n537"  />
+        <nitem  name = "n538"  />
+        <nitem  name = "n539"  />
+        <nitem  name = "n540"  />
+        <nitem  name = "n541"  />
+        <nitem  name = "n542"  />
+        <nitem  name = "n543"  />
         </nets>
     </instance>
 
     <instance  name = "Digit1"  library = "work"  arch = ""  type = "reg">
         <pins>
+        <pitem  name = "d[20]"  direction = "in"  />
         <pitem  name = "d[19]"  direction = "in"  />
         <pitem  name = "d[18]"  direction = "in"  />
         <pitem  name = "d[17]"  direction = "in"  />
@@ -3391,6 +3577,7 @@
         <pitem  name = "d[2]"  direction = "in"  />
         <pitem  name = "d[1]"  direction = "in"  />
         <pitem  name = "d[0]"  direction = "in"  />
+        <pitem  name = "set[20]"  direction = "in"  />
         <pitem  name = "set[19]"  direction = "in"  />
         <pitem  name = "set[18]"  direction = "in"  />
         <pitem  name = "set[17]"  direction = "in"  />
@@ -3411,6 +3598,7 @@
         <pitem  name = "set[2]"  direction = "in"  />
         <pitem  name = "set[1]"  direction = "in"  />
         <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[20]"  direction = "in"  />
         <pitem  name = "reset[19]"  direction = "in"  />
         <pitem  name = "reset[18]"  direction = "in"  />
         <pitem  name = "reset[17]"  direction = "in"  />
@@ -3432,6 +3620,7 @@
         <pitem  name = "reset[1]"  direction = "in"  />
         <pitem  name = "reset[0]"  direction = "in"  />
         <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[20]"  direction = "out"  />
         <pitem  name = "q[19]"  direction = "out"  />
         <pitem  name = "q[18]"  direction = "out"  />
         <pitem  name = "q[17]"  direction = "out"  />
@@ -3475,8 +3664,10 @@
         <nitem  name = "n25"  />
         <nitem  name = "n26"  />
         <nitem  name = "n27"  />
+        <nitem  name = "n28"  />
         <nitem  name = "n1"  />
         <nitem  name = "osc_clk_c_c"  />
+        <nitem  name = "Digit1[20]"  />
         <nitem  name = "Digit1[19]"  />
         <nitem  name = "Digit1[18]"  />
         <nitem  name = "Digit1[17]"  />
@@ -3530,23 +3721,20 @@
     </regs>
 
     <!--
-        Views in design "AutoShift": 14
+        Views in design "AutoShift": 11
     -->
 
     <views>
-        <view  name = "LessThan_8u_8u"  />
+        <view  name = "LessThan_12u_12u"  />
         <view  name = "OSCH(NOM_FREQ="7.00")"  />
-        <view  name = "add_8u_8u"  />
-        <view  name = "and_6"  />
+        <view  name = "add_12u_12u"  />
         <view  name = "and_7"  />
         <view  name = "equal_32"  />
-        <view  name = "mux_20"  />
-        <view  name = "mux_6"  />
+        <view  name = "mux_21"  />
         <view  name = "mux_7"  />
-        <view  name = "wide_dffrs_20"  />
-        <view  name = "wide_dffrs_6"  />
+        <view  name = "wide_dffrs_12"  />
+        <view  name = "wide_dffrs_21"  />
         <view  name = "wide_dffrs_7"  />
-        <view  name = "wide_dffrs_8"  />
         <view  name = "wide_dffrs_95"  />
     </views>
 
