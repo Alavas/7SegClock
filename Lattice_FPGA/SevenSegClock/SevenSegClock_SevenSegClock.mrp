@@ -14,7 +14,7 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-640UHCTQFP144
 Target Performance:   5
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.3.0.109
-Mapped on:  03/25/15  01:37:02
+Mapped on:  04/02/15  04:22:57
 
 Design Summary
 --------------
@@ -66,7 +66,7 @@ Design Summary
 
 
 
-Design:  AutoShift                                     Date:  03/25/15  01:37:02
+Design:  AutoShift                                     Date:  04/02/15  04:22:57
 
 Design Summary (cont)
 ---------------------
@@ -132,7 +132,7 @@ IO (PIO) Attributes
 
 
 
-Design:  AutoShift                                     Date:  03/25/15  01:37:02
+Design:  AutoShift                                     Date:  04/02/15  04:22:57
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -198,7 +198,7 @@ IO (PIO) Attributes (cont)
 
 
 
-Design:  AutoShift                                     Date:  03/25/15  01:37:02
+Design:  AutoShift                                     Date:  04/02/15  04:22:57
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -264,7 +264,7 @@ IO (PIO) Attributes (cont)
 
 
 
-Design:  AutoShift                                     Date:  03/25/15  01:37:02
+Design:  AutoShift                                     Date:  04/02/15  04:22:57
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -330,7 +330,7 @@ Signal n985 was merged into signal heartbeat_c
 
 
 
-Design:  AutoShift                                     Date:  03/25/15  01:37:02
+Design:  AutoShift                                     Date:  04/02/15  04:22:57
 
 Removed logic (cont)
 --------------------
@@ -357,7 +357,7 @@ OSC 1:                                     Pin/Node Value
   OSC Type:                                         OSCH
   STDBY Input:                                      NONE
   OSC Output:                              NODE     osc_clk_c_c
-  OSC Nominal Frequency (MHz):                      7.00
+  OSC Nominal Frequency (MHz):                      3.50
 
 ASIC Components
 ---------------

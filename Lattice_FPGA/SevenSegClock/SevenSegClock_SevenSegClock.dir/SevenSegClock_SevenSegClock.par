@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Mar 25 01:37:04 2015
+Thu Apr  2 04:22:58 2015
 
 /usr/local/diamond/3.3_x64/ispfpga/bin/lin64/par -f
 SevenSegClock_SevenSegClock.p2t SevenSegClock_SevenSegClock_map.ncd
@@ -16,7 +16,7 @@ Preference file: SevenSegClock_SevenSegClock.prf.
 Level/      Number      Worst       Timing      Worst       Timing      Run         NCD
 Cost [ncd]  Unrouted    Slack       Score       Slack(hold) Score(hold) Time        Status
 ----------  --------    -----       ------      ----------- ----------- -----       ------
-5_1   *     0           135.694     0           0.322       0           08          Complete        
+5_1   *     0           278.551     0           0.322       0           08          Complete        
 
 
 * : Design saved.

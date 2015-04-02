@@ -20,7 +20,7 @@
             <ID>35901018</ID>
             <Severity>Info</Severity>
             <Dynamic>/usr/local/diamond/3.3_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1793): </Dynamic>
-            <Dynamic>OSCH(NOM_FREQ=&quot;7.00&quot;)</Dynamic>
+            <Dynamic>OSCH(NOM_FREQ=&quot;3.50&quot;)</Dynamic>
             <Navigation>/usr/local/diamond/3.3_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
             <Navigation>1793</Navigation>
         </Message>

@@ -7,7 +7,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Mar 25 01:37:01 2015
+Thu Apr  2 04:22:56 2015
 
 
 Command Line:  synthesis -f SevenSegClock_SevenSegClock_lattice.synproj -gui 
@@ -77,7 +77,7 @@ Compile design.
 Compile Design Begin
 Top module name (Verilog): AutoShift
     <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(9): " arg1="AutoShift" arg2="/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v" arg3="9"  />
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="/usr/local/diamond/3.3_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1793): " arg1="OSCH(NOM_FREQ=&quot;7.00&quot;)" arg2="/usr/local/diamond/3.3_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v" arg3="1793"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="/usr/local/diamond/3.3_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1793): " arg1="OSCH(NOM_FREQ=&quot;3.50&quot;)" arg2="/usr/local/diamond/3.3_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v" arg3="1793"  />
 Last elaborated design is AutoShift()
 Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
@@ -181,7 +181,7 @@ All constraints were met.
 Peak Memory Usage: 183.332  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.749  secs
+Elapsed CPU time for LSE flow : 0.765  secs
 --------------------------------------------------------------
 
 map -a "MachXO2" -p LCMXO2-640UHC -t TQFP144 -s 5 -oc Commercial   "SevenSegClock_SevenSegClock.ngd" -o "SevenSegClock_SevenSegClock_map.ncd" -pr "SevenSegClock_SevenSegClock.prf" -mp "SevenSegClock_SevenSegClock.mrp" "/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/SevenSegClock.lpf" -c 0            
@@ -301,7 +301,7 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "SevenSegClock_SevenSegClock_map.ncd"
-Wed Mar 25 01:37:04 2015
+Thu Apr  2 04:22:58 2015
 
 PAR: Place And Route Diamond (64-bit) 3.3.0.109.
 Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF SevenSegClock_SevenSegClock_map.ncd SevenSegClock_SevenSegClock.dir/5_1.ncd SevenSegClock_SevenSegClock.prf
@@ -410,7 +410,7 @@ I/O Bank Usage Summary:
 | 3        | 19 / 26 ( 73%) | 3.3V       | -         |
 +----------+----------------+------------+-----------+
 
-Total placer CPU time: 6 secs 
+Total placer CPU time: 7 secs 
 
 Dumping design to file SevenSegClock_SevenSegClock.dir/5_1.ncd.
 
@@ -421,7 +421,7 @@ Starting router resource preassignment
 
 Completed router resource preassignment. Real time: 7 secs 
 
-Start NBR router at Wed Mar 25 01:37:11 UTC 2015
+Start NBR router at Thu Apr 02 04:23:06 UTC 2015
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -436,35 +436,35 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design. Thanks.                                       
 *****************************************************************
 
-Start NBR special constraint process at Wed Mar 25 01:37:11 UTC 2015
+Start NBR special constraint process at Thu Apr 02 04:23:06 UTC 2015
 
-Start NBR section for initial routing at Wed Mar 25 01:37:11 UTC 2015
+Start NBR section for initial routing at Thu Apr 02 04:23:06 UTC 2015
 Level 4, iteration 1
 21(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 136.316ns/0.000ns; real time: 8 secs 
+Estimated worst slack/total negative slack<setup>: 279.173ns/0.000ns; real time: 8 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at Wed Mar 25 01:37:12 UTC 2015
+Start NBR section for normal routing at Thu Apr 02 04:23:06 UTC 2015
 Level 4, iteration 1
 12(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 135.694ns/0.000ns; real time: 8 secs 
+Estimated worst slack/total negative slack<setup>: 278.551ns/0.000ns; real time: 8 secs 
 Level 4, iteration 2
 1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 135.694ns/0.000ns; real time: 8 secs 
+Estimated worst slack/total negative slack<setup>: 278.551ns/0.000ns; real time: 8 secs 
 Level 4, iteration 3
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 135.694ns/0.000ns; real time: 8 secs 
+Estimated worst slack/total negative slack<setup>: 278.551ns/0.000ns; real time: 8 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at Wed Mar 25 01:37:12 UTC 2015
+Start NBR section for setup/hold timing optimization with effort level 3 at Thu Apr 02 04:23:06 UTC 2015
 
-Start NBR section for re-routing at Wed Mar 25 01:37:12 UTC 2015
+Start NBR section for re-routing at Thu Apr 02 04:23:06 UTC 2015
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 135.694ns/0.000ns; real time: 8 secs 
+Estimated worst slack/total negative slack<setup>: 278.551ns/0.000ns; real time: 8 secs 
 
-Start NBR section for post-routing at Wed Mar 25 01:37:12 UTC 2015
+Start NBR section for post-routing at Thu Apr 02 04:23:06 UTC 2015
 
 End NBR router with 0 unrouted connection
 
@@ -472,7 +472,7 @@ NBR Summary
 -----------
   Number of unrouted connections : 0 (0.00%)
   Number of connections with timing violations : 0 (0.00%)
-  Estimated worst slack<setup> : 135.694ns
+  Estimated worst slack<setup> : 278.551ns
   Timing score<setup> : 0
 -----------
 Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
@@ -495,7 +495,7 @@ Dumping design to file SevenSegClock_SevenSegClock.dir/5_1.ncd.
 
 PAR_SUMMARY::Run status = completed
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack<setup/<ns>> = 135.694
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 278.551
 PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
 PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.322
 PAR_SUMMARY::Timing score<hold /<ns>> = 0.000

@@ -1,5 +1,5 @@
 // Verilog netlist produced by program LSE :  version Diamond (64-bit) 3.3.0.109
-// Netlist written on Wed Mar 25 01:37:02 2015
+// Netlist written on Thu Apr  2 04:22:56 2015
 //
 // Verilog Description of module AutoShift
 //
@@ -94,7 +94,7 @@ module AutoShift (Digit1, Digit2, Digit3, Digit4, pwm, latch, clk,
     FD1S3AX tmp_i1 (.D(data_c), .CK(clk_c), .Q(tmp[0]));   // /home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(104[8] 107[4])
     defparam tmp_i1.GSR = "ENABLED";
     OSCH OSCH_inst (.STDBY(GND_net), .OSC(osc_clk_c_c)) /* synthesis syn_instantiated=1 */ ;
-    defparam OSCH_inst.NOM_FREQ = "7.00";
+    defparam OSCH_inst.NOM_FREQ = "3.50";
     FD1S3AX RedD4_i0 (.D(tmp[88]), .CK(latch_c), .Q(RedD4[0]));   // /home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(110[8] 127[4])
     defparam RedD4_i0.GSR = "ENABLED";
     FD1S3AX GrnD4_i0 (.D(tmp[80]), .CK(latch_c), .Q(GrnD4[0]));   // /home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(110[8] 127[4])

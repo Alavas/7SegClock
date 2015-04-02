@@ -51,7 +51,7 @@ reg		[6:0] 	Seg = 7'b0000001;
 reg		[6:0]	Led = 7'b0000001;
 
 // Internal Oscillator
-defparam OSCH_inst.NOM_FREQ = "7.00";		//  Set internal oscillator frequency.
+defparam OSCH_inst.NOM_FREQ = "3.50";		//  Set internal oscillator frequency.
 
 OSCH OSCH_inst( .STDBY(1'b0), 		// 0=Enabled, 1=Disabled also Disabled with Bandgap=OFF
                 .OSC(osc_clk_c_c),

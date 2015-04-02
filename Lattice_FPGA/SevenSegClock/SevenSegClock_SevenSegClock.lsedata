@@ -3726,7 +3726,7 @@
 
     <views>
         <view  name = "LessThan_12u_12u"  />
-        <view  name = "OSCH(NOM_FREQ="7.00")"  />
+        <view  name = "OSCH(NOM_FREQ="3.50")"  />
         <view  name = "add_12u_12u"  />
         <view  name = "and_7"  />
         <view  name = "equal_32"  />
