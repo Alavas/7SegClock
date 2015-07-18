@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:7SEG
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,13 +30,12 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:7SEG
 LIBS:7SegClock-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title "4 Digit 7 Segment Clock"
 Date "12/27/14"
 Rev ""
