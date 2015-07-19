@@ -35,7 +35,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 7
+Sheet 7 7
 Title ""
 Date ""
 Rev ""
@@ -45,17 +45,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L LED_Array D3
-U 3 1 54BC7666
-P 4455 4150
-F 0 "D3" H 4455 5300 50  0000 C CNN
-F 1 "LED_Array" H 4455 5400 50  0000 C CNN
-F 2 "Custom:LED-ARRAY" H 4455 5075 50  0001 C CNN
-F 3 "" H 4455 5075 50  0000 C CNN
-	3    4455 4150
-	1    0    0    -1  
-$EndComp
 Text Label 3705 950  3    50   ~ 0
 D3A1
 Text Label 4005 950  3    50   ~ 0
@@ -140,6 +129,20 @@ Text Label 2680 2350 0    50   ~ 0
 D3A5
 Text Label 2680 2050 0    50   ~ 0
 D3A6
+$Comp
+L LED_Array D3
+U 3 1 55AE5EA9
+P 4455 4150
+AR Path="/54A9B3AB/54BC74C5/55AE5EA9" Ref="D3"  Part="1" 
+AR Path="/54A9B3AB/55AABE86/55AAC21A/55AE5EA9" Ref="D3"  Part="1" 
+AR Path="/54A9B3AB/55AABE86/55AAC222/55AE5EA9" Ref="D3"  Part="3" 
+F 0 "D3" H 4455 5300 50  0000 C CNN
+F 1 "LED_Array" H 4455 5400 50  0000 C CNN
+F 2 "Custom:LED-ARRAY" H 4455 5075 50  0001 C CNN
+F 3 "" H 4455 5075 50  0000 C CNN
+	3    4455 4150
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	3705 1150 3705 950 
 Wire Wire Line
@@ -227,8 +230,6 @@ Wire Wire Line
 Wire Wire Line
 	5130 6500 5130 6600
 Wire Wire Line
-	2450 6500 5130 6500
-Wire Wire Line
 	4830 6600 4830 6500
 Connection ~ 4830 6500
 Wire Wire Line
@@ -245,8 +246,6 @@ Wire Wire Line
 Connection ~ 3630 6500
 Wire Wire Line
 	5280 6450 5280 6600
-Wire Wire Line
-	1450 6450 5280 6450
 Wire Wire Line
 	4980 6600 4980 6450
 Connection ~ 4980 6450
@@ -267,13 +266,9 @@ Wire Wire Line
 Wire Wire Line
 	5380 4825 5380 6450
 Wire Wire Line
-	5380 6450 6550 6450
-Wire Wire Line
 	5480 4675 5330 4675
 Wire Wire Line
-	5330 4675 5330 6525
-Wire Wire Line
-	5330 6525 6625 6525
+	5330 4675 5330 6600
 Wire Wire Line
 	5480 6325 5380 6325
 Connection ~ 5380 6325
@@ -311,13 +306,9 @@ Wire Wire Line
 Wire Wire Line
 	3530 4550 3530 6175
 Wire Wire Line
-	2450 4550 3530 4550
-Wire Wire Line
 	3580 6325 3430 6325
 Wire Wire Line
-	3580 4475 3580 6325
-Wire Wire Line
-	1450 4475 3580 4475
+	3580 4400 3580 6325
 Wire Wire Line
 	3430 6025 3580 6025
 Connection ~ 3580 6025
@@ -353,21 +344,10 @@ Connection ~ 3530 4675
 Wire Wire Line
 	3630 4400 3630 4550
 Wire Wire Line
-	3630 4550 5505 4550
-Wire Wire Line
-	5505 4550 5505 4200
-Wire Wire Line
 	3780 4400 3780 4500
-Wire Wire Line
-	3780 4500 5430 4500
-Wire Wire Line
-	5430 4500 5430 4125
 Wire Wire Line
 	3930 4400 3930 4550
 Connection ~ 3930 4550
-Wire Wire Line
-	4235 4400 4235 4550
-Connection ~ 4235 4550
 Wire Wire Line
 	4530 4400 4530 4550
 Connection ~ 4530 4550
@@ -395,22 +375,9 @@ Wire Wire Line
 	5280 4400 5280 4500
 Connection ~ 5280 4500
 Wire Wire Line
-	5480 1975 5330 1975
-Wire Wire Line
-	5330 1975 5330 3825
-Wire Wire Line
-	5330 3825 6525 3825
-Wire Wire Line
 	5480 2125 5380 2125
 Wire Wire Line
 	5380 2125 5380 3750
-Wire Wire Line
-	5380 3750 6450 3750
-Wire Wire Line
-	5480 2275 5330 2275
-Wire Wire Line
-	5330 2275 5330 2270
-Connection ~ 5330 2270
 Wire Wire Line
 	5480 2425 5380 2425
 Connection ~ 5380 2425
@@ -443,13 +410,9 @@ Wire Wire Line
 Wire Wire Line
 	3530 1850 3530 3475
 Wire Wire Line
-	2450 1850 3530 1850
-Wire Wire Line
 	3580 3625 3430 3625
 Wire Wire Line
-	3580 1775 3580 3625
-Wire Wire Line
-	1450 1775 3580 1775
+	3580 1700 3580 3625
 Wire Wire Line
 	3430 3325 3580 3325
 Connection ~ 3580 3325
@@ -483,13 +446,11 @@ Connection ~ 3530 1975
 Wire Wire Line
 	3630 1700 3630 1850
 Wire Wire Line
-	3630 1850 5480 1850
+	3630 1850 5555 1850
 Wire Wire Line
 	3780 1700 3780 1800
 Wire Wire Line
 	3780 1800 5405 1800
-Wire Wire Line
-	5405 1800 5405 675 
 Wire Wire Line
 	3930 1700 3930 1850
 Connection ~ 3930 1850
@@ -523,7 +484,8 @@ Wire Wire Line
 	5280 1700 5280 1800
 Connection ~ 5280 1800
 Wire Wire Line
-	5480 1850 5480 750 
+	4230 4400 4230 4550
+Connection ~ 4230 4550
 $Bitmap
 Pos 10200 6850
 Scale 0.750000
@@ -1313,4 +1275,87 @@ F0 3A 1E C0 38 64 CF D4 F2 C8 9E A9 05 CC 43 F6 BE 79 15 99 0A D7 74 00 CF 02 78
 47 91 3D 63 3D 51 4F 11 C2 FF 03 CA 62 49 C8 E1 A2 25 5C 00 00 00 00 49 45 4E 44 AE 42 60 82 00 
 EndData
 $EndBitmap
+Text HLabel 6230 4750 2    50   Input ~ 0
+D3A1
+Text HLabel 6230 5050 2    50   Input ~ 0
+D3A2
+Text HLabel 6230 5350 2    50   Input ~ 0
+D3A3
+Text HLabel 6230 5650 2    50   Input ~ 0
+D3A4
+Text HLabel 6230 5950 2    50   Input ~ 0
+D3A5
+Text HLabel 6230 6250 2    50   Input ~ 0
+D3A6
+Wire Wire Line
+	5330 1975 5330 3900
+Wire Wire Line
+	5480 2275 5330 2275
+Connection ~ 5330 2275
+Wire Wire Line
+	5480 1975 5330 1975
+Wire Wire Line
+	5130 6500 3505 6500
+Wire Wire Line
+	5280 6450 3355 6450
+Wire Wire Line
+	3780 4500 5405 4500
+Wire Wire Line
+	3630 4550 5555 4550
+Wire Wire Line
+	3505 6500 3505 7450
+Wire Wire Line
+	3355 6450 3355 7450
+Wire Wire Line
+	5380 6450 6330 6450
+Wire Wire Line
+	5330 6600 6330 6600
+Wire Wire Line
+	5380 3750 6330 3750
+Wire Wire Line
+	5330 3900 6330 3900
+Wire Wire Line
+	3580 1700 2580 1700
+Wire Wire Line
+	3530 1850 2580 1850
+Wire Wire Line
+	3580 4400 2580 4400
+Wire Wire Line
+	3530 4550 2580 4550
+Wire Wire Line
+	5555 1850 5555 850 
+Wire Wire Line
+	5405 1800 5405 850 
+Text HLabel 5405 850  1    50   Input ~ 0
+D3S1G
+Text HLabel 5555 850  1    50   Input ~ 0
+D3S1R
+Text HLabel 6330 3750 2    50   Input ~ 0
+D3S2G
+Text HLabel 6330 3900 2    50   Input ~ 0
+D3S2R
+Text HLabel 6330 6450 2    50   Input ~ 0
+D3S3G
+Text HLabel 6330 6600 2    50   Input ~ 0
+D3S3R
+Text HLabel 3505 7450 3    50   Input ~ 0
+D3S4G
+Text HLabel 3355 7450 3    50   Input ~ 0
+D3S4R
+Wire Wire Line
+	5555 4550 5555 4300
+Wire Wire Line
+	5405 4500 5405 4300
+Text HLabel 5405 4300 1    50   Input ~ 0
+D3S7G
+Text HLabel 5555 4300 1    50   Input ~ 0
+D3S7R
+Text HLabel 2580 4550 0    50   Input ~ 0
+D3S5G
+Text HLabel 2580 4400 0    50   Input ~ 0
+D3S5R
+Text HLabel 2580 1700 0    50   Input ~ 0
+D3S6R
+Text HLabel 2580 1850 0    50   Input ~ 0
+D3S6G
 $EndSCHEMATC
