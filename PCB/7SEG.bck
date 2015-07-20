@@ -11,6 +11,11 @@ K Dual N-Channel MOSFET Logic Level
 F http://www.fairchildsemi.com/ds/FD/FDG1024NZ.pdf
 $ENDCMP
 #
+$CMP DMN2041LSD-13
+D Dual N-Channel MOSFET, SO-8
+K Dual N-Channel MOSFET Logic Level
+$ENDCMP
+#
 $CMP P8X32A
 D Parallax Propeller
 $ENDCMP
