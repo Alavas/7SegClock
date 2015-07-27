@@ -35,7 +35,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 6
+Sheet 2 7
 Title "4 Digit 7 Segment Clock"
 Date "12/27/14"
 Rev ""
@@ -2181,4 +2181,10 @@ Text Label 6500 6750 2    50   ~ 0
 A5
 Text Label 6500 6850 2    50   ~ 0
 A6
+$Sheet
+S 9900 5750 800  500 
+U 55B5DB7D
+F0 "Indicators" 60
+F1 "Indicators.sch" 60
+$EndSheet
 $EndSCHEMATC
