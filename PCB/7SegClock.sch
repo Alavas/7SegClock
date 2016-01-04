@@ -1705,17 +1705,6 @@ F 3 "" H 1800 1000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Electric_Imp U7
-U 1 1 55BE7C01
-P 9500 3000
-F 0 "U7" H 9500 2575 60  0000 C CNN
-F 1 "Electric_Imp" H 9500 3425 60  0000 C CNN
-F 2 "Custom:SD_Card" H 9150 3025 60  0001 C CNN
-F 3 "" H 9150 3025 60  0000 C CNN
-	1    9500 3000
-	1    0    0    -1  
-$EndComp
-$Comp
 L USB_Micro_Vertical CON1
 U 1 1 55BEE955
 P 5050 4000
