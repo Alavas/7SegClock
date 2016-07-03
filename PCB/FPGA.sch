@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:7SegClock-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -10,7 +11,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -112,9 +112,11 @@ F 3 "" H 9950 4850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C10
+L C-RESCUE-7SegClock C10
 U 1 1 54B50968
 P 4500 1000
+AR Path="/54B50968" Ref="C10"  Part="1" 
+AR Path="/54A9B3AB/54B50968" Ref="C10"  Part="1" 
 F 0 "C10" H 4500 1100 40  0000 L CNN
 F 1 "0.1uF" H 4506 915 40  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4538 850 30  0001 C CNN
@@ -123,9 +125,11 @@ F 3 "" H 4500 1000 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C9
+L C-RESCUE-7SegClock C9
 U 1 1 54B50A0F
 P 4250 1000
+AR Path="/54B50A0F" Ref="C9"  Part="1" 
+AR Path="/54A9B3AB/54B50A0F" Ref="C9"  Part="1" 
 F 0 "C9" H 4250 1100 40  0000 L CNN
 F 1 "0.1uF" H 4256 915 40  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4288 850 30  0001 C CNN
@@ -134,9 +138,11 @@ F 3 "" H 4250 1000 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C8
+L C-RESCUE-7SegClock C8
 U 1 1 54B50A30
 P 4000 1000
+AR Path="/54B50A30" Ref="C8"  Part="1" 
+AR Path="/54A9B3AB/54B50A30" Ref="C8"  Part="1" 
 F 0 "C8" H 4000 1100 40  0000 L CNN
 F 1 "0.1uF" H 4006 915 40  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4038 850 30  0001 C CNN
@@ -155,9 +161,11 @@ VCCIO1
 Text Label 9600 3200 0    50   ~ 0
 VCCIO0
 $Comp
-L C C11
+L C-RESCUE-7SegClock C11
 U 1 1 54B525CF
 P 4750 1000
+AR Path="/54B525CF" Ref="C11"  Part="1" 
+AR Path="/54A9B3AB/54B525CF" Ref="C11"  Part="1" 
 F 0 "C11" H 4750 1100 40  0000 L CNN
 F 1 "0.1uF" H 4756 915 40  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4788 850 30  0001 C CNN
@@ -181,9 +189,11 @@ VCC
 Text Label 5200 700  0    50   ~ 0
 VCCIO3
 $Comp
-L C C12
+L C-RESCUE-7SegClock C12
 U 1 1 54B5329C
 P 5550 1000
+AR Path="/54B5329C" Ref="C12"  Part="1" 
+AR Path="/54A9B3AB/54B5329C" Ref="C12"  Part="1" 
 F 0 "C12" H 5550 1100 40  0000 L CNN
 F 1 "0.1uF" H 5556 915 40  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5588 850 30  0001 C CNN
@@ -192,9 +202,11 @@ F 3 "" H 5550 1000 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C13
+L C-RESCUE-7SegClock C13
 U 1 1 54B532CE
 P 5800 1000
+AR Path="/54B532CE" Ref="C13"  Part="1" 
+AR Path="/54A9B3AB/54B532CE" Ref="C13"  Part="1" 
 F 0 "C13" H 5800 1100 40  0000 L CNN
 F 1 "0.1uF" H 5806 915 40  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5838 850 30  0001 C CNN
@@ -203,9 +215,11 @@ F 3 "" H 5800 1000 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C14
+L C-RESCUE-7SegClock C14
 U 1 1 54B532F5
 P 6050 1000
+AR Path="/54B532F5" Ref="C14"  Part="1" 
+AR Path="/54A9B3AB/54B532F5" Ref="C14"  Part="1" 
 F 0 "C14" H 6050 1100 40  0000 L CNN
 F 1 "0.1uF" H 6056 915 40  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6088 850 30  0001 C CNN
@@ -238,9 +252,11 @@ F 3 "" H 7450 700 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C C15
+L C-RESCUE-7SegClock C15
 U 1 1 54B53713
 P 6850 1000
+AR Path="/54B53713" Ref="C15"  Part="1" 
+AR Path="/54A9B3AB/54B53713" Ref="C15"  Part="1" 
 F 0 "C15" H 6850 1100 40  0000 L CNN
 F 1 "0.1uF" H 6856 915 40  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6888 850 30  0001 C CNN
@@ -249,9 +265,11 @@ F 3 "" H 6850 1000 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C16
+L C-RESCUE-7SegClock C16
 U 1 1 54B5374A
 P 7100 1000
+AR Path="/54B5374A" Ref="C16"  Part="1" 
+AR Path="/54A9B3AB/54B5374A" Ref="C16"  Part="1" 
 F 0 "C16" H 7100 1100 40  0000 L CNN
 F 1 "0.1uF" H 7106 915 40  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7138 850 30  0001 C CNN
@@ -260,9 +278,11 @@ F 3 "" H 7100 1000 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C17
+L C-RESCUE-7SegClock C17
 U 1 1 54B53772
 P 7350 1000
+AR Path="/54B53772" Ref="C17"  Part="1" 
+AR Path="/54A9B3AB/54B53772" Ref="C17"  Part="1" 
 F 0 "C17" H 7350 1100 40  0000 L CNN
 F 1 "0.1uF" H 7356 915 40  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7388 850 30  0001 C CNN
@@ -284,9 +304,11 @@ F 3 "" H 8750 700 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C C18
+L C-RESCUE-7SegClock C18
 U 1 1 54B53B3D
 P 8100 1000
+AR Path="/54B53B3D" Ref="C18"  Part="1" 
+AR Path="/54A9B3AB/54B53B3D" Ref="C18"  Part="1" 
 F 0 "C18" H 8100 1100 40  0000 L CNN
 F 1 "0.1uF" H 8106 915 40  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 8138 850 30  0001 C CNN
@@ -295,9 +317,11 @@ F 3 "" H 8100 1000 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C19
+L C-RESCUE-7SegClock C19
 U 1 1 54B53B75
 P 8350 1000
+AR Path="/54B53B75" Ref="C19"  Part="1" 
+AR Path="/54A9B3AB/54B53B75" Ref="C19"  Part="1" 
 F 0 "C19" H 8350 1100 40  0000 L CNN
 F 1 "0.1uF" H 8356 915 40  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 8388 850 30  0001 C CNN
@@ -306,9 +330,11 @@ F 3 "" H 8350 1000 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C20
+L C-RESCUE-7SegClock C20
 U 1 1 54B53BA2
 P 8600 1000
+AR Path="/54B53BA2" Ref="C20"  Part="1" 
+AR Path="/54A9B3AB/54B53BA2" Ref="C20"  Part="1" 
 F 0 "C20" H 8600 1100 40  0000 L CNN
 F 1 "0.1uF" H 8606 915 40  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 8638 850 30  0001 C CNN
@@ -330,9 +356,11 @@ $EndComp
 Text Label 9050 700  0    50   ~ 0
 VCCIO0
 $Comp
-L C C21
+L C-RESCUE-7SegClock C21
 U 1 1 54B54DDE
 P 9400 1000
+AR Path="/54B54DDE" Ref="C21"  Part="1" 
+AR Path="/54A9B3AB/54B54DDE" Ref="C21"  Part="1" 
 F 0 "C21" H 9400 1100 40  0000 L CNN
 F 1 "0.1uF" H 9406 915 40  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 9438 850 30  0001 C CNN
@@ -341,9 +369,11 @@ F 3 "" H 9400 1000 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C22
+L C-RESCUE-7SegClock C22
 U 1 1 54B54E21
 P 9650 1000
+AR Path="/54B54E21" Ref="C22"  Part="1" 
+AR Path="/54A9B3AB/54B54E21" Ref="C22"  Part="1" 
 F 0 "C22" H 9650 1100 40  0000 L CNN
 F 1 "0.1uF" H 9656 915 40  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 9688 850 30  0001 C CNN
@@ -352,9 +382,11 @@ F 3 "" H 9650 1000 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C23
+L C-RESCUE-7SegClock C23
 U 1 1 54B54E55
 P 9900 1000
+AR Path="/54B54E55" Ref="C23"  Part="1" 
+AR Path="/54A9B3AB/54B54E55" Ref="C23"  Part="1" 
 F 0 "C23" H 9900 1100 40  0000 L CNN
 F 1 "0.1uF" H 9906 915 40  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 9938 850 30  0001 C CNN
@@ -1727,7 +1759,7 @@ F 3 "" H 2900 5300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R8
+L R-RESCUE-7SegClock R8
 U 1 1 55AC1422
 P 3600 5700
 F 0 "R8" V 3680 5700 40  0000 C CNN
@@ -1738,7 +1770,7 @@ F 3 "" H 3600 5700 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R7
+L R-RESCUE-7SegClock R7
 U 1 1 55AC1429
 P 2600 5700
 F 0 "R7" V 2680 5700 40  0000 C CNN
@@ -1771,7 +1803,7 @@ F 3 "" H 4000 5000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R13
+L R-RESCUE-7SegClock R13
 U 1 1 55AC143D
 P 3000 5850
 F 0 "R13" V 3080 5850 40  0000 C CNN
@@ -1782,7 +1814,7 @@ F 3 "" H 3000 5850 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R14
+L R-RESCUE-7SegClock R14
 U 1 1 55AC1444
 P 4000 5850
 F 0 "R14" V 4080 5850 40  0000 C CNN
@@ -1867,7 +1899,7 @@ F 3 "" H 4900 5300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R10
+L R-RESCUE-7SegClock R10
 U 1 1 55AC1B18
 P 5600 5700
 F 0 "R10" V 5680 5700 40  0000 C CNN
@@ -1878,7 +1910,7 @@ F 3 "" H 5600 5700 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R9
+L R-RESCUE-7SegClock R9
 U 1 1 55AC1B1F
 P 4600 5700
 F 0 "R9" V 4680 5700 40  0000 C CNN
@@ -1911,7 +1943,7 @@ F 3 "" H 6000 5000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R15
+L R-RESCUE-7SegClock R15
 U 1 1 55AC1B33
 P 5000 5850
 F 0 "R15" V 5080 5850 40  0000 C CNN
@@ -1922,7 +1954,7 @@ F 3 "" H 5000 5850 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R16
+L R-RESCUE-7SegClock R16
 U 1 1 55AC1B3A
 P 6000 5850
 F 0 "R16" V 6080 5850 40  0000 C CNN
@@ -2007,7 +2039,7 @@ F 3 "" H 6900 5300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R12
+L R-RESCUE-7SegClock R12
 U 1 1 55AC1E5E
 P 7600 5700
 F 0 "R12" V 7680 5700 40  0000 C CNN
@@ -2018,7 +2050,7 @@ F 3 "" H 7600 5700 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R11
+L R-RESCUE-7SegClock R11
 U 1 1 55AC1E65
 P 6600 5700
 F 0 "R11" V 6680 5700 40  0000 C CNN
@@ -2051,7 +2083,7 @@ F 3 "" H 8000 5000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R17
+L R-RESCUE-7SegClock R17
 U 1 1 55AC1E79
 P 7000 5850
 F 0 "R17" V 7080 5850 40  0000 C CNN
@@ -2062,7 +2094,7 @@ F 3 "" H 7000 5850 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R18
+L R-RESCUE-7SegClock R18
 U 1 1 55AC1E80
 P 8000 5850
 F 0 "R18" V 8080 5850 40  0000 C CNN

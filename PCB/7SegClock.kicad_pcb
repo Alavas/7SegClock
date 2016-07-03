@@ -1,9 +1,9 @@
-(kicad_pcb (version 4) (host pcbnew "(2014-12-26 BZR 5338)-product")
+(kicad_pcb (version 4) (host pcbnew 4.0.2-stable)
 
   (general
     (links 842)
     (no_connects 232)
-    (area 59.263038 38.8818 237.540001 144.14784)
+    (area 59.6138 38.8818 237.540001 141.845)
     (thickness 1.6)
     (drawings 4)
     (tracks 3202)
@@ -67,7 +67,7 @@
     (pad_drill 1.2)
     (pad_to_mask_clearance 0)
     (aux_axis_origin 59.69 48.26)
-    (visible_elements FFFFF77F)
+    (visible_elements FFFFFF7F)
     (pcbplotparams
       (layerselection 0x010f0_80000001)
       (usegerberextensions false)
@@ -2356,7 +2356,7 @@
   )
 
   (module Transistors_SMD:sot23 (layer B.Cu) (tedit 54B4C58D) (tstamp 54A0C1CE)
-    (at 141.605 42.545)
+    (at 138.43 42.545)
     (descr SOT23)
     (path /549F89D8)
     (attr smd)

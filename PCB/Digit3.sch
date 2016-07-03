@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:7SegClock-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -10,7 +11,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -141,7 +141,7 @@ D3A5
 Text Label 2680 2050 0    50   ~ 0
 D3A6
 $Comp
-L R R49
+L R-RESCUE-7SegClock R49
 U 1 1 54EB2DD9
 P 1000 2725
 F 0 "R49" V 1080 2725 40  0000 C CNN
@@ -152,7 +152,7 @@ F 3 "" H 1000 2725 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R50
+L R-RESCUE-7SegClock R50
 U 1 1 54EB2DE0
 P 2000 2725
 F 0 "R50" V 2080 2725 40  0000 C CNN
@@ -185,7 +185,7 @@ F 3 "" H 1450 3050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R55
+L R-RESCUE-7SegClock R55
 U 1 1 54EB2DFA
 P 1000 5425
 F 0 "R55" V 1080 5425 40  0000 C CNN
@@ -196,7 +196,7 @@ F 3 "" H 1000 5425 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R56
+L R-RESCUE-7SegClock R56
 U 1 1 54EB2E01
 P 2000 5425
 F 0 "R56" V 2080 5425 40  0000 C CNN
@@ -237,7 +237,7 @@ D3S5R
 Text HLabel 1900 5100 0    50   Input ~ 0
 D3S5G
 $Comp
-L R R59
+L R-RESCUE-7SegClock R59
 U 1 1 54EB2E26
 P 1000 7200
 F 0 "R59" V 1080 7200 40  0000 C CNN
@@ -248,7 +248,7 @@ F 3 "" H 1000 7200 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R60
+L R-RESCUE-7SegClock R60
 U 1 1 54EB2E2D
 P 2000 7200
 F 0 "R60" V 2080 7200 40  0000 C CNN
@@ -752,7 +752,7 @@ Wire Wire Line
 Wire Wire Line
 	2450 6625 2450 6500
 $Comp
-L R R47
+L R-RESCUE-7SegClock R47
 U 1 1 54EB2F64
 P 7350 1500
 F 0 "R47" V 7430 1500 40  0000 C CNN
@@ -763,7 +763,7 @@ F 3 "" H 7350 1500 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R48
+L R-RESCUE-7SegClock R48
 U 1 1 54EB2F6B
 P 8350 1500
 F 0 "R48" V 8430 1500 40  0000 C CNN
@@ -826,7 +826,7 @@ Connection ~ 8800 1800
 Wire Wire Line
 	8800 675  8800 925 
 $Comp
-L R R51
+L R-RESCUE-7SegClock R51
 U 1 1 54EB2F9D
 P 7350 3000
 F 0 "R51" V 7430 3000 40  0000 C CNN
@@ -837,7 +837,7 @@ F 3 "" H 7350 3000 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R52
+L R-RESCUE-7SegClock R52
 U 1 1 54EB2FA4
 P 8350 3000
 F 0 "R52" V 8430 3000 40  0000 C CNN
@@ -902,7 +902,7 @@ Wire Wire Line
 Wire Wire Line
 	8800 2125 8800 2425
 $Comp
-L R R57
+L R-RESCUE-7SegClock R57
 U 1 1 54EB2FD7
 P 7350 5860
 F 0 "R57" V 7430 5860 40  0000 C CNN
@@ -913,7 +913,7 @@ F 3 "" H 7350 5860 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R58
+L R-RESCUE-7SegClock R58
 U 1 1 54EB2FDE
 P 8350 5860
 F 0 "R58" V 8430 5860 40  0000 C CNN
@@ -980,7 +980,7 @@ Wire Wire Line
 Wire Wire Line
 	7800 750  7800 925 
 $Comp
-L R R53
+L R-RESCUE-7SegClock R53
 U 1 1 54EB3012
 P 7350 4385
 F 0 "R53" V 7430 4385 40  0000 C CNN
@@ -991,7 +991,7 @@ F 3 "" H 7350 4385 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R54
+L R-RESCUE-7SegClock R54
 U 1 1 54EB3019
 P 8350 4385
 F 0 "R54" V 8430 4385 40  0000 C CNN
