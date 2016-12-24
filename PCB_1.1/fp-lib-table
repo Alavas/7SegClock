@@ -1,4 +1,0 @@
-(fp_lib_table
-  (lib (name Custom)(type KiCad)(uri /home/justin/7SegClock/7SegClock/PCB/Custom.pretty)(options "")(descr ""))
-  (lib (name 7SEG)(type KiCad)(uri /home/justin/7SegClock/7SegClock/PCB_1.1/Custom.pretty)(options "")(descr ""))
-)

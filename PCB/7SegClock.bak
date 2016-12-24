@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:7SegClock-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -10,7 +11,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -188,7 +188,7 @@ $EndComp
 NoConn ~ 5700 1900
 NoConn ~ 5700 2000
 $Comp
-L C C1
+L C-RESCUE-7SegClock C1
 U 1 1 549F88B8
 P 6350 2100
 F 0 "C1" H 6350 2200 40  0000 L CNN
@@ -210,7 +210,7 @@ F 3 "" H 7100 2100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R2
+L R-RESCUE-7SegClock R2
 U 1 1 549F8BBE
 P 6750 2550
 F 0 "R2" V 6830 2550 40  0000 C CNN
@@ -236,7 +236,7 @@ DTR
 Text GLabel 7200 1600 1    50   Input ~ 0
 DTR
 $Comp
-L R R1
+L R-RESCUE-7SegClock R1
 U 1 1 549F93DF
 P 6750 1450
 F 0 "R1" V 6830 1450 40  0000 C CNN
@@ -280,7 +280,7 @@ F 3 "" H 3000 4800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D1
+L LED-RESCUE-7SegClock D1
 U 1 1 549F9252
 P 6200 3000
 F 0 "D1" H 6200 3100 50  0000 C CNN
@@ -291,7 +291,7 @@ F 3 "" H 6200 3000 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LED D2
+L LED-RESCUE-7SegClock D2
 U 1 1 549F92C9
 P 6500 3000
 F 0 "D2" H 6500 3100 50  0000 C CNN
@@ -302,7 +302,7 @@ F 3 "" H 6500 3000 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R3
+L R-RESCUE-7SegClock R3
 U 1 1 549F945E
 P 6350 3650
 F 0 "R3" V 6430 3650 40  0000 C CNN
@@ -463,7 +463,7 @@ Wire Wire Line
 Wire Wire Line
 	3750 1900 3100 1900
 $Comp
-L R R6
+L R-RESCUE-7SegClock R6
 U 1 1 54A04352
 P 1200 6700
 F 0 "R6" V 1280 6700 40  0000 C CNN
@@ -474,7 +474,7 @@ F 3 "" H 1200 6700 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R5
+L R-RESCUE-7SegClock R5
 U 1 1 54A043D7
 P 950 6700
 F 0 "R5" V 1030 6700 40  0000 C CNN
@@ -616,7 +616,7 @@ $EndComp
 Wire Wire Line
 	5050 4900 5050 5050
 $Comp
-L C C3
+L C-RESCUE-7SegClock C3
 U 1 1 54A0AA7F
 P 5600 4950
 F 0 "C3" H 5600 5050 40  0000 L CNN
@@ -639,7 +639,7 @@ F 3 "" H 5900 5050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C2
+L C-RESCUE-7SegClock C2
 U 1 1 54A0B1CB
 P 3550 4850
 F 0 "C2" H 3550 4950 40  0000 L CNN
@@ -678,7 +678,7 @@ Wire Wire Line
 Text GLabel 6500 5450 2    50   Input ~ 0
 CLK_INT
 $Comp
-L R R4
+L R-RESCUE-7SegClock R4
 U 1 1 54A0C1E4
 P 6350 5050
 F 0 "R4" V 6430 5050 40  0000 C CNN
@@ -758,7 +758,7 @@ F6 "CS_PWM" I L 9600 5750 50
 F7 "CS_Encoder" I L 9600 5850 50 
 $EndSheet
 $Comp
-L C C7
+L C-RESCUE-7SegClock C7
 U 1 1 54B5BD71
 P 2700 6750
 F 0 "C7" H 2700 6850 40  0000 L CNN
@@ -769,7 +769,7 @@ F 3 "" H 2700 6750 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C6
+L C-RESCUE-7SegClock C6
 U 1 1 54B5BE23
 P 2450 6750
 F 0 "C6" H 2450 6850 40  0000 L CNN
@@ -780,7 +780,7 @@ F 3 "" H 2450 6750 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C5
+L C-RESCUE-7SegClock C5
 U 1 1 54B5BE54
 P 2200 6750
 F 0 "C5" H 2200 6850 40  0000 L CNN
@@ -791,7 +791,7 @@ F 3 "" H 2200 6750 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C4
+L C-RESCUE-7SegClock C4
 U 1 1 54B5BE86
 P 1950 6750
 F 0 "C4" H 1950 6850 40  0000 L CNN
