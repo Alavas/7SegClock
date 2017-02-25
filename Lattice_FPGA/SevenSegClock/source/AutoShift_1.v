@@ -100,13 +100,13 @@ always @(posedge osc_clk_c_c)begin
 	end
 end
 
-// Serial data register.
+// Serial data register. tmp register stores the value presented on the data line.
 always @(posedge clk)begin
 	tmp = tmp << 1;
 	tmp[0] = data;
 end
 
-// LED controller latch.
+// LED controller latch. Update the registers with the new values.
 always @(posedge latch)begin
 // Digit 4
 		RedD4 <= tmp[94:88];
@@ -126,6 +126,7 @@ always @(posedge latch)begin
 		ledA1 <= tmp[6:0];
 end
 
+// Fill PWN register.
 always @(posedge pwm)begin
 	bright = tmp[11:0];
 end
