@@ -2,4 +2,4 @@
 
 -g RamCfg:Reset
 
--path "/home/justin/7SegClock/7SegClock/Lattice_FPGA"  
+-path "C:/Users/Justin/Dropbox/Projects/7SegClock/Lattice_FPGA"  

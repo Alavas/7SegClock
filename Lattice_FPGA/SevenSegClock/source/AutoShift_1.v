@@ -3,7 +3,8 @@
 // January 5,2015
 // Updated March 16,2015
 
-// 4 seven segments displays with each segment made of 6 bi-color leds (red & green). Microcontroller updates FPGA which then maintains clock display automatically.
+// 4 seven segments displays with each segment made of 6 bi-color leds (red & green). 
+// Microcontroller updates FPGA which then maintains clock display automatically.
 
 
 module AutoShift(Digit1[20:0],Digit2[20:0],Digit3[20:0],Digit4[20:0], pwm, latch, clk, data, heartbeat);

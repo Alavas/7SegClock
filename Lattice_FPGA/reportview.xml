@@ -3,7 +3,7 @@
 <ReportView version="2.0">
     <Implement name="SevenSegClock">
         <ToolReport id="tooldec" path="" status="0"/>
-        <ToolReport id="toolhle_genhierarchy" path="/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/hdla_gen_hierarchy.html" status="1"/>
+        <ToolReport id="toolhle_genhierarchy" path="C:/Users/Justin/Dropbox/Projects/7SegClock/Lattice_FPGA/SevenSegClock/hdla_gen_hierarchy.html" status="1"/>
         <ToolReport id="toolpio" path="" status="2"/>
         <ToolReport id="toolsso" path="/home/justin/7SegClock/7SegClock/Lattice_FPGA/sso_rpt.htm" status="2"/>
     </Implement>

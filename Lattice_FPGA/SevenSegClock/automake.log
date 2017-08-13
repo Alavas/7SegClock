@@ -1,17 +1,18 @@
 
 synthesis -f "SevenSegClock_SevenSegClock_lattice.synproj"
-synthesis:  version Diamond (64-bit) 3.3.0.109
+synthesis:  version Diamond (64-bit) 3.9.0.99.2
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Apr  2 04:22:56 2015
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Fri Mar 10 23:28:29 2017
 
 
 Command Line:  synthesis -f SevenSegClock_SevenSegClock_lattice.synproj -gui 
 
+    <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
 Synthesis options:
 The -a option is MachXO2.
 The -s option is 5.
@@ -23,7 +24,7 @@ Using performance grade 5.
 
 ##########################################################
 
-### Lattice Family : MachXO2A
+### Lattice Family : MachXO2
 
 ### Device  : LCMXO2-640UHC
 
@@ -35,14 +36,15 @@ Using performance grade 5.
 
                                                           
 
+    <postMsg mid="35001781" type="Info"    dynamic="0" navigation="0"  />
 Optimization goal = Balanced
 Top-level module name = AutoShift.
 Target frequency = 200.000000 MHz.
 Maximum fanout = 1000.
 Timing path count = 3
 BRAM utilization = 100.000000 %
-DSP usage = true (default)
-DSP utilization = 100 % (default)
+DSP usage = true
+DSP utilization = 100.000000 %
 fsm_encoding_style = auto
 resolve_mixed_drivers = 0
 fix_gated_clocks = 1
@@ -50,9 +52,9 @@ fix_gated_clocks = 1
 Mux style = Auto
 Use Carry Chain = true
 carry_chain_length = 0
-WARNING - synthesis: Using default loop_limit value of 1950
-
+Loop Limit = 1950.
 Use IO Insertion = TRUE
+Use IO Reg = TRUE
 Resource Sharing = TRUE
 Propagate Constants = TRUE
 Remove Duplicate Registers = TRUE
@@ -61,11 +63,11 @@ ROM style = auto
 RAM style = auto
 The -comp option is FALSE.
 The -syn option is FALSE.
--p /home/justin/7SegClock/7SegClock/Lattice_FPGA (searchpath added)
--p /usr/local/diamond/3.3_x64/ispfpga/xo2c00/data (searchpath added)
--p /home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock (searchpath added)
--p /home/justin/7SegClock/7SegClock/Lattice_FPGA (searchpath added)
-Verilog design file = /home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v
+-p C:/Users/Justin/Dropbox/Projects/7SegClock/Lattice_FPGA (searchpath added)
+-p C:/lscc/diamond/3.9_x64/ispfpga/xo2c00/data (searchpath added)
+-p C:/Users/Justin/Dropbox/Projects/7SegClock/Lattice_FPGA/SevenSegClock (searchpath added)
+-p C:/Users/Justin/Dropbox/Projects/7SegClock/Lattice_FPGA (searchpath added)
+Verilog design file = C:/Users/Justin/Dropbox/Projects/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v
 NGD file = SevenSegClock_SevenSegClock.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -73,63 +75,88 @@ Hardtimer checking is enabled (default). The -dt option is not used.
 The -r option is OFF. [ Remove LOC Properties is OFF. ]
 Technology check ok...
 
+Analyzing Verilog file C:/lscc/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Compile design.
 Compile Design Begin
+Analyzing Verilog file c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v. VERI-1482
+Analyzing Verilog file C:/lscc/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Top module name (Verilog): AutoShift
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(9): " arg1="AutoShift" arg2="/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v" arg3="9"  />
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="/usr/local/diamond/3.3_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1793): " arg1="OSCH(NOM_FREQ=&quot;3.50&quot;)" arg2="/usr/local/diamond/3.3_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v" arg3="1793"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(9): " arg1="AutoShift" arg2="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v" arg3="9"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="C:/lscc/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): " arg1="OSCH(NOM_FREQ=&quot;3.50&quot;)" arg2="C:/lscc/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1793"  />
+    <postMsg mid="35901221" type="Warning" dynamic="2" navigation="2" arg0="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(86): " arg1="RedD1" arg2="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v" arg3="86"  />
+    <postMsg mid="35901221" type="Warning" dynamic="2" navigation="2" arg0="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(86): " arg1="Seg" arg2="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v" arg3="86"  />
+    <postMsg mid="35901221" type="Warning" dynamic="2" navigation="2" arg0="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(86): " arg1="GrnD1" arg2="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v" arg3="86"  />
+    <postMsg mid="35901221" type="Warning" dynamic="2" navigation="2" arg0="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(86): " arg1="Seg" arg2="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v" arg3="86"  />
+    <postMsg mid="35901221" type="Warning" dynamic="2" navigation="2" arg0="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(86): " arg1="ledA1" arg2="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v" arg3="86"  />
+    <postMsg mid="35901221" type="Warning" dynamic="2" navigation="2" arg0="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(87): " arg1="RedD2" arg2="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v" arg3="87"  />
+    <postMsg mid="35901221" type="Warning" dynamic="2" navigation="2" arg0="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(87): " arg1="Seg" arg2="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v" arg3="87"  />
+    <postMsg mid="35901221" type="Warning" dynamic="2" navigation="2" arg0="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(87): " arg1="GrnD2" arg2="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v" arg3="87"  />
+    <postMsg mid="35901221" type="Warning" dynamic="2" navigation="2" arg0="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(87): " arg1="Seg" arg2="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v" arg3="87"  />
+    <postMsg mid="35901221" type="Warning" dynamic="2" navigation="2" arg0="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(87): " arg1="ledA2" arg2="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v" arg3="87"  />
+    <postMsg mid="35901221" type="Warning" dynamic="2" navigation="2" arg0="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(88): " arg1="RedD3" arg2="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v" arg3="88"  />
+    <postMsg mid="35901221" type="Warning" dynamic="2" navigation="2" arg0="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(88): " arg1="Seg" arg2="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v" arg3="88"  />
+    <postMsg mid="35901221" type="Warning" dynamic="2" navigation="2" arg0="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(88): " arg1="GrnD3" arg2="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v" arg3="88"  />
+    <postMsg mid="35901221" type="Warning" dynamic="2" navigation="2" arg0="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(88): " arg1="Seg" arg2="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v" arg3="88"  />
+    <postMsg mid="35901221" type="Warning" dynamic="2" navigation="2" arg0="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(88): " arg1="ledA3" arg2="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v" arg3="88"  />
+    <postMsg mid="35901221" type="Warning" dynamic="2" navigation="2" arg0="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(89): " arg1="RedD4" arg2="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v" arg3="89"  />
+    <postMsg mid="35901221" type="Warning" dynamic="2" navigation="2" arg0="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(89): " arg1="Seg" arg2="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v" arg3="89"  />
+    <postMsg mid="35901221" type="Warning" dynamic="2" navigation="2" arg0="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(89): " arg1="GrnD4" arg2="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v" arg3="89"  />
+    <postMsg mid="35901221" type="Warning" dynamic="2" navigation="2" arg0="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(89): " arg1="Seg" arg2="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v" arg3="89"  />
+    <postMsg mid="35901221" type="Warning" dynamic="2" navigation="2" arg0="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(89): " arg1="ledA4" arg2="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v" arg3="89"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(136): " arg1="32" arg2="12" arg3="c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v" arg4="136"  />
 Last elaborated design is AutoShift()
-Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
-Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
-Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
-Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/or5g00/data/orc5glib.ngl'...
-Loading device for application map from file 'xo2c1200.nph' in environment: /usr/local/diamond/3.3_x64/ispfpga.
-Package Status:                     Final          Version 1.39.
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c1200.nph' in environment: C:/lscc/diamond/3.9_x64/ispfpga.
+Package Status:                     Final          Version 1.42.
 Top-level module name = AutoShift.
 
 
 
-GSR instance connected to net n1.
 GSR will not be inferred because no asynchronous signal was found in the netlist.
-    <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
+    <postMsg mid="35001699" type="Info"    dynamic="2" navigation="0" arg0="tmp_i1" arg1="IFS1P3DX"  />
 Applying 200.000000 MHz constraint to all clocks
 
+    <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
 Results of NGD DRC are available in AutoShift_drc.log.
-Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
-Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
-Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
-Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/or5g00/data/orc5glib.ngl'...
 
 
 Running DRC...
 
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="cnt_94_add_4_1/S0"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="cnt_94_add_4_13/CO"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="0" arg0="logical" arg1="cnt_94_add_4_13/S1"  />
-    <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="3"  />
+DRC complete with no errors or warnings
 
 Design Results:
-    522 blocks expanded
+    500 blocks expanded
 completed the first expansion
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file SevenSegClock_SevenSegClock.ngd.
 
 ################### Begin Area Report (AutoShift)######################
 Number of register bits => 302 of 964 (31 % )
-CCU2D => 7
+CCU2D => 14
 FD1P3AY => 1
 FD1P3IX => 6
-FD1S3AX => 204
+FD1S3AX => 203
 FD1S3AY => 1
-FD1S3IX => 90
+FD1S3IX => 6
 GSR => 1
 IB => 4
-L6MUX21 => 1
-LUT4 => 116
+IFS1P3DX => 1
+LUT4 => 90
 OB => 85
+OFS1P3IX => 84
 OSCH => 1
-PFUMX => 2
 ################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
 
 ################### Begin Clock Report ######################
 Clock Nets
@@ -140,13 +167,15 @@ Number of Clocks: 4
   Net : pwm_c, loads : 12
 Clock Enable Nets
 Number of Clock Enables: 1
+Top 1 highest fanout Clock Enables:
+  Net : Led_6_N_104_0, loads : 15
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : n985, loads : 84
-  Net : n299, loads : 15
+  Net : n949, loads : 84
+  Net : Led_6_N_104_0, loads : 15
+  Net : Seg_4, loads : 11
+  Net : Seg_3, loads : 11
   Net : Seg_5, loads : 10
-  Net : Seg_4, loads : 10
-  Net : Seg_3, loads : 10
   Net : Seg_2, loads : 10
   Net : Seg_1, loads : 10
   Net : Seg_0, loads : 10
@@ -167,31 +196,31 @@ create_clock -period 5.000000 -name     |             |             |
 clk2 [get_nets latch_c]                 |            -|            -|     0  
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk1 [get_nets clk_c]                   |  200.000 MHz|  606.796 MHz|     1  
+clk1 [get_nets clk_c]                   |  200.000 MHz|  568.182 MHz|     1  
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets osc_clk_c_c]             |            -|            -|     0  
+clk0 [get_nets osc_clk_c_c]             |  200.000 MHz|  149.745 MHz|     4 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
 
-All constraints were met.
+1 constraints not met.
 
 
-Peak Memory Usage: 183.332  MB
+Peak Memory Usage: 52.418  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.765  secs
+Elapsed CPU time for LSE flow : 0.577  secs
 --------------------------------------------------------------
 
-map -a "MachXO2" -p LCMXO2-640UHC -t TQFP144 -s 5 -oc Commercial   "SevenSegClock_SevenSegClock.ngd" -o "SevenSegClock_SevenSegClock_map.ncd" -pr "SevenSegClock_SevenSegClock.prf" -mp "SevenSegClock_SevenSegClock.mrp" "/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/SevenSegClock.lpf" -c 0            
-map:  version Diamond (64-bit) 3.3.0.109
+map -a "MachXO2" -p LCMXO2-640UHC -t TQFP144 -s 5 -oc Commercial   "SevenSegClock_SevenSegClock.ngd" -o "SevenSegClock_SevenSegClock_map.ncd" -pr "SevenSegClock_SevenSegClock.prf" -mp "SevenSegClock_SevenSegClock.mrp" "C:/Users/Justin/Dropbox/Projects/7SegClock/Lattice_FPGA/SevenSegClock/source/SevenSegClock.lpf" -c 0            
+map:  version Diamond (64-bit) 3.9.0.99.2
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
    Process the file: SevenSegClock_SevenSegClock.ngd
    Picdevice="LCMXO2-640UHC"
 
@@ -205,8 +234,8 @@ Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
 
 Part used: LCMXO2-640UHCTQFP144, Performance used: 5.
 
-Loading device for application map from file 'xo2c1200.nph' in environment: /usr/local/diamond/3.3_x64/ispfpga.
-Package Status:                     Final          Version 1.39.
+Loading device for application map from file 'xo2c1200.nph' in environment: C:/lscc/diamond/3.9_x64/ispfpga.
+Package Status:                     Final          Version 1.42.
 
 Running general design DRC...
 
@@ -219,17 +248,17 @@ Optimizing...
 
 Design Summary:
    Number of registers:    302 out of   964 (31%)
-      PFU registers:          302 out of   640 (47%)
-      PIO registers:            0 out of   324 (0%)
-   Number of SLICEs:       157 out of   320 (49%)
-      SLICEs as Logic/ROM:    157 out of   320 (49%)
+      PFU registers:          217 out of   640 (34%)
+      PIO registers:           85 out of   324 (26%)
+   Number of SLICEs:       111 out of   320 (35%)
+      SLICEs as Logic/ROM:    111 out of   320 (35%)
       SLICEs as RAM:            0 out of   240 (0%)
-      SLICEs as Carry:          7 out of   320 (2%)
-   Number of LUT4s:        129 out of   640 (20%)
-      Number of logic LUTs:      115
-      Number of distributed RAM:   0 (0 LUT4s)
-      Number of ripple logic:      7 (14 LUT4s)
-      Number of shift registers:   0
+      SLICEs as Carry:         14 out of   320 (4%)
+   Number of LUT4s:        117 out of   640 (18%)
+      Number used as logic LUTs:         89
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       28
+      Number used as shift registers:     0
    Number of PIO sites used: 89 + 4(JTAG) out of 108 (86%)
    Number of block RAMs:  0 out of 7 (0%)
    Number of GSRs:  0 out of 1 (0%)
@@ -254,26 +283,26 @@ Design Summary:
       1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
       2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
    Number of clocks:  4
-     Net osc_clk_c_c: 60 loads, 60 rising, 0 falling (Driver: OSCH_inst )
+     Net osc_clk_c_c: 100 loads, 100 rising, 0 falling (Driver: OSCH_inst )
      Net clk_c: 48 loads, 48 rising, 0 falling (Driver: PIO clk )
      Net latch_c: 42 loads, 42 rising, 0 falling (Driver: PIO latch )
      Net pwm_c: 6 loads, 6 rising, 0 falling (Driver: PIO pwm )
    Number of Clock Enables:  1
-     Net n299: 4 loads, 4 LSLICEs
+     Net Led_6_N_104_0: 4 loads, 4 LSLICEs
    Number of LSRs:  3
-     Net n299: 3 loads, 3 LSLICEs
-     Net heartbeat_c: 44 loads, 44 LSLICEs
-     Net n986: 3 loads, 3 LSLICEs
+     Net Led_6_N_104_0: 3 loads, 3 LSLICEs
+     Net heartbeat_c: 84 loads, 0 LSLICEs
+     Net n950: 3 loads, 3 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net heartbeat_c: 45 loads
+     Net heartbeat_c: 85 loads
+     Net Seg_3: 11 loads
+     Net Seg_4: 11 loads
      Net Seg_0: 10 loads
      Net Seg_1: 10 loads
      Net Seg_2: 10 loads
-     Net Seg_3: 10 loads
-     Net Seg_4: 10 loads
      Net Seg_5: 10 loads
-     Net n299: 9 loads
+     Net Led_6_N_104_0: 9 loads
      Net Seg_6: 8 loads
      Net Led_0: 6 loads
  
@@ -284,15 +313,14 @@ Design Summary:
 
 
 Total CPU Time: 0 secs  
-Total REAL Time: 0 secs  
-Peak Memory Usage: 157 MB
+Total REAL Time: 2 secs  
+Peak Memory Usage: 39 MB
 
 Dumping design to file SevenSegClock_SevenSegClock_map.ncd.
 
-ncd2vdb "SevenSegClock_SevenSegClock_map.ncd" "SevenSegClock_SevenSegClock_map.vdb"
+ncd2vdb "SevenSegClock_SevenSegClock_map.ncd" ".vdbs/SevenSegClock_SevenSegClock_map.vdb"
 
-Loading device for application ncd2vdb from file 'xo2c1200.nph' in environment: /usr/local/diamond/3.3_x64/ispfpga.
-Design:  AutoShift
+Loading device for application ncd2vdb from file 'xo2c1200.nph' in environment: C:/lscc/diamond/3.9_x64/ispfpga.
 
 mpartrce -p "SevenSegClock_SevenSegClock.p2t" -f "SevenSegClock_SevenSegClock.p3t" -tf "SevenSegClock_SevenSegClock.pt" "SevenSegClock_SevenSegClock_map.ncd" "SevenSegClock_SevenSegClock.ncd"
 
@@ -301,9 +329,9 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "SevenSegClock_SevenSegClock_map.ncd"
-Thu Apr  2 04:22:58 2015
+Fri Mar 10 23:28:41 2017
 
-PAR: Place And Route Diamond (64-bit) 3.3.0.109.
+PAR: Place And Route Diamond (64-bit) 3.9.0.99.2.
 Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF SevenSegClock_SevenSegClock_map.ncd SevenSegClock_SevenSegClock.dir/5_1.ncd SevenSegClock_SevenSegClock.prf
 Preference file: SevenSegClock_SevenSegClock.prf.
 Placement level-cost: 5-1.
@@ -316,9 +344,9 @@ Vendor:      LATTICE
 Device:      LCMXO2-640UHC
 Package:     TQFP144
 Performance: 5
-Loading device for application par from file 'xo2c1200.nph' in environment: /usr/local/diamond/3.3_x64/ispfpga.
-Package Status:                     Final          Version 1.39.
-Performance Hardware Data Status:   Final          Version 26.4.
+Loading device for application par from file 'xo2c1200.nph' in environment: C:/lscc/diamond/3.9_x64/ispfpga.
+Package Status:                     Final          Version 1.42.
+Performance Hardware Data Status:   Final          Version 34.4.
 License checked out.
 
 
@@ -327,20 +355,21 @@ Device utilization summary:
 
    PIO (prelim)   89+4(JTAG)/108     86% used
                   89+4(JTAG)/108     86% bonded
+   IOLOGIC           85/108          78% used
 
-   SLICE            157/320          49% used
+   SLICE            111/320          34% used
 
    OSC                1/1           100% used
 
 
-Number of Signals: 439
-Number of Connections: 876
+Number of Signals: 421
+Number of Connections: 911
 
 Pin Constraint Summary:
-   25 out of 25 pins locked (100% locked).
+   25 out of 89 pins locked (28% locked).
 
 The following 3 signals are selected to use the primary clock routing resources:
-    osc_clk_c_c (driver: OSCH_inst, clk load #: 60)
+    osc_clk_c_c (driver: OSCH_inst, clk load #: 100)
     clk_c (driver: clk, clk load #: 48)
     latch_c (driver: latch, clk load #: 42)
 
@@ -348,25 +377,25 @@ The following 3 signals are selected to use the primary clock routing resources:
     <postMsg mid="61061008" type="Warning" dynamic="5" navigation="0" arg0="latch_c" arg1="Primary" arg2="latch" arg3="65" arg4="Primary"  />
 
 The following 2 signals are selected to use the secondary clock routing resources:
-    heartbeat_c (driver: SLICE_57, clk load #: 0, sr load #: 44, ce load #: 0)
+    heartbeat_c (driver: SLICE_0, clk load #: 0, sr load #: 84, ce load #: 0)
     pwm_c (driver: pwm, clk load #: 6, sr load #: 0, ce load #: 0)
 
     <postMsg mid="61061008" type="Warning" dynamic="5" navigation="0" arg0="pwm_c" arg1="Secondary" arg2="pwm" arg3="50" arg4="Secondary"  />
 No signal is selected as Global Set/Reset.
 .
 Starting Placer Phase 0.
-............
-Finished Placer Phase 0.  REAL time: 0 secs 
+...........
+Finished Placer Phase 0.  REAL time: 6 secs 
 
 Starting Placer Phase 1.
-.....................
-Placer score = 48714.
-Finished Placer Phase 1.  REAL time: 7 secs 
+....................
+Placer score = 61769.
+Finished Placer Phase 1.  REAL time: 18 secs 
 
 Starting Placer Phase 2.
 .
-Placer score =  48622
-Finished Placer Phase 2.  REAL time: 7 secs 
+Placer score =  61565
+Finished Placer Phase 2.  REAL time: 18 secs 
 
 
 ------------------ Clock Report ------------------
@@ -379,10 +408,10 @@ Global Clock Resources:
   DCC        : 0 out of 8 (0%)
 
 Quadrants All (TL, TR, BL, BR) - Global Clocks:
-  PRIMARY "osc_clk_c_c" from OSC on comp "OSCH_inst" on site "OSC", clk load = 60
+  PRIMARY "osc_clk_c_c" from OSC on comp "OSCH_inst" on site "OSC", clk load = 100
   PRIMARY "clk_c" from comp "clk" on PIO site "67 (PB18D)", clk load = 48
   PRIMARY "latch_c" from comp "latch" on PIO site "65 (PB18C)", clk load = 42
-  SECONDARY "heartbeat_c" from Q1 on comp "SLICE_57" on site "R7C12A", clk load = 0, ce load = 0, sr load = 44
+  SECONDARY "heartbeat_c" from Q1 on comp "SLICE_0" on site "R7C12C", clk load = 0, ce load = 0, sr load = 84
   SECONDARY "pwm_c" from comp "pwm" on PIO site "50 (PB9B)", clk load = 6, ce load = 0, sr load = 0
 
   PRIMARY  : 3 out of 8 (37%)
@@ -405,23 +434,23 @@ I/O Bank Usage Summary:
 | I/O Bank | Usage          | Bank Vccio | Bank Vref |
 +----------+----------------+------------+-----------+
 | 0        | 24 / 28 ( 85%) | 3.3V       | -         |
-| 1        | 20 / 26 ( 76%) | 3.3V       | -         |
-| 2        | 26 / 28 ( 92%) | 3.3V       | -         |
-| 3        | 19 / 26 ( 73%) | 3.3V       | -         |
+| 1        | 26 / 26 (100%) | 3.3V       | -         |
+| 2        | 24 / 28 ( 85%) | 3.3V       | -         |
+| 3        | 15 / 26 ( 57%) | 3.3V       | -         |
 +----------+----------------+------------+-----------+
 
-Total placer CPU time: 7 secs 
+Total placer CPU time: 12 secs 
 
 Dumping design to file SevenSegClock_SevenSegClock.dir/5_1.ncd.
 
-0 connections routed; 876 unrouted.
+0 connections routed; 911 unrouted.
 Starting router resource preassignment
     <postMsg mid="62061008" type="Warning" dynamic="1" navigation="0" arg0="clk_c"  />
     <postMsg mid="62061008" type="Warning" dynamic="1" navigation="0" arg0="latch_c"  />
 
-Completed router resource preassignment. Real time: 7 secs 
+Completed router resource preassignment. Real time: 19 secs 
 
-Start NBR router at Thu Apr 02 04:23:06 UTC 2015
+Start NBR router at 23:29:01 03/10/17
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -433,38 +462,38 @@ Info: NBR allows conflicts(one node used by more than one signal)
 Note: NBR uses a different method to calculate timing slacks. The
       worst slack and total negative slack may not be the same as
       that in TRCE report. You should always run TRCE to verify  
-      your design. Thanks.                                       
+      your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at Thu Apr 02 04:23:06 UTC 2015
+Start NBR special constraint process at 23:29:01 03/10/17
 
-Start NBR section for initial routing at Thu Apr 02 04:23:06 UTC 2015
+Start NBR section for initial routing at 23:29:01 03/10/17
 Level 4, iteration 1
-21(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 279.173ns/0.000ns; real time: 8 secs 
+20(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 278.832ns/0.000ns; real time: 20 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at Thu Apr 02 04:23:06 UTC 2015
+Start NBR section for normal routing at 23:29:01 03/10/17
 Level 4, iteration 1
-12(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 278.551ns/0.000ns; real time: 8 secs 
+17(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 278.832ns/0.000ns; real time: 20 secs 
 Level 4, iteration 2
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 278.551ns/0.000ns; real time: 8 secs 
+4(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 277.633ns/0.000ns; real time: 20 secs 
 Level 4, iteration 3
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 278.551ns/0.000ns; real time: 8 secs 
+Estimated worst slack/total negative slack<setup>: 277.633ns/0.000ns; real time: 20 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at Thu Apr 02 04:23:06 UTC 2015
+Start NBR section for setup/hold timing optimization with effort level 3 at 23:29:01 03/10/17
 
-Start NBR section for re-routing at Thu Apr 02 04:23:06 UTC 2015
+Start NBR section for re-routing at 23:29:02 03/10/17
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 278.551ns/0.000ns; real time: 8 secs 
+Estimated worst slack/total negative slack<setup>: 277.633ns/0.000ns; real time: 21 secs 
 
-Start NBR section for post-routing at Thu Apr 02 04:23:06 UTC 2015
+Start NBR section for post-routing at 23:29:02 03/10/17
 
 End NBR router with 0 unrouted connection
 
@@ -472,19 +501,17 @@ NBR Summary
 -----------
   Number of unrouted connections : 0 (0.00%)
   Number of connections with timing violations : 0 (0.00%)
-  Estimated worst slack<setup> : 278.551ns
+  Estimated worst slack<setup> : 277.633ns
   Timing score<setup> : 0
 -----------
 Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
 
 
 
-Total CPU time 8 secs 
-Total REAL time: 8 secs 
+Total CPU time 14 secs 
+Total REAL time: 21 secs 
 Completely routed.
-End of route.  876 routed (100.00%); 0 unrouted.
-Checking DRC ... 
-No errors found.
+End of route.  911 routed (100.00%); 0 unrouted.
 
 Hold time timing score: 0, hold timing errors: 0
 
@@ -495,14 +522,14 @@ Dumping design to file SevenSegClock_SevenSegClock.dir/5_1.ncd.
 
 PAR_SUMMARY::Run status = completed
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack<setup/<ns>> = 278.551
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 277.633
 PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
 PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.322
 PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  time to completion: 8 secs 
-Total REAL time to completion: 8 secs 
+Total CPU  time to completion: 14 secs 
+Total REAL time to completion: 21 secs 
 
 par done!
 
@@ -510,19 +537,19 @@ Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
 Exiting par with exit code 0
 Exiting mpartrce with exit code 0
 
 bitgen -f "SevenSegClock_SevenSegClock.t2b" -w "SevenSegClock_SevenSegClock.ncd" -jedec "SevenSegClock_SevenSegClock.prf"
 
 
-BITGEN: Bitstream Generator Diamond (64-bit) 3.3.0.109
+BITGEN: Bitstream Generator Diamond (64-bit) 3.9.0.99.2
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
 
 
 Loading design for application Bitgen from file SevenSegClock_SevenSegClock.ncd.
@@ -532,9 +559,9 @@ Vendor:      LATTICE
 Device:      LCMXO2-640UHC
 Package:     TQFP144
 Performance: 5
-Loading device for application Bitgen from file 'xo2c1200.nph' in environment: /usr/local/diamond/3.3_x64/ispfpga.
-Package Status:                     Final          Version 1.39.
-Performance Hardware Data Status:   Final          Version 26.4.
+Loading device for application Bitgen from file 'xo2c1200.nph' in environment: C:/lscc/diamond/3.9_x64/ispfpga.
+Package Status:                     Final          Version 1.42.
+Performance Hardware Data Status:   Final          Version 34.4.
 
 Running DRC.
 DRC detected 0 errors and 0 warnings.
@@ -549,6 +576,8 @@ Preference Summary:
 |                     MCCLK_FREQ  |                         2.08**  |
 +---------------------------------+---------------------------------+
 |                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
 +---------------------------------+---------------------------------+
 |                      JTAG_PORT  |                       ENABLE**  |
 +---------------------------------+---------------------------------+
@@ -574,13 +603,15 @@ Preference Summary:
 +---------------------------------+---------------------------------+
 |                  SHAREDEBRINIT  |                      DISABLE**  |
 +---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
  *  Default setting.
  ** The specified setting matches the default setting.
 
 
 Creating bit map...
  
-Bitstream Status: Final           Version 1.84.
+Bitstream Status: Final           Version 1.94.
  
 Saving bit stream in "SevenSegClock_SevenSegClock.jed".
  

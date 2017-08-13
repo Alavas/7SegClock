@@ -1,11 +1,11 @@
-BITGEN: Bitstream Generator Diamond (64-bit) 3.3.0.109
+BITGEN: Bitstream Generator Diamond (64-bit) 3.9.0.99.2
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
 
-Command: bitgen -g RamCfg:Reset -path /home/justin/7SegClock/7SegClock/Lattice_FPGA -w -jedec -gui SevenSegClock_SevenSegClock.ncd SevenSegClock_SevenSegClock.prf 
+Command: bitgen -g RamCfg:Reset -path C:/Users/Justin/Dropbox/Projects/7SegClock/Lattice_FPGA -w -jedec -gui SevenSegClock_SevenSegClock.ncd SevenSegClock_SevenSegClock.prf 
 
 Loading design for application Bitgen from file SevenSegClock_SevenSegClock.ncd.
 Design name: AutoShift
@@ -14,9 +14,9 @@ Vendor:      LATTICE
 Device:      LCMXO2-640UHC
 Package:     TQFP144
 Performance: 5
-Loading device for application Bitgen from file 'xo2c1200.nph' in environment: /usr/local/diamond/3.3_x64/ispfpga.
-Package Status:                     Final          Version 1.39.
-Performance Hardware Data Status:   Final          Version 26.4.
+Loading device for application Bitgen from file 'xo2c1200.nph' in environment: C:/lscc/diamond/3.9_x64/ispfpga.
+Package Status:                     Final          Version 1.42.
+Performance Hardware Data Status:   Final          Version 34.4.
 
 Running DRC.
 DRC detected 0 errors and 0 warnings.
@@ -31,6 +31,8 @@ Preference Summary:
 |                     MCCLK_FREQ  |                         2.08**  |
 +---------------------------------+---------------------------------+
 |                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
 +---------------------------------+---------------------------------+
 |                      JTAG_PORT  |                       ENABLE**  |
 +---------------------------------+---------------------------------+
@@ -56,13 +58,15 @@ Preference Summary:
 +---------------------------------+---------------------------------+
 |                  SHAREDEBRINIT  |                      DISABLE**  |
 +---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
  *  Default setting.
  ** The specified setting matches the default setting.
 
 
 Creating bit map...
  
-Bitstream Status: Final           Version 1.84.
+Bitstream Status: Final           Version 1.94.
  
 Saving bit stream in "SevenSegClock_SevenSegClock.jed".
  

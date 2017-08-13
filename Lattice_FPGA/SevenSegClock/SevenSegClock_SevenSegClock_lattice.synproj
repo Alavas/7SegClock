@@ -7,6 +7,8 @@
 -bram_utilization 100
 -ramstyle Auto
 -romstyle auto
+-dsp_utilization 100
+-use_dsp 1
 -use_carry_chain 1
 -carry_chain_length 0
 -force_gsr Auto
@@ -20,18 +22,20 @@
 -fix_gated_clocks 1
 -loop_limit 1950
 
+
+
 -use_io_insertion 1
 -resolve_mixed_drivers 0
 -use_io_reg 1
 
 
 -lpf 1
--p "/home/justin/7SegClock/7SegClock/Lattice_FPGA"
--ver "/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v"
+-p "C:/Users/Justin/Dropbox/Projects/7SegClock/Lattice_FPGA"
+-ver "C:/Users/Justin/Dropbox/Projects/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v"
 -top AutoShift
 
 
--p "/usr/local/diamond/3.3_x64/ispfpga/xo2c00/data" "/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock" "/home/justin/7SegClock/7SegClock/Lattice_FPGA"
+-p "C:/lscc/diamond/3.9_x64/ispfpga/xo2c00/data" "C:/Users/Justin/Dropbox/Projects/7SegClock/Lattice_FPGA/SevenSegClock" "C:/Users/Justin/Dropbox/Projects/7SegClock/Lattice_FPGA"
 
 -ngd "SevenSegClock_SevenSegClock.ngd"
 

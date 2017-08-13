@@ -1,20 +1,20 @@
 ----------------------------------------------------------------------
-Report for cell AutoShift.<NoName>
+Report for cell AutoShift.TECH
 Register bits:  302 of 964 (31.328%)
 I/O cells:      89
                                   Cell usage:
                                cell     count   Res Usage(%)
-                              CCU2D         7          100.0
+                              CCU2D        14          100.0
                             FD1P3AY         1          100.0
                             FD1P3IX         6          100.0
-                            FD1S3AX       204          100.0
+                            FD1S3AX       203          100.0
                             FD1S3AY         1          100.0
-                            FD1S3IX        90          100.0
+                            FD1S3IX         6          100.0
                                 GSR         1          100.0
                                  IB         4          100.0
-                            L6MUX21         1          100.0
-                               LUT4       116          100.0
+                           IFS1P3DX         1          100.0
+                               LUT4        90          100.0
                                  OB        85          100.0
+                           OFS1P3IX        84          100.0
                                OSCH         1          100.0
-                              PFUMX         2          100.0
-                              TOTAL       519
+                              TOTAL       497

@@ -2,54 +2,207 @@
 <BaliMessageLog>
     <Task name="Lattice_Synthesis">
         <Message>
-            <ID>2029993</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>synthesis: Using default loop_limit value of 1950</Dynamic>
-            <Navigation>synthesis</Navigation>
-            <Navigation>Using default loop_limit value of 1950</Navigation>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(9): </Dynamic>
+            <Dynamic>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(9): </Dynamic>
             <Dynamic>AutoShift</Dynamic>
-            <Navigation>/home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v</Navigation>
+            <Navigation>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v</Navigation>
             <Navigation>9</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>/usr/local/diamond/3.3_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1793): </Dynamic>
+            <Dynamic>C:/lscc/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): </Dynamic>
             <Dynamic>OSCH(NOM_FREQ=&quot;3.50&quot;)</Dynamic>
-            <Navigation>/usr/local/diamond/3.3_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>C:/lscc/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
             <Navigation>1793</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(86): </Dynamic>
+            <Dynamic>RedD1</Dynamic>
+            <Navigation>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v</Navigation>
+            <Navigation>86</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(86): </Dynamic>
+            <Dynamic>Seg</Dynamic>
+            <Navigation>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v</Navigation>
+            <Navigation>86</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(86): </Dynamic>
+            <Dynamic>GrnD1</Dynamic>
+            <Navigation>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v</Navigation>
+            <Navigation>86</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(86): </Dynamic>
+            <Dynamic>Seg</Dynamic>
+            <Navigation>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v</Navigation>
+            <Navigation>86</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(86): </Dynamic>
+            <Dynamic>ledA1</Dynamic>
+            <Navigation>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v</Navigation>
+            <Navigation>86</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(87): </Dynamic>
+            <Dynamic>RedD2</Dynamic>
+            <Navigation>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v</Navigation>
+            <Navigation>87</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(87): </Dynamic>
+            <Dynamic>Seg</Dynamic>
+            <Navigation>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v</Navigation>
+            <Navigation>87</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(87): </Dynamic>
+            <Dynamic>GrnD2</Dynamic>
+            <Navigation>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v</Navigation>
+            <Navigation>87</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(87): </Dynamic>
+            <Dynamic>Seg</Dynamic>
+            <Navigation>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v</Navigation>
+            <Navigation>87</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(87): </Dynamic>
+            <Dynamic>ledA2</Dynamic>
+            <Navigation>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v</Navigation>
+            <Navigation>87</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(88): </Dynamic>
+            <Dynamic>RedD3</Dynamic>
+            <Navigation>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v</Navigation>
+            <Navigation>88</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(88): </Dynamic>
+            <Dynamic>Seg</Dynamic>
+            <Navigation>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v</Navigation>
+            <Navigation>88</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(88): </Dynamic>
+            <Dynamic>GrnD3</Dynamic>
+            <Navigation>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v</Navigation>
+            <Navigation>88</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(88): </Dynamic>
+            <Dynamic>Seg</Dynamic>
+            <Navigation>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v</Navigation>
+            <Navigation>88</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(88): </Dynamic>
+            <Dynamic>ledA3</Dynamic>
+            <Navigation>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v</Navigation>
+            <Navigation>88</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(89): </Dynamic>
+            <Dynamic>RedD4</Dynamic>
+            <Navigation>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v</Navigation>
+            <Navigation>89</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(89): </Dynamic>
+            <Dynamic>Seg</Dynamic>
+            <Navigation>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v</Navigation>
+            <Navigation>89</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(89): </Dynamic>
+            <Dynamic>GrnD4</Dynamic>
+            <Navigation>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v</Navigation>
+            <Navigation>89</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(89): </Dynamic>
+            <Dynamic>Seg</Dynamic>
+            <Navigation>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v</Navigation>
+            <Navigation>89</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(89): </Dynamic>
+            <Dynamic>ledA4</Dynamic>
+            <Navigation>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v</Navigation>
+            <Navigation>89</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(136): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>12</Dynamic>
+            <Navigation>c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v</Navigation>
+            <Navigation>136</Navigation>
+        </Message>
+        <Message>
+            <ID>35001699</ID>
+            <Severity>Info</Severity>
+            <Dynamic>tmp_i1</Dynamic>
+            <Dynamic>IFS1P3DX</Dynamic>
         </Message>
         <Message>
             <ID>35001611</ID>
             <Severity>Warning</Severity>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>cnt_94_add_4_1/S0</Dynamic>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>cnt_94_add_4_13/CO</Dynamic>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>cnt_94_add_4_13/S1</Dynamic>
-        </Message>
-        <Message>
-            <ID>1163101</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>3</Dynamic>
         </Message>
     </Task>
     <Task name="PAR">

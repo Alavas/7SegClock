@@ -1,11 +1,11 @@
-synthesis:  version Diamond (64-bit) 3.3.0.109
+synthesis:  version Diamond (64-bit) 3.9.0.99.2
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Apr  2 04:22:56 2015
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Fri Mar 10 23:28:29 2017
 
 
 Command Line:  synthesis -f SevenSegClock_SevenSegClock_lattice.synproj -gui 
@@ -21,7 +21,7 @@ Using performance grade 5.
 
 ##########################################################
 
-### Lattice Family : MachXO2A
+### Lattice Family : MachXO2
 
 ### Device  : LCMXO2-640UHC
 
@@ -33,14 +33,15 @@ Using performance grade 5.
 
                                                           
 
+INFO - synthesis: User-Selected Strategy Settings
 Optimization goal = Balanced
 Top-level module name = AutoShift.
 Target frequency = 200.000000 MHz.
 Maximum fanout = 1000.
 Timing path count = 3
 BRAM utilization = 100.000000 %
-DSP usage = true (default)
-DSP utilization = 100 % (default)
+DSP usage = true
+DSP utilization = 100.000000 %
 fsm_encoding_style = auto
 resolve_mixed_drivers = 0
 fix_gated_clocks = 1
@@ -48,9 +49,9 @@ fix_gated_clocks = 1
 Mux style = Auto
 Use Carry Chain = true
 carry_chain_length = 0
-WARNING - synthesis: Using default loop_limit value of 1950
-
+Loop Limit = 1950.
 Use IO Insertion = TRUE
+Use IO Reg = TRUE
 Resource Sharing = TRUE
 Propagate Constants = TRUE
 Remove Duplicate Registers = TRUE
@@ -59,11 +60,11 @@ ROM style = auto
 RAM style = auto
 The -comp option is FALSE.
 The -syn option is FALSE.
--p /home/justin/7SegClock/7SegClock/Lattice_FPGA (searchpath added)
--p /usr/local/diamond/3.3_x64/ispfpga/xo2c00/data (searchpath added)
--p /home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock (searchpath added)
--p /home/justin/7SegClock/7SegClock/Lattice_FPGA (searchpath added)
-Verilog design file = /home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v
+-p C:/Users/Justin/Dropbox/Projects/7SegClock/Lattice_FPGA (searchpath added)
+-p C:/lscc/diamond/3.9_x64/ispfpga/xo2c00/data (searchpath added)
+-p C:/Users/Justin/Dropbox/Projects/7SegClock/Lattice_FPGA/SevenSegClock (searchpath added)
+-p C:/Users/Justin/Dropbox/Projects/7SegClock/Lattice_FPGA (searchpath added)
+Verilog design file = C:/Users/Justin/Dropbox/Projects/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v
 NGD file = SevenSegClock_SevenSegClock.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -71,54 +72,78 @@ Hardtimer checking is enabled (default). The -dt option is not used.
 The -r option is OFF. [ Remove LOC Properties is OFF. ]
 Technology check ok...
 
+Analyzing Verilog file C:/lscc/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Compile design.
 Compile Design Begin
+Analyzing Verilog file c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v. VERI-1482
+Analyzing Verilog file C:/lscc/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Top module name (Verilog): AutoShift
-INFO - synthesis: /home/justin/7SegClock/7SegClock/Lattice_FPGA/SevenSegClock/source/AutoShift_1.v(9): compiling module AutoShift. VERI-1018
-INFO - synthesis: /usr/local/diamond/3.3_x64/ispfpga/userware/unix/SYNTHESIS_HEADERS/machxo2.v(1793): compiling module OSCH(NOM_FREQ="3.50"). VERI-1018
-Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
-Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
-Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
-Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/or5g00/data/orc5glib.ngl'...
-Loading device for application map from file 'xo2c1200.nph' in environment: /usr/local/diamond/3.3_x64/ispfpga.
-Package Status:                     Final          Version 1.39.
+INFO - synthesis: c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(9): compiling module AutoShift. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): compiling module OSCH(NOM_FREQ="3.50"). VERI-1018
+WARNING - synthesis: c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(86): RedD1 should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(86): Seg should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(86): GrnD1 should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(86): Seg should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(86): ledA1 should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(87): RedD2 should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(87): Seg should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(87): GrnD2 should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(87): Seg should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(87): ledA2 should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(88): RedD3 should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(88): Seg should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(88): GrnD3 should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(88): Seg should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(88): ledA3 should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(89): RedD4 should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(89): Seg should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(89): GrnD4 should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(89): Seg should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(89): ledA4 should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/justin/dropbox/projects/7segclock/lattice_fpga/sevensegclock/source/autoshift_1.v(136): expression size 32 truncated to fit in target size 12. VERI-1209
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c1200.nph' in environment: C:/lscc/diamond/3.9_x64/ispfpga.
+Package Status:                     Final          Version 1.42.
 Top-level module name = AutoShift.
 
 
 
-GSR instance connected to net n1.
 GSR will not be inferred because no asynchronous signal was found in the netlist.
-WARNING - synthesis: No user .sdc file.
+INFO - synthesis: Register tmp_i1 of type IFS1P3DX will not be replicated.
 Applying 200.000000 MHz constraint to all clocks
 
+WARNING - synthesis: No user .sdc file.
 Results of NGD DRC are available in AutoShift_drc.log.
-Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
-Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
-Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
-Loading NGL library '/usr/local/diamond/3.3_x64/ispfpga/or5g00/data/orc5glib.ngl'...
-WARNING - synthesis: logical net 'cnt_94_add_4_1/S0' has no load.
-WARNING - synthesis: logical net 'cnt_94_add_4_13/CO' has no load.
-WARNING - synthesis: logical net 'cnt_94_add_4_13/S1' has no load.
-WARNING - synthesis: DRC complete with 3 warnings.
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/or5g00/data/orc5glib.ngl'...
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file SevenSegClock_SevenSegClock.ngd.
 
 ################### Begin Area Report (AutoShift)######################
 Number of register bits => 302 of 964 (31 % )
-CCU2D => 7
+CCU2D => 14
 FD1P3AY => 1
 FD1P3IX => 6
-FD1S3AX => 204
+FD1S3AX => 203
 FD1S3AY => 1
-FD1S3IX => 90
+FD1S3IX => 6
 GSR => 1
 IB => 4
-L6MUX21 => 1
-LUT4 => 116
+IFS1P3DX => 1
+LUT4 => 90
 OB => 85
+OFS1P3IX => 84
 OSCH => 1
-PFUMX => 2
 ################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
 
 ################### Begin Clock Report ######################
 Clock Nets
@@ -129,13 +154,15 @@ Number of Clocks: 4
   Net : pwm_c, loads : 12
 Clock Enable Nets
 Number of Clock Enables: 1
+Top 1 highest fanout Clock Enables:
+  Net : Led_6_N_104_0, loads : 15
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : n985, loads : 84
-  Net : n299, loads : 15
+  Net : n949, loads : 84
+  Net : Led_6_N_104_0, loads : 15
+  Net : Seg_4, loads : 11
+  Net : Seg_3, loads : 11
   Net : Seg_5, loads : 10
-  Net : Seg_4, loads : 10
-  Net : Seg_3, loads : 10
   Net : Seg_2, loads : 10
   Net : Seg_1, loads : 10
   Net : Seg_0, loads : 10
@@ -156,19 +183,19 @@ create_clock -period 5.000000 -name     |             |             |
 clk2 [get_nets latch_c]                 |            -|            -|     0  
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk1 [get_nets clk_c]                   |  200.000 MHz|  606.796 MHz|     1  
+clk1 [get_nets clk_c]                   |  200.000 MHz|  568.182 MHz|     1  
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets osc_clk_c_c]             |            -|            -|     0  
+clk0 [get_nets osc_clk_c_c]             |  200.000 MHz|  149.745 MHz|     4 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
 
-All constraints were met.
+1 constraints not met.
 
 
-Peak Memory Usage: 183.332  MB
+Peak Memory Usage: 52.418  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.765  secs
+Elapsed CPU time for LSE flow : 0.577  secs
 --------------------------------------------------------------
